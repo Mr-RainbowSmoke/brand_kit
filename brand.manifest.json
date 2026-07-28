@@ -1,0 +1,2003 @@
+{
+  "schemaVersion": "1.0",
+  "brand": {
+    "name": "RAINBOWSMOKE",
+    "libraryId": "d6dcf31b-fcf0-4057-9303-c2d993f19456",
+    "source": {
+      "type": "adobe-cclibs",
+      "file": "RAINBOWSMOKE.cclibs",
+      "sha256": "9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803",
+      "bytes": 18282858
+    },
+    "generatedAt": "2026-01-17T19:11:25Z"
+  },
+  "identity": {
+    "essence": [
+      "identity in motion",
+      "spectrum-first color",
+      "digital-native presence",
+      "high-contrast, dark-mode friendly"
+    ],
+    "voice": {
+      "traits": [
+        "confident",
+        "warm",
+        "bold",
+        "playful"
+      ],
+      "avoid": [
+        "generic-corporate",
+        "flat-minimalism-without-signal"
+      ]
+    }
+  },
+  "color": {
+    "themes": [
+      {
+        "id": "b1ff0e16-d9fb-4984-be36-8065a0cf584e",
+        "name": "pride",
+        "mood": "pride",
+        "swatches": [
+          {
+            "hex": "#FF0000",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 0
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FF8E00",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 142
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FFED00",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 237
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#008026",
+            "rgb": {
+              "r": 0,
+              "b": 38,
+              "g": 128
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#004CFF",
+            "rgb": {
+              "r": 0,
+              "b": 255,
+              "g": 76
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#400098",
+            "rgb": {
+              "r": 64,
+              "b": 152,
+              "g": 0
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T07:42:57Z",
+        "modified": "2026-01-07T07:56:12Z"
+      },
+      {
+        "id": "80c114e9-cc64-484d-8168-bd82e4c45a1d",
+        "name": "pride_extended",
+        "mood": "pride_extended",
+        "swatches": [
+          {
+            "hex": "#FF0000",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 0
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FF8E00",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 142
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FFED00",
+            "rgb": {
+              "r": 255,
+              "b": 0,
+              "g": 237
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#008026",
+            "rgb": {
+              "r": 0,
+              "b": 38,
+              "g": 128
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#00C0C0",
+            "rgb": {
+              "r": 0,
+              "b": 192,
+              "g": 192
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#004CFF",
+            "rgb": {
+              "r": 0,
+              "b": 255,
+              "g": 76
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#8E008E",
+            "rgb": {
+              "r": 142,
+              "b": 142,
+              "g": 0
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#400098",
+            "rgb": {
+              "r": 64,
+              "b": 152,
+              "g": 0
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T07:42:57Z",
+        "modified": "2026-01-07T07:51:14Z"
+      },
+      {
+        "id": "65da34cf-f625-4db4-8e07-60e4082bd761",
+        "name": "demisexual",
+        "mood": "demisexual",
+        "swatches": [
+          {
+            "hex": "#000000",
+            "rgb": {
+              "r": 0,
+              "b": 0,
+              "g": 0
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FFFFFF",
+            "rgb": {
+              "r": 255,
+              "b": 255,
+              "g": 255
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#6E0070",
+            "rgb": {
+              "r": 110,
+              "b": 112,
+              "g": 0
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#D2D2D2",
+            "rgb": {
+              "r": 210,
+              "b": 210,
+              "g": 210
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T08:01:40Z",
+        "modified": "2026-01-17T18:37:25Z"
+      },
+      {
+        "id": "ea6994b8-c211-4592-973c-e0b4e3283359",
+        "name": "demiboy",
+        "mood": "demiboy",
+        "swatches": [
+          {
+            "hex": "#7F7F7F",
+            "rgb": {
+              "r": 127,
+              "b": 127,
+              "g": 127
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#C4C4C4",
+            "rgb": {
+              "r": 196,
+              "b": 196,
+              "g": 196
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#9DD7EA",
+            "rgb": {
+              "r": 157,
+              "b": 234,
+              "g": 215
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#FFFFFF",
+            "rgb": {
+              "r": 255,
+              "b": 255,
+              "g": 255
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T08:10:25Z",
+        "modified": "2026-01-07T08:10:25Z"
+      },
+      {
+        "id": "84f1da85-baf3-4bdb-a609-b92adf83b72b",
+        "name": "royalty",
+        "mood": "custom",
+        "swatches": [
+          {
+            "hex": "#0903A6",
+            "rgb": {
+              "r": 9,
+              "b": 166,
+              "g": 3
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#0F1AF2",
+            "rgb": {
+              "r": 15,
+              "b": 242,
+              "g": 26
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#1B3BF2",
+            "rgb": {
+              "r": 27,
+              "b": 242,
+              "g": 59
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#798BF2",
+            "rgb": {
+              "r": 121,
+              "b": 242,
+              "g": 139
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#F2F2F2",
+            "rgb": {
+              "r": 242,
+              "b": 242,
+              "g": 242
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T09:59:46Z",
+        "modified": "2026-01-07T09:59:46Z"
+      },
+      {
+        "id": "2d66907c-b115-4f84-b205-64c58e89bb6a",
+        "name": "Cotton Candy",
+        "mood": null,
+        "swatches": [
+          {
+            "hex": "#FCA8D8",
+            "rgb": {
+              "r": 252,
+              "b": 216,
+              "g": 168
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#A1A8E5",
+            "rgb": {
+              "r": 161,
+              "b": 229,
+              "g": 168
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#B2B3ED",
+            "rgb": {
+              "r": 178,
+              "b": 237,
+              "g": 179
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#ABCDF3",
+            "rgb": {
+              "r": 171,
+              "b": 243,
+              "g": 205
+            },
+            "alpha": 1
+          },
+          {
+            "hex": "#D2DFF2",
+            "rgb": {
+              "r": 210,
+              "b": 242,
+              "g": 223
+            },
+            "alpha": 1
+          }
+        ],
+        "created": "2026-01-07T10:03:32Z",
+        "modified": "2026-01-07T10:03:32Z"
+      }
+    ],
+    "gradient": {
+      "id": "6ead6844-e2ab-4610-9911-689a8b2c3125",
+      "name": "gradient_190606171127-pride-flag-style-animation-1",
+      "data": {
+        "interpolation": "linear",
+        "angle": 0,
+        "aspectRatio": 1,
+        "stops": [
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 119,
+                  "b": 168,
+                  "g": 67
+                }
+              }
+            ],
+            "offset": 0.061394380853277836,
+            "midpoint": "0.5"
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 11,
+                  "b": 146,
+                  "g": 94
+                }
+              }
+            ],
+            "offset": 0.26534859521331944,
+            "midpoint": "0.6224489795918368"
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 99,
+                  "b": 102,
+                  "g": 151
+                }
+              }
+            ],
+            "offset": 0.4588969823100936,
+            "midpoint": "0.4155844155844155"
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 246,
+                  "b": 72,
+                  "g": 186
+                }
+              }
+            ],
+            "offset": 0.6701352757544224,
+            "midpoint": "0.5467980295566504"
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 244,
+                  "b": 21,
+                  "g": 103
+                }
+              }
+            ],
+            "offset": 0.8272632674297606,
+            "midpoint": "0.4966887417218542"
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 230,
+                  "b": 52,
+                  "g": 52
+                }
+              }
+            ],
+            "offset": 1,
+            "midpoint": "0.5"
+          }
+        ],
+        "type": "linear"
+      },
+      "created": "2026-01-07T10:02:02Z",
+      "modified": "2026-01-07T10:02:02Z"
+    }
+  },
+  "typography": {
+    "fonts": [
+      {
+        "id": "0372ef26-91eb-4426-8866-0f8b03e3a7ec",
+        "name": "Scatterplot VF Light",
+        "family": "Scatterplot VF",
+        "style": "Light",
+        "foundry": "CAST",
+        "designer": "Giulio Galli",
+        "postScriptName": "ScatterplotVF-Light",
+        "typekitFontId": "TkD-61624-678b753ecd79a6a00c3218e9d48568c3dafbf6a6",
+        "created": "2026-01-07T08:23:22Z",
+        "modified": "2026-01-07T08:23:22Z"
+      },
+      {
+        "id": "664a498e-4a33-4f25-b5ba-8355cdfebd88",
+        "name": "Grandstander Thin",
+        "family": "Grandstander Variable",
+        "style": "Thin",
+        "foundry": "Google",
+        "designer": null,
+        "postScriptName": "Grandstander-Thin",
+        "typekitFontId": "TkD-55309-c113d432352a99e6680edfeeeb6dda6eda14f5ad",
+        "created": "2026-01-07T08:24:10Z",
+        "modified": "2026-01-07T08:24:10Z"
+      },
+      {
+        "id": "8f064cc5-e5d9-40fc-91f1-50e802426902",
+        "name": "Grandstander Thin Italic",
+        "family": "Grandstander Variable",
+        "style": "Thin Italic",
+        "foundry": "Google",
+        "designer": null,
+        "postScriptName": "Grandstander-ThinItalic",
+        "typekitFontId": "TkD-55310-67c3f023bbcbf988596436128ae494f308b37223",
+        "created": "2026-01-07T08:24:10Z",
+        "modified": "2026-01-07T08:24:10Z"
+      },
+      {
+        "id": "681b5ca2-fdd1-4279-baa6-b8ad39c1096e",
+        "name": "BioRhyme ExtraBold",
+        "family": "BioRhyme Variable",
+        "style": "ExtraBold",
+        "foundry": "Google",
+        "designer": null,
+        "postScriptName": "BioRhyme-ExtraBold",
+        "typekitFontId": "TkD-55300-48938a8839e920d7820638ae18b694a725d97105",
+        "created": "2026-01-07T08:24:35Z",
+        "modified": "2026-01-07T08:24:35Z"
+      },
+      {
+        "id": "2d8d338a-95a6-411f-8eef-a788f2169cce",
+        "name": "Aglet Mono VF Regular",
+        "family": "Aglet Mono Variable",
+        "style": "Regular",
+        "foundry": "XYZ Type",
+        "designer": "Jesse Ragan",
+        "postScriptName": "AgletMonoVF-Regular",
+        "typekitFontId": "TkD-51926-e118b875c786dbead2592abfb97063843f6abb64",
+        "created": "2026-01-07T08:24:46Z",
+        "modified": "2026-01-07T08:24:46Z"
+      },
+      {
+        "id": "0b5a085e-f7a4-40c0-b3cd-55c441512840",
+        "name": "Aglet Mono VF Italic",
+        "family": "Aglet Mono Variable",
+        "style": "Italic",
+        "foundry": "XYZ Type",
+        "designer": "Jesse Ragan",
+        "postScriptName": "AgletMonoVF-Italic",
+        "typekitFontId": "TkD-51925-69d9daf84ceb0343a8dc4891f32b1049e705213c",
+        "created": "2026-01-07T08:24:46Z",
+        "modified": "2026-01-07T08:24:46Z"
+      },
+      {
+        "id": "94fa9e14-c54e-4ed4-a9de-98841e46fdbd",
+        "name": "Xanti Typewriter VF ExtraBold",
+        "family": "Xanti Typewriter Variable",
+        "style": "ExtraBold",
+        "foundry": "CAST",
+        "designer": "Gianluca Sandrone",
+        "postScriptName": "Xanti-TypewriterVF-ExtraBold",
+        "typekitFontId": "TkD-51917-de87df835f7b2e6e9d9667ac5dbaf873e6bdabcb",
+        "created": "2026-01-07T08:25:15Z",
+        "modified": "2026-01-07T08:25:15Z"
+      },
+      {
+        "id": "1724ad39-5e49-403c-8bdd-d4ff6650587c",
+        "name": "Xanti Typewriter VF ExtraBold Italic",
+        "family": "Xanti Typewriter Variable",
+        "style": "ExtraBold Italic",
+        "foundry": "CAST",
+        "designer": null,
+        "postScriptName": "XantiTypewriterVF-ExtraBoldItalic",
+        "typekitFontId": "TkD-53158-f2bac1ee7a607e2bfffa1ec27305f99e555c605b",
+        "created": "2026-01-07T08:25:15Z",
+        "modified": "2026-01-07T08:25:15Z"
+      },
+      {
+        "id": "0746c3a0-4eb0-4d95-8b67-13fd8f9583c3",
+        "name": "Rig Solid Zero Halftone",
+        "family": "Rig Solid Zero Halftone",
+        "style": "Zero Halftone",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-ZeroHalftone",
+        "typekitFontId": "TkD-37933-83b804fb0ac76f2ff706f07b34a69a69e89c614f",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "afb6b430-ae0b-4ef4-9395-7f2202fc547b",
+        "name": "Rig Solid Medium Outline",
+        "family": "Rig Solid Medium Outline",
+        "style": "Medium Outline",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-MediumOutline",
+        "typekitFontId": "TkD-37932-9dedcc48a0e88b186baa0b9e020814bb7f607e02",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "bd703ca4-5dca-4bd8-b374-90f6ff981793",
+        "name": "Rig Solid Medium Lines",
+        "family": "Rig Solid Medium Lines",
+        "style": "Medium Lines",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-MediumLines",
+        "typekitFontId": "TkD-37931-6b2bdc19655592ad75912f8c2bf1930e06d25e7a",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "8dfc1042-7dca-43f8-a88d-7026bbfa919c",
+        "name": "Rig Solid Medium Halftone",
+        "family": "Rig Solid Medium Halftone",
+        "style": "Medium Halftone",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-MediumHalftone",
+        "typekitFontId": "TkD-37930-7729078b2991e3db710ff53d19eaffdfe9716797",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "2750279f-a66a-4213-9ce5-75ac5908d8f2",
+        "name": "Rig Solid Light Halftone",
+        "family": "Rig Solid Light Halftone",
+        "style": "Light Halftone",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-LightHalftone",
+        "typekitFontId": "TkD-37928-ac78f49e5ee7ab5d0f3994b138904c8d8910d2cf",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "be300804-c71c-464c-b1ad-c50ba10c19e0",
+        "name": "Chennai Thin",
+        "family": "Chennai",
+        "style": "Thin",
+        "foundry": "Insigne Design",
+        "designer": null,
+        "postScriptName": "ChennaiThin",
+        "typekitFontId": "TkD-1500-2bf2c365bed974207f84fde84821af0a8a059cc3",
+        "created": "2025-10-21T05:02:36Z",
+        "modified": "2025-10-21T05:02:36Z"
+      },
+      {
+        "id": "9ef6760c-695f-4056-bc0f-b7db42c8ea90",
+        "name": "Omnes ExtraLight Italic",
+        "family": "Omnes Pro",
+        "style": "Extra Light Italic",
+        "foundry": "Darden Studio",
+        "designer": "Joshua Darden",
+        "postScriptName": "OmnesExtraLight-Italic",
+        "typekitFontId": "TkD-7995-c64b3dd7f29a87ee3fbeaba23c2ac4f2fa814c54",
+        "created": "2025-10-21T05:03:56Z",
+        "modified": "2025-10-21T05:03:56Z"
+      },
+      {
+        "id": "97990492-4fe8-4dd9-bb7d-dcf244ce48b7",
+        "name": "Le Havre Rounded Light",
+        "family": "Le Havre Rounded",
+        "style": "Light",
+        "foundry": "Insigne Design",
+        "designer": "Insigne Design",
+        "postScriptName": "LeHavreRoundedLight",
+        "typekitFontId": "TkD-696-dfef52d33b0684b2d9ad5492efa5fe90a5b03e72",
+        "created": "2025-10-21T05:01:19Z",
+        "modified": "2025-10-21T05:01:19Z"
+      },
+      {
+        "id": "2a68744a-830d-45b6-b74b-a0072b75c837",
+        "name": "Le Havre Rounded Thin Italic",
+        "family": "Le Havre Rounded",
+        "style": "Thin Italic",
+        "foundry": "Insigne Design",
+        "designer": "Insigne Design",
+        "postScriptName": "LeHavreRoundedThinItalic",
+        "typekitFontId": "TkD-695-9c7ebf455b0d57b9ecc6a8742823c190f455ac3f",
+        "created": "2025-10-21T05:02:52Z",
+        "modified": "2025-10-21T05:02:52Z"
+      },
+      {
+        "id": "53166794-a1c2-4a0c-b72d-7a3602dfd9c3",
+        "name": "Chennai Light Oblique",
+        "family": "Chennai",
+        "style": "Light Oblique",
+        "foundry": "Insigne Design",
+        "designer": null,
+        "postScriptName": "ChennaiLightOblique",
+        "typekitFontId": "TkD-1503-e953faf4ebbee2b610c6352260e299fd78f53501",
+        "created": "2025-10-21T05:01:39Z",
+        "modified": "2025-10-21T05:01:39Z"
+      },
+      {
+        "id": "72342abb-fa73-48ab-aa0c-b3a6bbbb2d6f",
+        "name": "Transat Medium",
+        "family": "Transat",
+        "style": "Medium",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatMedium",
+        "typekitFontId": "TkD-42047-81a780d4de252d438056ac20d0353f84e5303519",
+        "created": "2025-12-12T13:09:54Z",
+        "modified": "2025-12-12T13:09:54Z"
+      },
+      {
+        "id": "e04b75dc-9add-47c0-9bd1-651787fd1829",
+        "name": "Transat Medium Oblique",
+        "family": "Transat",
+        "style": "Medium Oblique",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatMediumOblique",
+        "typekitFontId": "TkD-42048-3ef685bb22822977a591bf4181b8f209b7040fae",
+        "created": "2025-12-12T13:10:03Z",
+        "modified": "2025-12-12T13:10:03Z"
+      },
+      {
+        "id": "b5089075-936e-47c7-8e19-b8e4e9175476",
+        "name": "Sketchnote Text Regular",
+        "family": "Sketchnote Text",
+        "style": "Regular",
+        "foundry": "Delve Fonts",
+        "designer": "Mike Rohde",
+        "postScriptName": "SketchnoteText",
+        "typekitFontId": "TkD-21678-25b50427a8a698a91fbf0c6cebc5ed356995c5f0",
+        "created": "2025-10-21T05:03:25Z",
+        "modified": "2025-10-21T05:03:25Z"
+      },
+      {
+        "id": "9113dffe-e3fe-484b-96bd-cca73e037720",
+        "name": "Transat Standard Oblique",
+        "family": "Transat",
+        "style": "Standard Oblique",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatStandardOblique",
+        "typekitFontId": "TkD-42046-f4efd12b5543d6ec0fb3da9a24284b9031a4b77f",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "73cbfc15-0dfc-4e53-a761-7ab3d8840431",
+        "name": "Transat Black",
+        "family": "Transat",
+        "style": "Black",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatBlack",
+        "typekitFontId": "TkD-42051-d3f43ecd3c67edcd59f272bc61f025582a17bac1",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "2fc8f2a4-5bf1-494f-9a59-af31a4db68bb",
+        "name": "Transat Black Oblique",
+        "family": "Transat",
+        "style": "Black Oblique",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatBlackOblique",
+        "typekitFontId": "TkD-42052-abd70cfcba6fa449c048887d096616cdd5be1e6c",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "6c8bec90-e64f-43eb-beef-9fd289b4b3a8",
+        "name": "Elliotts OT JigsawDropshadow",
+        "family": "Elliotts Jigsaw Dropshadow",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-JigsawDropshadow",
+        "typekitFontId": "TkD-28631-e2ef1612bfe287ee60c6d32d46ba0d7da9a249ca",
+        "created": "2025-12-12T13:44:47Z",
+        "modified": "2025-12-12T13:44:47Z"
+      },
+      {
+        "id": "1b19ba02-8e7e-469f-9b26-d9e741272b54",
+        "name": "Elliotts OT BlueEyeShadow",
+        "family": "Elliotts Blue EyeShadow",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-BlueEyeShadow",
+        "typekitFontId": "TkD-28629-e31c9ad8295f6b8d046a14ee0895ff9de2d2aac3",
+        "created": "2025-12-12T13:44:49Z",
+        "modified": "2025-12-12T13:44:49Z"
+      },
+      {
+        "id": "b733e74e-a200-4f75-b763-bc2c82273610",
+        "name": "Elliotts OT TyphpoidMary3DDark",
+        "family": "Elliotts Typhoid Mary 3D Dark",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-TyphpoidMary3DDark",
+        "typekitFontId": "TkD-28630-057279ebfce53e4396ef5a00e15f73a2a67564f6",
+        "created": "2025-12-12T13:44:49Z",
+        "modified": "2025-12-12T13:44:49Z"
+      },
+      {
+        "id": "6b164828-8ed9-4210-a2e3-9ed91838f589",
+        "name": "Elliotts OT VenusDOutlined",
+        "family": "Elliotts Venus D Outlined",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-VenusDOutlined",
+        "typekitFontId": "TkD-28627-4a3d4d9921fd8d4e297afa3b1f990eb4b0417080",
+        "created": "2025-12-12T13:44:49Z",
+        "modified": "2025-12-12T13:44:49Z"
+      },
+      {
+        "id": "19c9c25e-2c3e-4700-a656-8e42d8053c08",
+        "name": "PerecScripteDeco Regular",
+        "family": "Perec Scripte Deco",
+        "style": "Regular",
+        "foundry": "PampaType",
+        "designer": "Alejandro Lo Celso",
+        "postScriptName": "PerecScripteDeco-Regular",
+        "typekitFontId": "TkD-57284-dd022820892a7300e454f6355a7b201c468d7e40",
+        "created": "2025-12-12T13:46:24Z",
+        "modified": "2025-12-12T13:46:24Z"
+      },
+      {
+        "id": "1b946106-fde1-4b49-80ce-e5e3a0bacfd0",
+        "name": "Rig Solid Bold Fill",
+        "family": "Rig Solid Bold Fill",
+        "style": "Bold Fill",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldFill",
+        "typekitFontId": "TkD-37921-dd94abd1bdb0239d56f3809cc9aad284a843f7b8",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "fd99e4b8-8de7-4194-a045-17f62352aef3",
+        "name": "Rig Solid Bold Halftone",
+        "family": "Rig Solid Bold Halftone",
+        "style": "Bold Halftone",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldHalftone",
+        "typekitFontId": "TkD-37922-137b81f8d9579a7e4757bfb88d4dedc485a1fa0d",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "fa1741d9-4d7e-4276-8235-b9a80462a956",
+        "name": "Rig Solid Bold Inline",
+        "family": "Rig Solid Bold Inline",
+        "style": "Bold Inline",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldInlineExtrude",
+        "typekitFontId": "TkD-37923-afc44552b9b90cccbd0083d498f0aa978449404d",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "613643ca-7eb5-4a51-88da-9c3228eb0211",
+        "name": "Rig Solid Bold Inline Solo",
+        "family": "Rig Solid Bold Inline Solo",
+        "style": "Bold Inline Solo",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldInlineSolo",
+        "typekitFontId": "TkD-37924-2dda548f4798ccc923a600c02195ed5cca834172",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "2a7e7b4d-baf7-4beb-9d72-43e00ba58afd",
+        "name": "Rig Solid Bold Outline",
+        "family": "Rig Solid Bold Outline",
+        "style": "Bold Outline",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldOutline",
+        "typekitFontId": "TkD-37925-2feee893448f6d69d5966151081c188836547913",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "84976af3-cbf3-4dec-ba07-9e0a8b023879",
+        "name": "Rig Solid Bold Reverse",
+        "family": "Rig Solid Bold Reverse",
+        "style": "Bold Reverse",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-BoldReverse",
+        "typekitFontId": "TkD-37926-6e555754c64525442f5711bb00f8c213e0abcfbb",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "3cf2ff7b-7d65-43a0-a6c3-9ad1bc75221d",
+        "name": "Rig Solid Light Fill",
+        "family": "Rig Solid Light Fill",
+        "style": "Light Fill",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-LightFill",
+        "typekitFontId": "TkD-37927-c5e592282b2ef360f0e4ed681141f289b9ac30e3",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "200ca9a4-8c25-42d0-825f-23c63939a108",
+        "name": "Rig Solid Medium Fill",
+        "family": "Rig Solid Medium Fill",
+        "style": "Medium Fill",
+        "foundry": "Jamie Clarke Type",
+        "designer": "Jamie Clarke",
+        "postScriptName": "Rig-MediumFill",
+        "typekitFontId": "TkD-37929-8a6c179287a4dce18e75cef57307f37e56afdd14",
+        "created": "2025-12-12T13:47:57Z",
+        "modified": "2025-12-12T13:47:57Z"
+      },
+      {
+        "id": "4750c440-13c3-450e-8daf-b12436f7fe8f",
+        "name": "Transat Light Oblique",
+        "family": "Transat",
+        "style": "Light Oblique",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatLightOblique",
+        "typekitFontId": "TkD-42044-f805f510de7f258afd9cd1793c0efe0769801af7",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "a1bd6e8e-c6cc-4c23-a375-32d37e9d21b7",
+        "name": "Transat Light",
+        "family": "Transat",
+        "style": "Light",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatLight",
+        "typekitFontId": "TkD-42043-d37691eb1c0a9bbb52b19044e47be1fd210a0663",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "56008552-9fc6-4685-adca-60a952956b87",
+        "name": "Transat Bold",
+        "family": "Transat",
+        "style": "Bold",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatBold",
+        "typekitFontId": "TkD-42049-bd5bad0fc9ad386563fdc5073ca6c201f5326e1b",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "9169dee6-5f7a-49e7-8f82-2fd61e1e3620",
+        "name": "Transat Bold Oblique",
+        "family": "Transat",
+        "style": "Bold Oblique",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatBoldOblique",
+        "typekitFontId": "TkD-42050-27f4e746d5aaae3b373f9c5329bda8d36f390f85",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "7f71d483-fec6-4b2d-be9c-c3e2d552b30d",
+        "name": "Transat Standard",
+        "family": "Transat",
+        "style": "Standard",
+        "foundry": "Typetanic",
+        "designer": "Greg Shutters",
+        "postScriptName": "TransatStandard",
+        "typekitFontId": "TkD-42045-4bcfc5723ba7b304c08c2de9526debbbcb249a52",
+        "created": "2025-12-12T13:35:57Z",
+        "modified": "2025-12-12T13:35:57Z"
+      },
+      {
+        "id": "6b746042-5151-4973-a7e5-29f255f45a61",
+        "name": "Elliotts OT TyphpoidMary3DLight",
+        "family": "Elliotts Typhoid Mary 3D Light",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-TyphpoidMary3DLight",
+        "typekitFontId": "TkD-28626-62c5861481bf0f8d3f98f052a75c699c4240c717",
+        "created": "2025-12-12T13:44:49Z",
+        "modified": "2025-12-12T13:44:49Z"
+      },
+      {
+        "id": "9aa9c55a-7525-45ca-bbf6-4b17cea1f6ca",
+        "name": "Elliotts OT VenusDioxide",
+        "family": "Elliotts Venus Dioxide",
+        "style": "Regular",
+        "foundry": "Emigre",
+        "designer": "Elliott Peter Earls",
+        "postScriptName": "ElliottsOT-VenusDioxide",
+        "typekitFontId": "TkD-28628-b4af961da9249b57cec7f77815cf787a9b629935",
+        "created": "2025-12-12T13:44:49Z",
+        "modified": "2025-12-12T13:44:49Z"
+      }
+    ],
+    "notes": "Fonts are referenced as Adobe/Typekit items via typekitFontId."
+  },
+  "assets": {
+    "images": [
+      {
+        "id": "2a65ba3e-8cdf-4ad0-8e1b-8953a083fb95",
+        "name": "RAINBOWSMOKE_Profile_00.10.3_decorative_clean",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "2a65ba3e-8cdf-4ad0-8e1b-8953a083fb95/7e680ced-db4e-43ed-90cc-fe4bb554cda6.png",
+          "library_element_path": "2a65ba3e-8cdf-4ad0-8e1b-8953a083fb95"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_00_10_3_decorative_clean.png",
+          "bytes": 1477278,
+          "sha256": "cd66de47964ca0c4231a837fc915becb49f9dbdf16747014b24b30e813ba17c7"
+        },
+        "created": "2026-01-07T09:39:32Z",
+        "modified": "2026-01-07T09:39:32Z",
+        "groups": {
+          "$default#883eba32-38f3-4b61-8e77-8e59ae5f4e1f": {
+            "order": "e"
+          }
+        }
+      },
+      {
+        "id": "b15937d0-d5a2-4a6c-ba58-f24322ed2f24",
+        "name": "RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "b15937d0-d5a2-4a6c-ba58-f24322ed2f24/0e22ff3c-6d83-4372-9013-a58851095d62.png",
+          "library_element_path": "b15937d0-d5a2-4a6c-ba58-f24322ed2f24"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_00_10_3_rigsolid_clean.png",
+          "bytes": 1461999,
+          "sha256": "4358c99523d9f45dd037dcc3c959075f391c617e115331c2c67020889330fe49"
+        },
+        "created": "2026-01-07T09:39:32Z",
+        "modified": "2026-01-07T09:39:32Z",
+        "groups": {
+          "$default#883eba32-38f3-4b61-8e77-8e59ae5f4e1f": {
+            "order": "h"
+          }
+        }
+      },
+      {
+        "id": "a4bdb070-d4bf-4837-8650-0c4ca0cbdc44",
+        "name": "RAINBOWSMOKE_Profile_Light_00.11.0",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "a4bdb070-d4bf-4837-8650-0c4ca0cbdc44/25e3ffdc-c150-48d7-80a2-c1da94394d26.png",
+          "library_element_path": "a4bdb070-d4bf-4837-8650-0c4ca0cbdc44"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Light_00_11_0.png",
+          "bytes": 988416,
+          "sha256": "597757ce954484422f803dd8f02a9c4963dc33e495f47910e89c6629badf8945"
+        },
+        "created": "2026-01-07T09:39:32Z",
+        "modified": "2026-01-07T09:39:32Z",
+        "groups": {
+          "$default#883eba32-38f3-4b61-8e77-8e59ae5f4e1f": {
+            "order": "n"
+          }
+        }
+      },
+      {
+        "id": "d2de2fd1-3edd-430a-93f6-10c29fa08e89",
+        "name": "RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "d2de2fd1-3edd-430a-93f6-10c29fa08e89/07446089-a8c4-4433-b297-805c10268ad2.png",
+          "library_element_path": "d2de2fd1-3edd-430a-93f6-10c29fa08e89"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00_10_2.png",
+          "bytes": 1349645,
+          "sha256": "58d6c0640f5dda7c7e18beb5fdd713f5b885a3342f47dfff14d4915a8e1b5701"
+        },
+        "created": "2026-01-07T09:39:32Z",
+        "modified": "2026-01-07T09:39:32Z",
+        "groups": {
+          "$default#883eba32-38f3-4b61-8e77-8e59ae5f4e1f": {
+            "order": "u"
+          }
+        }
+      },
+      {
+        "id": "9117eef1-ae1e-40b1-944d-c94324d72cc3",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2.svg",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "f24780b3-e691-4fb7-ba51-5b5766b138d2/df637dea-1977-459b-a4cb-af70dfba1898.svg",
+          "library_element_path": "f24780b3-e691-4fb7-ba51-5b5766b138d2"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2_svg.svg",
+          "bytes": 388678,
+          "sha256": "ababa12032ad563901cf23da280792c10d47357617688509d5b0a38dadab3635"
+        },
+        "created": "2026-01-07T09:41:39Z",
+        "modified": "2026-01-07T09:41:39Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "p"
+          }
+        }
+      },
+      {
+        "id": "3cd864ca-9111-41e9-a24e-1386a0e8c0ec",
+        "name": "RAINBOWSMOKE_Profile_Light_00.11.0.png",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "fa91ff3a-880c-4c3f-8f78-6b0bd7a9575b/6a57b528-6e28-4508-8035-ade902b38455.png",
+          "library_element_path": "fa91ff3a-880c-4c3f-8f78-6b0bd7a9575b"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Light_00_11_0_png.png",
+          "bytes": 988416,
+          "sha256": "597757ce954484422f803dd8f02a9c4963dc33e495f47910e89c6629badf8945"
+        },
+        "created": "2026-01-07T09:41:40Z",
+        "modified": "2026-01-07T09:41:40Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "w"
+          }
+        }
+      },
+      {
+        "id": "6f8baa62-f6b6-4614-bba1-cfd98067e88c",
+        "name": "RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00.10.2.png",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "56ae6065-b3a3-438b-a1e8-706dc12fdfab/709b71a8-edb8-46cc-8750-e908e67a04ce.png",
+          "library_element_path": "56ae6065-b3a3-438b-a1e8-706dc12fdfab"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00_10_2_png.png",
+          "bytes": 1349645,
+          "sha256": "58d6c0640f5dda7c7e18beb5fdd713f5b885a3342f47dfff14d4915a8e1b5701"
+        },
+        "created": "2026-01-07T09:41:41Z",
+        "modified": "2026-01-07T09:41:41Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "x"
+          }
+        }
+      },
+      {
+        "id": "2c6a8688-8b40-4323-997f-9a28e87e5184",
+        "name": "RAINBOWSMOKE_Profile_00.10.3_decorative_clean.png",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "77ed12e2-1fc5-47e6-8aab-466c65aebbba/c9265cb8-5152-4daa-bdec-7f0c319de584.png",
+          "library_element_path": "77ed12e2-1fc5-47e6-8aab-466c65aebbba"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_00_10_3_decorative_clean_png.png",
+          "bytes": 1477278,
+          "sha256": "cd66de47964ca0c4231a837fc915becb49f9dbdf16747014b24b30e813ba17c7"
+        },
+        "created": "2026-01-07T09:41:42Z",
+        "modified": "2026-01-07T09:41:42Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "r"
+          }
+        }
+      },
+      {
+        "id": "c387c419-529e-40a6-886a-d8632d1b301e",
+        "name": "RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean.png",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "79ad79ed-aadf-4a68-8940-e40004dfd043/f124e653-259b-4b66-844b-11885080e4f3.png",
+          "library_element_path": "79ad79ed-aadf-4a68-8940-e40004dfd043"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_00_10_3_rigsolid_clean_png.png",
+          "bytes": 1461999,
+          "sha256": "4358c99523d9f45dd037dcc3c959075f391c617e115331c2c67020889330fe49"
+        },
+        "created": "2026-01-07T09:41:43Z",
+        "modified": "2026-01-07T09:41:43Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "u"
+          }
+        }
+      },
+      {
+        "id": "3f428b81-f50c-4e5e-9b58-78ab0b19a629",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2.png",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "f2fbb3f8-35fb-4a4d-abc6-4564b44de7cf/e524b984-9f78-4a75-b6bb-a73228636dff.png",
+          "library_element_path": "f2fbb3f8-35fb-4a4d-abc6-4564b44de7cf"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2_png.png",
+          "bytes": 291407,
+          "sha256": "1022d209ee8c68861e4a312200682b60e70313f4ac0552a3b4979d27e7def541"
+        },
+        "created": "2026-01-07T09:41:43Z",
+        "modified": "2026-01-07T09:41:43Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "n"
+          }
+        }
+      },
+      {
+        "id": "b2edee8a-c37b-4619-9f3a-a1ef79c70215",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2.svg",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "01e9b19f-b0d1-489d-97ad-a66b7788271a/33d6b5c5-e728-4eed-ac65-ad72c19572f4.svg",
+          "library_element_path": "01e9b19f-b0d1-489d-97ad-a66b7788271a"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2_svg.svg",
+          "bytes": 123974,
+          "sha256": "2ad8ce193bad522908dce5f9a13949413ae3c4e1fcccb77f4e5046f1ae1b4cc7"
+        },
+        "created": "2026-01-07T09:41:44Z",
+        "modified": "2026-01-07T09:41:44Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "k"
+          }
+        }
+      },
+      {
+        "id": "a5ff3aca-8323-4d01-9333-88f05e4dfc2f",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2.png",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "39c8d23c-8027-4e4f-b0be-64f30246f699/0dd4f4af-1338-43cc-9381-893b7296257e.png",
+          "library_element_path": "39c8d23c-8027-4e4f-b0be-64f30246f699"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2_png.png",
+          "bytes": 92880,
+          "sha256": "aa1cc778643638017e5a5e9bb86a52f7271192f8afa3c0293ef344b254dc8647"
+        },
+        "created": "2026-01-07T09:41:45Z",
+        "modified": "2026-01-07T09:41:45Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "j"
+          }
+        }
+      },
+      {
+        "id": "b2f2d15b-6b90-4934-befc-bd281c1059ff",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2.svg",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "30cb6220-dd13-4d42-854f-8da0aafcc724/6e1ad4f7-1569-41c2-800d-0482cb4370ae.svg",
+          "library_element_path": "30cb6220-dd13-4d42-854f-8da0aafcc724"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_svg.svg",
+          "bytes": 39770,
+          "sha256": "fb09b3b2fbce81be8ee4eeb9855701253a4fb71ee24e9d24d8df8ba9e2f6bd50"
+        },
+        "created": "2026-01-07T09:41:46Z",
+        "modified": "2026-01-07T09:41:46Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "h"
+          }
+        }
+      },
+      {
+        "id": "25fbac1f-e3dd-4d6e-9d4e-87a47b66228f",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2.png",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "41795841-3e50-4307-a17b-fe37de686351/25625aca-8a04-473f-997c-b5d1d47c29f8.png",
+          "library_element_path": "41795841-3e50-4307-a17b-fe37de686351"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_png.png",
+          "bytes": 29725,
+          "sha256": "53284a5562d86d9e197d065afa5b50f8a848f4d585c3ded0fb9564dfd58feb05"
+        },
+        "created": "2026-01-07T09:41:47Z",
+        "modified": "2026-01-07T09:41:47Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "g"
+          }
+        }
+      },
+      {
+        "id": "2f01cb7e-0760-4d1f-b918-783d1781881d",
+        "name": "RAINBOWSMOKE_Overlay_Micro_64_00.10.2.svg",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "f1cc6392-866a-4de2-8267-c4d81dede7bc/fe4cf32f-3e35-464e-b869-050348136f12.svg",
+          "library_element_path": "f1cc6392-866a-4de2-8267-c4d81dede7bc"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_64_00_10_2_svg.svg",
+          "bytes": 12426,
+          "sha256": "2a7c33583c047fc3968709d2fd3819c15e44c6c52809a93f960e7b8e81176a1a"
+        },
+        "created": "2026-01-07T09:41:48Z",
+        "modified": "2026-01-07T09:41:48Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "e"
+          }
+        }
+      },
+      {
+        "id": "d7ed3ed8-bdbf-44df-b6de-27556af291ca",
+        "name": "RAINBOWSMOKE_Overlay_Micro_64_00.10.2.png",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "002c066d-735c-439e-91cf-3ef47d6d08be/a5c7e562-2c80-43f6-b260-565f0aed4818.png",
+          "library_element_path": "002c066d-735c-439e-91cf-3ef47d6d08be"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_64_00_10_2_png.png",
+          "bytes": 9220,
+          "sha256": "71f5a2b7f07eeb0eeb71a5c17b72f18c79684e6974676ad34202719903447579"
+        },
+        "created": "2026-01-07T09:41:49Z",
+        "modified": "2026-01-07T09:41:49Z",
+        "groups": {
+          "$default#f438ba10-45b1-4c55-a71a-f02365bbfa22": {
+            "order": "c"
+          }
+        }
+      },
+      {
+        "id": "b4462795-e482-48dd-a545-8dad60d5b191",
+        "name": "RAINBOWSMOKE_Overlay_Micro_64_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "b4462795-e482-48dd-a545-8dad60d5b191/5a97a542-00ee-4124-a5a2-686a64288c43.png",
+          "library_element_path": "b4462795-e482-48dd-a545-8dad60d5b191"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_64_00_10_2.png",
+          "bytes": 9220,
+          "sha256": "71f5a2b7f07eeb0eeb71a5c17b72f18c79684e6974676ad34202719903447579"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "c"
+          }
+        }
+      },
+      {
+        "id": "2337195e-3da4-4258-8c00-d7971e3f9d2d",
+        "name": "RAINBOWSMOKE_Overlay_Micro_64_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "2337195e-3da4-4258-8c00-d7971e3f9d2d/9cdc585e-1474-4842-bd3e-7dee88b30125.svg",
+          "library_element_path": "2337195e-3da4-4258-8c00-d7971e3f9d2d"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_64_00_10_2.svg",
+          "bytes": 12426,
+          "sha256": "2a7c33583c047fc3968709d2fd3819c15e44c6c52809a93f960e7b8e81176a1a"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "e"
+          }
+        }
+      },
+      {
+        "id": "c235e436-3780-462b-88f3-a23e84e6ead2",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "c235e436-3780-462b-88f3-a23e84e6ead2/ea54ca40-ed56-4466-bbec-134b4ad44fba.png",
+          "library_element_path": "c235e436-3780-462b-88f3-a23e84e6ead2"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2.png",
+          "bytes": 29725,
+          "sha256": "53284a5562d86d9e197d065afa5b50f8a848f4d585c3ded0fb9564dfd58feb05"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "g"
+          }
+        }
+      },
+      {
+        "id": "38bd604d-f8c5-4d2f-803a-4570f48bd939",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "38bd604d-f8c5-4d2f-803a-4570f48bd939/c3c2e658-f80d-406e-bbed-0fd022d92767.svg",
+          "library_element_path": "38bd604d-f8c5-4d2f-803a-4570f48bd939"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2.svg",
+          "bytes": 39770,
+          "sha256": "fb09b3b2fbce81be8ee4eeb9855701253a4fb71ee24e9d24d8df8ba9e2f6bd50"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "h"
+          }
+        }
+      },
+      {
+        "id": "50a162eb-ffbe-48a6-b173-e0fed51d199e",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "50a162eb-ffbe-48a6-b173-e0fed51d199e/f888570b-9bac-4587-9a09-61189a9c4dbe.png",
+          "library_element_path": "50a162eb-ffbe-48a6-b173-e0fed51d199e"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2.png",
+          "bytes": 92880,
+          "sha256": "aa1cc778643638017e5a5e9bb86a52f7271192f8afa3c0293ef344b254dc8647"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "j"
+          }
+        }
+      },
+      {
+        "id": "f8453465-870e-4378-9b69-a70525b19fdd",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "f8453465-870e-4378-9b69-a70525b19fdd/71d6ec3f-6343-4717-be7b-ba7a4677a7bc.svg",
+          "library_element_path": "f8453465-870e-4378-9b69-a70525b19fdd"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2.svg",
+          "bytes": 123974,
+          "sha256": "2ad8ce193bad522908dce5f9a13949413ae3c4e1fcccb77f4e5046f1ae1b4cc7"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "k"
+          }
+        }
+      },
+      {
+        "id": "1c03166e-a00c-4d7c-ad60-fc1b643bf711",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "1c03166e-a00c-4d7c-ad60-fc1b643bf711/eb845463-90c8-4578-ba12-e952ec6c8d13.png",
+          "library_element_path": "1c03166e-a00c-4d7c-ad60-fc1b643bf711"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2.png",
+          "bytes": 291407,
+          "sha256": "1022d209ee8c68861e4a312200682b60e70313f4ac0552a3b4979d27e7def541"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "m"
+          }
+        }
+      },
+      {
+        "id": "7372a2ff-947a-4d4b-b8d7-e5a3068e2596",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "7372a2ff-947a-4d4b-b8d7-e5a3068e2596/23d4c0cd-d5ac-42a2-8ab0-b1c5db25375d.svg",
+          "library_element_path": "7372a2ff-947a-4d4b-b8d7-e5a3068e2596"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2.svg",
+          "bytes": 388678,
+          "sha256": "ababa12032ad563901cf23da280792c10d47357617688509d5b0a38dadab3635"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "n"
+          }
+        }
+      },
+      {
+        "id": "e6d36e0f-a075-42f2-8d2b-574fc8b9a5bc",
+        "name": "RAINBOWSMOKE_Glyph_RS_64_00.11.0",
+        "category": "glyph",
+        "format": "png",
+        "source": {
+          "cclibs_path": "e6d36e0f-a075-42f2-8d2b-574fc8b9a5bc/c0f1ecb9-d5a3-4a31-ad14-b3a418e65f79.png",
+          "library_element_path": "e6d36e0f-a075-42f2-8d2b-574fc8b9a5bc"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_64_00_11_0.png",
+          "bytes": 9512,
+          "sha256": "96dfbf1bd083f26a454c245eab4684d90589c2b32739be0626b3b1d7ea65d4bf"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "p"
+          }
+        }
+      },
+      {
+        "id": "3cc23538-b8b9-43dc-8748-6e828a3fc77f",
+        "name": "RAINBOWSMOKE_Glyph_RS_128_00.11.0",
+        "category": "glyph",
+        "format": "png",
+        "source": {
+          "cclibs_path": "3cc23538-b8b9-43dc-8748-6e828a3fc77f/637aaf5a-de6c-4420-b121-21d150a88628.png",
+          "library_element_path": "3cc23538-b8b9-43dc-8748-6e828a3fc77f"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0.png",
+          "bytes": 30338,
+          "sha256": "88671e2b058ac9c4b29027d1c053607a3718a09342ed5f3530c04a8942110c38"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "t"
+          }
+        }
+      },
+      {
+        "id": "966b3edf-4a3b-4024-ada3-2bdcc98bbc3e",
+        "name": "RAINBOWSMOKE_Glyph_RS_128_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "966b3edf-4a3b-4024-ada3-2bdcc98bbc3e/39299d4a-5af0-4199-9f1f-95c4ecb60b80.svg",
+          "library_element_path": "966b3edf-4a3b-4024-ada3-2bdcc98bbc3e"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0.svg",
+          "bytes": 40586,
+          "sha256": "b8c94de52d8aef9f97b240f781da0b8f1526de7ac7156e5b1293ce1f4b4fdc10"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "u"
+          }
+        }
+      },
+      {
+        "id": "2e37848b-232a-4058-840c-7511f03742c0",
+        "name": "RAINBOWSMOKE_Glyph_RS_256_00.11.0",
+        "category": "glyph",
+        "format": "png",
+        "source": {
+          "cclibs_path": "2e37848b-232a-4058-840c-7511f03742c0/dc3464d1-97e2-414d-889d-a343458323f7.png",
+          "library_element_path": "2e37848b-232a-4058-840c-7511f03742c0"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0.png",
+          "bytes": 92293,
+          "sha256": "8bb3eea424017d61b1ba488ddb16137331cffcb2d08c780258d88dff9cdd1ee6"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "w"
+          }
+        }
+      },
+      {
+        "id": "ae81232e-83cd-42bc-8c4b-a617db800034",
+        "name": "RAINBOWSMOKE_Glyph_RS_256_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "ae81232e-83cd-42bc-8c4b-a617db800034/81712f86-f8f4-417a-af13-1d6b3963d910.svg",
+          "library_element_path": "ae81232e-83cd-42bc-8c4b-a617db800034"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0.svg",
+          "bytes": 123194,
+          "sha256": "4930124110996e6c3f08e57626cb0c75ffe0ae6c487f021f1950a3137446264c"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "x"
+          }
+        }
+      },
+      {
+        "id": "def94523-1f9b-497c-9efc-d7959bdc4a89",
+        "name": "RAINBOWSMOKE_Glyph_RS_512_00.11.0",
+        "category": "glyph",
+        "format": "png",
+        "source": {
+          "cclibs_path": "def94523-1f9b-497c-9efc-d7959bdc4a89/4b8cf75b-08c7-443a-aa72-f9f98dfe3430.png",
+          "library_element_path": "def94523-1f9b-497c-9efc-d7959bdc4a89"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_512_00_11_0.png",
+          "bytes": 251192,
+          "sha256": "51bb4ed60bce28f7b97dd1e25b13b786e5fffc55ed83396c35bae366e697aa6c"
+        },
+        "created": "2026-01-07T09:46:53Z",
+        "modified": "2026-01-07T09:46:53Z",
+        "groups": {
+          "$default#1420f942-5995-4733-acbe-a0cb297313a5": {
+            "order": "z"
+          }
+        }
+      },
+      {
+        "id": "296c3c3b-ea67-419b-b3f2-e2d6f58439a2",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "296c3c3b-ea67-419b-b3f2-e2d6f58439a2/01121d67-4398-4968-96c0-3a3aa11f9c3b.png",
+          "library_element_path": "296c3c3b-ea67-419b-b3f2-e2d6f58439a2"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_2.png",
+          "bytes": 29725,
+          "sha256": "53284a5562d86d9e197d065afa5b50f8a848f4d585c3ded0fb9564dfd58feb05"
+        },
+        "created": "2026-01-07T09:48:34Z",
+        "modified": "2026-01-07T09:48:34Z",
+        "groups": {
+          "$default#8bc5e7b2-442b-41a3-9a39-8ff9f46225c4": {
+            "order": "h"
+          }
+        }
+      },
+      {
+        "id": "1a857b2b-f472-43b1-8ebf-7aa237b7e6c0",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "1a857b2b-f472-43b1-8ebf-7aa237b7e6c0/2ff18dc5-1084-4798-94e2-cdcb4c62848b.png",
+          "library_element_path": "1a857b2b-f472-43b1-8ebf-7aa237b7e6c0"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2_2.png",
+          "bytes": 92880,
+          "sha256": "aa1cc778643638017e5a5e9bb86a52f7271192f8afa3c0293ef344b254dc8647"
+        },
+        "created": "2026-01-07T09:48:34Z",
+        "modified": "2026-01-07T09:48:34Z",
+        "groups": {
+          "$default#8bc5e7b2-442b-41a3-9a39-8ff9f46225c4": {
+            "order": "k"
+          }
+        }
+      },
+      {
+        "id": "cd354abc-947d-4861-b1e5-ae55ce104721",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "cd354abc-947d-4861-b1e5-ae55ce104721/d44e6d4a-353d-49aa-8e8c-f05dc80bb685.png",
+          "library_element_path": "cd354abc-947d-4861-b1e5-ae55ce104721"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2_2.png",
+          "bytes": 291407,
+          "sha256": "1022d209ee8c68861e4a312200682b60e70313f4ac0552a3b4979d27e7def541"
+        },
+        "created": "2026-01-07T09:48:34Z",
+        "modified": "2026-01-07T09:48:34Z",
+        "groups": {
+          "$default#8bc5e7b2-442b-41a3-9a39-8ff9f46225c4": {
+            "order": "n"
+          }
+        }
+      },
+      {
+        "id": "6142307f-0d0d-4708-9035-308e1c863899",
+        "name": "RAINBOWSMOKE_Profile_Light_00.11.0",
+        "category": "social-profile",
+        "format": "png",
+        "source": {
+          "cclibs_path": "6142307f-0d0d-4708-9035-308e1c863899/9115ee0d-9698-4c71-9c4e-5c4ae9cbe83c.png",
+          "library_element_path": "6142307f-0d0d-4708-9035-308e1c863899"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Light_00_11_0_2.png",
+          "bytes": 988416,
+          "sha256": "597757ce954484422f803dd8f02a9c4963dc33e495f47910e89c6629badf8945"
+        },
+        "created": "2026-01-07T09:48:34Z",
+        "modified": "2026-01-07T09:48:34Z",
+        "groups": {
+          "$default#8bc5e7b2-442b-41a3-9a39-8ff9f46225c4": {
+            "order": "r"
+          }
+        }
+      },
+      {
+        "id": "ddd6bc66-ad8f-430e-9e5e-f07f9cb6c3dd",
+        "name": "RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00.10.2",
+        "category": "overlay",
+        "format": "png",
+        "source": {
+          "cclibs_path": "ddd6bc66-ad8f-430e-9e5e-f07f9cb6c3dd/c589f3c2-fce0-44b6-9611-a82f40769f91.png",
+          "library_element_path": "ddd6bc66-ad8f-430e-9e5e-f07f9cb6c3dd"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Profile_Overlay_Dark_Transparent_00_10_2_2.png",
+          "bytes": 1349645,
+          "sha256": "58d6c0640f5dda7c7e18beb5fdd713f5b885a3342f47dfff14d4915a8e1b5701"
+        },
+        "created": "2026-01-07T09:48:34Z",
+        "modified": "2026-01-07T09:48:34Z",
+        "groups": {
+          "$default#8bc5e7b2-442b-41a3-9a39-8ff9f46225c4": {
+            "order": "u"
+          }
+        }
+      },
+      {
+        "id": "f4c575a1-7f13-4e88-b1dc-506f23d77438",
+        "name": "RAINBOWSMOKE_Glyph_RS_64_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "f4c575a1-7f13-4e88-b1dc-506f23d77438/8c131ca3-e0c2-421d-bb34-eb4bf4e495d4.svg",
+          "library_element_path": "f4c575a1-7f13-4e88-b1dc-506f23d77438"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_64_00_11_0.svg",
+          "bytes": 12814,
+          "sha256": "a936eda20b72e2fae1ae5a48983fe30a899e4de560408e70ce1b2ff4793fab6f"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "c"
+          }
+        }
+      },
+      {
+        "id": "06c5efa0-361d-4ad5-bfb2-2b40642034b0",
+        "name": "RAINBOWSMOKE_Glyph_RS_128_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "06c5efa0-361d-4ad5-bfb2-2b40642034b0/4c278272-7430-41e8-9af3-8188afb4f34f.svg",
+          "library_element_path": "06c5efa0-361d-4ad5-bfb2-2b40642034b0"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0_2.svg",
+          "bytes": 40586,
+          "sha256": "b8c94de52d8aef9f97b240f781da0b8f1526de7ac7156e5b1293ce1f4b4fdc10"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "e"
+          }
+        }
+      },
+      {
+        "id": "50f7bb2d-74d0-4a5a-bafe-56353c8fdffd",
+        "name": "RAINBOWSMOKE_Glyph_RS_256_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "50f7bb2d-74d0-4a5a-bafe-56353c8fdffd/cdfb788c-fa10-464e-84ae-c5effc12533d.svg",
+          "library_element_path": "50f7bb2d-74d0-4a5a-bafe-56353c8fdffd"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0_2.svg",
+          "bytes": 123194,
+          "sha256": "4930124110996e6c3f08e57626cb0c75ffe0ae6c487f021f1950a3137446264c"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "h"
+          }
+        }
+      },
+      {
+        "id": "e355f71d-ca70-4ef3-b636-ab0120badc9b",
+        "name": "RAINBOWSMOKE_Glyph_RS_512_00.11.0",
+        "category": "glyph",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "e355f71d-ca70-4ef3-b636-ab0120badc9b/d1c1ce9c-318f-4dd0-b5e7-cbfd001876a9.svg",
+          "library_element_path": "e355f71d-ca70-4ef3-b636-ab0120badc9b"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Glyph_RS_512_00_11_0.svg",
+          "bytes": 335058,
+          "sha256": "d63801c4ab1f060ad9468ff8da121a0168c66bd42ad0de30cc1df5afdad8283e"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "k"
+          }
+        }
+      },
+      {
+        "id": "034a4f03-79b5-426a-ae0e-0a040ecc0753",
+        "name": "RAINBOWSMOKE_Micro_Smoke_Loop_00.11.0",
+        "category": "motion",
+        "format": "gif",
+        "source": {
+          "cclibs_path": "034a4f03-79b5-426a-ae0e-0a040ecc0753/955b4c4d-d3bc-41d4-927d-aa79fec08ae8.gif",
+          "library_element_path": "034a4f03-79b5-426a-ae0e-0a040ecc0753"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Micro_Smoke_Loop_00_11_0.gif",
+          "bytes": 784216,
+          "sha256": "c9af9dac4b5dc97aa9e4673c4be5e692ab03ffd477b8898e8344371961570e3d"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "n"
+          }
+        }
+      },
+      {
+        "id": "72dd27bc-df5e-4769-afd2-6ffb64d5f0a1",
+        "name": "RAINBOWSMOKE_Overlay_Micro_64_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "72dd27bc-df5e-4769-afd2-6ffb64d5f0a1/62a49d93-eed5-4421-b1af-0819f1e4a4d3.svg",
+          "library_element_path": "72dd27bc-df5e-4769-afd2-6ffb64d5f0a1"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_64_00_10_2_2.svg",
+          "bytes": 12426,
+          "sha256": "2a7c33583c047fc3968709d2fd3819c15e44c6c52809a93f960e7b8e81176a1a"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "p"
+          }
+        }
+      },
+      {
+        "id": "b06f5e6c-688f-4df6-8e6c-57c02c5bb6a9",
+        "name": "RAINBOWSMOKE_Overlay_Micro_128_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "b06f5e6c-688f-4df6-8e6c-57c02c5bb6a9/2aa936f4-f823-4398-b34f-d1dd2a0c22ff.svg",
+          "library_element_path": "b06f5e6c-688f-4df6-8e6c-57c02c5bb6a9"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_2.svg",
+          "bytes": 39770,
+          "sha256": "fb09b3b2fbce81be8ee4eeb9855701253a4fb71ee24e9d24d8df8ba9e2f6bd50"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "r"
+          }
+        }
+      },
+      {
+        "id": "9a8772e7-0e05-4a27-a10c-4aa095234953",
+        "name": "RAINBOWSMOKE_Overlay_Micro_256_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "9a8772e7-0e05-4a27-a10c-4aa095234953/6233a216-79ba-4054-ae50-80c77e7e1695.svg",
+          "library_element_path": "9a8772e7-0e05-4a27-a10c-4aa095234953"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_256_00_10_2_2.svg",
+          "bytes": 123974,
+          "sha256": "2ad8ce193bad522908dce5f9a13949413ae3c4e1fcccb77f4e5046f1ae1b4cc7"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "u"
+          }
+        }
+      },
+      {
+        "id": "9093d7ad-de36-4b71-9852-47cd2a894e7a",
+        "name": "RAINBOWSMOKE_Overlay_Micro_512_00.10.2",
+        "category": "overlay",
+        "format": "svg",
+        "source": {
+          "cclibs_path": "9093d7ad-de36-4b71-9852-47cd2a894e7a/cd3c4184-33bf-44d7-8d20-2be439934165.svg",
+          "library_element_path": "9093d7ad-de36-4b71-9852-47cd2a894e7a"
+        },
+        "export": {
+          "path": "assets/RAINBOWSMOKE_Overlay_Micro_512_00_10_2_2.svg",
+          "bytes": 388678,
+          "sha256": "ababa12032ad563901cf23da280792c10d47357617688509d5b0a38dadab3635"
+        },
+        "created": "2026-01-07T09:49:26Z",
+        "modified": "2026-01-07T09:49:26Z",
+        "groups": {
+          "$default#14993392-8bdd-4770-8adb-8ccfdef6a3d9": {
+            "order": "x"
+          }
+        }
+      }
+    ],
+    "counts": {
+      "images": 44,
+      "fonts": 44,
+      "colorThemes": 6,
+      "gradients": 1
+    }
+  },
+  "rules": {
+    "canonical": "If anything conflicts, the cclibs library wins.",
+    "do": [
+      "Prefer SVG for scalable marks",
+      "Use assets directly from the library",
+      "Maintain clear space and contrast"
+    ],
+    "dont": [
+      "Redraw or trace logos",
+      "Stretch or skew marks",
+      "Recolor motion assets",
+      "Invent near-match colors"
+    ]
+  }
+}

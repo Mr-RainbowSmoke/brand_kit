@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RAINBOWSMOKE — Brand Kit</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.68);
+      --border: rgba(255,255,255,0.12);
+      --radius: 16px;
+    }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(255, 0, 128, 0.18), transparent 60%),
+                  radial-gradient(1000px 700px at 80% 20%, rgba(0, 160, 255, 0.18), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+    }
+    header {
+      padding: 56px 18px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 3vw, 44px);
+      letter-spacing: 0.2px;
+    }
+    .sub {
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    .pillbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .pill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 18px 64px;
+      display: grid;
+      gap: 18px;
+    }
+    section {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: rgba(0,0,0,0.18);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      display: block;
+      background: rgba(255,255,255,0.03);
+    }
+    figcaption {
+      padding: 10px 10px 12px;
+    }
+    .asset-name {
+      font-size: 12.5px;
+      line-height: 1.25;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .meta {
+      margin-top: 6px;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+    .themes {
+      display: grid;
+      gap: 14px;
+    }
+    .theme-name {
+      font-size: 12.5px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .swatch {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      width: 108px;
+      background: rgba(0,0,0,0.18);
+    }
+    .chip {
+      height: 44px;
+    }
+    .hex {
+      font-size: 11.5px;
+      padding: 8px 10px;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      color: var(--text);
+    }
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      text-align: left;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.82);
+    }
+    a {
+      color: rgba(160, 220, 255, 0.95);
+    }
+    @media (max-width: 840px) {
+      .hero { grid-template-columns: 1fr; }
+      .two { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <h1>RAINBOWSMOKE — Brand Kit</h1>
+        <div class="sub">
+          A spectrum-first identity system built around presence, contrast, and motion.<br/>
+          Canonical source: <code>RAINBOWSMOKE.cclibs</code> (Adobe CC Library export).
+        </div>
+        <div class="pillbar">
+          <div class="pill">44 image assets</div>
+          <div class="pill">44 font references</div>
+          <div class="pill">6 color themes</div>
+          <div class="pill">1 gradient</div>
+          <div class="pill"><a href="brand.manifest.json">brand.manifest.json</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub" style="margin-bottom:10px;">Essence:</div>
+        <ul class="sub" style="margin:0; padding-left:18px;">
+          <li>Identity in motion</li>
+          <li>Spectrum-forward color</li>
+          <li>High contrast, dark-mode friendly</li>
+          <li>Digital-native presence</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Usage rules</h2>
+      <div class="two">
+        <div>
+          <div class="sub" style="margin-bottom:10px;"><strong>Do</strong></div>
+          <ul class="sub" style="margin:0; padding-left:18px;">
+            <li>Use assets directly from the library</li>
+            <li>Prefer SVG where possible for scalable marks</li>
+            <li>Maintain clear space + contrast</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sub" style="margin-bottom:10px;"><strong>Don’t</strong></div>
+          <ul class="sub" style="margin:0; padding-left:18px;">
+            <li>Redraw or trace logos</li>
+            <li>Stretch / skew / warp marks</li>
+            <li>Recolor motion assets or “approximate” the palette</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Color themes</h2>
+      <div class="themes"><div class="theme"><div class="theme-name">pride</div><div class="swatches"><div class="swatch" title="#FF0000"><div class="chip" style="background:#FF0000"></div><div class="hex">#FF0000</div></div><div class="swatch" title="#FF8E00"><div class="chip" style="background:#FF8E00"></div><div class="hex">#FF8E00</div></div><div class="swatch" title="#FFED00"><div class="chip" style="background:#FFED00"></div><div class="hex">#FFED00</div></div><div class="swatch" title="#008026"><div class="chip" style="background:#008026"></div><div class="hex">#008026</div></div><div class="swatch" title="#004CFF"><div class="chip" style="background:#004CFF"></div><div class="hex">#004CFF</div></div><div class="swatch" title="#400098"><div class="chip" style="background:#400098"></div><div class="hex">#400098</div></div></div></div><div class="theme"><div class="theme-name">pride_extended</div><div class="swatches"><div class="swatch" title="#FF0000"><div class="chip" style="background:#FF0000"></div><div class="hex">#FF0000</div></div><div class="swatch" title="#FF8E00"><div class="chip" style="background:#FF8E00"></div><div class="hex">#FF8E00</div></div><div class="swatch" title="#FFED00"><div class="chip" style="background:#FFED00"></div><div class="hex">#FFED00</div></div><div class="swatch" title="#008026"><div class="chip" style="background:#008026"></div><div class="hex">#008026</div></div><div class="swatch" title="#00C0C0"><div class="chip" style="background:#00C0C0"></div><div class="hex">#00C0C0</div></div><div class="swatch" title="#004CFF"><div class="chip" style="background:#004CFF"></div><div class="hex">#004CFF</div></div><div class="swatch" title="#8E008E"><div class="chip" style="background:#8E008E"></div><div class="hex">#8E008E</div></div><div class="swatch" title="#400098"><div class="chip" style="background:#400098"></div><div class="hex">#400098</div></div></div></div><div class="theme"><div class="theme-name">demisexual</div><div class="swatches"><div class="swatch" title="#000000"><div class="chip" style="background:#000000"></div><div class="hex">#000000</div></div><div class="swatch" title="#FFFFFF"><div class="chip" style="background:#FFFFFF"></div><div class="hex">#FFFFFF</div></div><div class="swatch" title="#6E0070"><div class="chip" style="background:#6E0070"></div><div class="hex">#6E0070</div></div><div class="swatch" title="#D2D2D2"><div class="chip" style="background:#D2D2D2"></div><div class="hex">#D2D2D2</div></div></div></div><div class="theme"><div class="theme-name">demiboy</div><div class="swatches"><div class="swatch" title="#7F7F7F"><div class="chip" style="background:#7F7F7F"></div><div class="hex">#7F7F7F</div></div><div class="swatch" title="#C4C4C4"><div class="chip" style="background:#C4C4C4"></div><div class="hex">#C4C4C4</div></div><div class="swatch" title="#9DD7EA"><div class="chip" style="background:#9DD7EA"></div><div class="hex">#9DD7EA</div></div><div class="swatch" title="#FFFFFF"><div class="chip" style="background:#FFFFFF"></div><div class="hex">#FFFFFF</div></div></div></div><div class="theme"><div class="theme-name">royalty</div><div class="swatches"><div class="swatch" title="#0903A6"><div class="chip" style="background:#0903A6"></div><div class="hex">#0903A6</div></div><div class="swatch" title="#0F1AF2"><div class="chip" style="background:#0F1AF2"></div><div class="hex">#0F1AF2</div></div><div class="swatch" title="#1B3BF2"><div class="chip" style="background:#1B3BF2"></div><div class="hex">#1B3BF2</div></div><div class="swatch" title="#798BF2"><div class="chip" style="background:#798BF2"></div><div class="hex">#798BF2</div></div><div class="swatch" title="#F2F2F2"><div class="chip" style="background:#F2F2F2"></div><div class="hex">#F2F2F2</div></div></div></div><div class="theme"><div class="theme-name">Cotton Candy</div><div class="swatches"><div class="swatch" title="#FCA8D8"><div class="chip" style="background:#FCA8D8"></div><div class="hex">#FCA8D8</div></div><div class="swatch" title="#A1A8E5"><div class="chip" style="background:#A1A8E5"></div><div class="hex">#A1A8E5</div></div><div class="swatch" title="#B2B3ED"><div class="chip" style="background:#B2B3ED"></div><div class="hex">#B2B3ED</div></div><div class="swatch" title="#ABCDF3"><div class="chip" style="background:#ABCDF3"></div><div class="hex">#ABCDF3</div></div><div class="swatch" title="#D2DFF2"><div class="chip" style="background:#D2DFF2"></div><div class="hex">#D2DFF2</div></div></div></div></div>
+    </section>
+
+    <section>
+      <h2>Typography (Adobe / Typekit references)</h2>
+      <div class="sub" style="margin-bottom:10px;">These are references (not embedded font files). Use <code>typekitFontId</code> to resolve in Adobe/Typekit contexts.</div>
+      <table>
+        <thead>
+          <tr><th>Family</th><th>Style</th><th>Name</th><th>Typekit ID</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Aglet Mono Variable</td><td>Italic</td><td>Aglet Mono VF Italic</td><td><code>TkD-51925-69d9daf84ceb0343a8dc4891f32b1049e705213c</code></td></tr><tr><td>Aglet Mono Variable</td><td>Regular</td><td>Aglet Mono VF Regular</td><td><code>TkD-51926-e118b875c786dbead2592abfb97063843f6abb64</code></td></tr><tr><td>BioRhyme Variable</td><td>ExtraBold</td><td>BioRhyme ExtraBold</td><td><code>TkD-55300-48938a8839e920d7820638ae18b694a725d97105</code></td></tr><tr><td>Chennai</td><td>Light Oblique</td><td>Chennai Light Oblique</td><td><code>TkD-1503-e953faf4ebbee2b610c6352260e299fd78f53501</code></td></tr><tr><td>Chennai</td><td>Thin</td><td>Chennai Thin</td><td><code>TkD-1500-2bf2c365bed974207f84fde84821af0a8a059cc3</code></td></tr><tr><td>Elliotts Blue EyeShadow</td><td>Regular</td><td>Elliotts OT BlueEyeShadow</td><td><code>TkD-28629-e31c9ad8295f6b8d046a14ee0895ff9de2d2aac3</code></td></tr><tr><td>Elliotts Jigsaw Dropshadow</td><td>Regular</td><td>Elliotts OT JigsawDropshadow</td><td><code>TkD-28631-e2ef1612bfe287ee60c6d32d46ba0d7da9a249ca</code></td></tr><tr><td>Elliotts Typhoid Mary 3D Dark</td><td>Regular</td><td>Elliotts OT TyphpoidMary3DDark</td><td><code>TkD-28630-057279ebfce53e4396ef5a00e15f73a2a67564f6</code></td></tr><tr><td>Elliotts Typhoid Mary 3D Light</td><td>Regular</td><td>Elliotts OT TyphpoidMary3DLight</td><td><code>TkD-28626-62c5861481bf0f8d3f98f052a75c699c4240c717</code></td></tr><tr><td>Elliotts Venus D Outlined</td><td>Regular</td><td>Elliotts OT VenusDOutlined</td><td><code>TkD-28627-4a3d4d9921fd8d4e297afa3b1f990eb4b0417080</code></td></tr><tr><td>Elliotts Venus Dioxide</td><td>Regular</td><td>Elliotts OT VenusDioxide</td><td><code>TkD-28628-b4af961da9249b57cec7f77815cf787a9b629935</code></td></tr><tr><td>Grandstander Variable</td><td>Thin</td><td>Grandstander Thin</td><td><code>TkD-55309-c113d432352a99e6680edfeeeb6dda6eda14f5ad</code></td></tr><tr><td>Grandstander Variable</td><td>Thin Italic</td><td>Grandstander Thin Italic</td><td><code>TkD-55310-67c3f023bbcbf988596436128ae494f308b37223</code></td></tr><tr><td>Le Havre Rounded</td><td>Light</td><td>Le Havre Rounded Light</td><td><code>TkD-696-dfef52d33b0684b2d9ad5492efa5fe90a5b03e72</code></td></tr><tr><td>Le Havre Rounded</td><td>Thin Italic</td><td>Le Havre Rounded Thin Italic</td><td><code>TkD-695-9c7ebf455b0d57b9ecc6a8742823c190f455ac3f</code></td></tr><tr><td>Omnes Pro</td><td>Extra Light Italic</td><td>Omnes ExtraLight Italic</td><td><code>TkD-7995-c64b3dd7f29a87ee3fbeaba23c2ac4f2fa814c54</code></td></tr><tr><td>Perec Scripte Deco</td><td>Regular</td><td>PerecScripteDeco Regular</td><td><code>TkD-57284-dd022820892a7300e454f6355a7b201c468d7e40</code></td></tr><tr><td>Rig Solid Bold Fill</td><td>Bold Fill</td><td>Rig Solid Bold Fill</td><td><code>TkD-37921-dd94abd1bdb0239d56f3809cc9aad284a843f7b8</code></td></tr><tr><td>Rig Solid Bold Halftone</td><td>Bold Halftone</td><td>Rig Solid Bold Halftone</td><td><code>TkD-37922-137b81f8d9579a7e4757bfb88d4dedc485a1fa0d</code></td></tr><tr><td>Rig Solid Bold Inline</td><td>Bold Inline</td><td>Rig Solid Bold Inline</td><td><code>TkD-37923-afc44552b9b90cccbd0083d498f0aa978449404d</code></td></tr><tr><td>Rig Solid Bold Inline Solo</td><td>Bold Inline Solo</td><td>Rig Solid Bold Inline Solo</td><td><code>TkD-37924-2dda548f4798ccc923a600c02195ed5cca834172</code></td></tr><tr><td>Rig Solid Bold Outline</td><td>Bold Outline</td><td>Rig Solid Bold Outline</td><td><code>TkD-37925-2feee893448f6d69d5966151081c188836547913</code></td></tr><tr><td>Rig Solid Bold Reverse</td><td>Bold Reverse</td><td>Rig Solid Bold Reverse</td><td><code>TkD-37926-6e555754c64525442f5711bb00f8c213e0abcfbb</code></td></tr><tr><td>Rig Solid Light Fill</td><td>Light Fill</td><td>Rig Solid Light Fill</td><td><code>TkD-37927-c5e592282b2ef360f0e4ed681141f289b9ac30e3</code></td></tr><tr><td>Rig Solid Light Halftone</td><td>Light Halftone</td><td>Rig Solid Light Halftone</td><td><code>TkD-37928-ac78f49e5ee7ab5d0f3994b138904c8d8910d2cf</code></td></tr><tr><td>Rig Solid Medium Fill</td><td>Medium Fill</td><td>Rig Solid Medium Fill</td><td><code>TkD-37929-8a6c179287a4dce18e75cef57307f37e56afdd14</code></td></tr><tr><td>Rig Solid Medium Halftone</td><td>Medium Halftone</td><td>Rig Solid Medium Halftone</td><td><code>TkD-37930-7729078b2991e3db710ff53d19eaffdfe9716797</code></td></tr><tr><td>Rig Solid Medium Lines</td><td>Medium Lines</td><td>Rig Solid Medium Lines</td><td><code>TkD-37931-6b2bdc19655592ad75912f8c2bf1930e06d25e7a</code></td></tr><tr><td>Rig Solid Medium Outline</td><td>Medium Outline</td><td>Rig Solid Medium Outline</td><td><code>TkD-37932-9dedcc48a0e88b186baa0b9e020814bb7f607e02</code></td></tr><tr><td>Rig Solid Zero Halftone</td><td>Zero Halftone</td><td>Rig Solid Zero Halftone</td><td><code>TkD-37933-83b804fb0ac76f2ff706f07b34a69a69e89c614f</code></td></tr><tr><td>Scatterplot VF</td><td>Light</td><td>Scatterplot VF Light</td><td><code>TkD-61624-678b753ecd79a6a00c3218e9d48568c3dafbf6a6</code></td></tr><tr><td>Sketchnote Text</td><td>Regular</td><td>Sketchnote Text Regular</td><td><code>TkD-21678-25b50427a8a698a91fbf0c6cebc5ed356995c5f0</code></td></tr><tr><td>Transat</td><td>Black</td><td>Transat Black</td><td><code>TkD-42051-d3f43ecd3c67edcd59f272bc61f025582a17bac1</code></td></tr><tr><td>Transat</td><td>Black Oblique</td><td>Transat Black Oblique</td><td><code>TkD-42052-abd70cfcba6fa449c048887d096616cdd5be1e6c</code></td></tr><tr><td>Transat</td><td>Bold</td><td>Transat Bold</td><td><code>TkD-42049-bd5bad0fc9ad386563fdc5073ca6c201f5326e1b</code></td></tr><tr><td>Transat</td><td>Bold Oblique</td><td>Transat Bold Oblique</td><td><code>TkD-42050-27f4e746d5aaae3b373f9c5329bda8d36f390f85</code></td></tr><tr><td>Transat</td><td>Light</td><td>Transat Light</td><td><code>TkD-42043-d37691eb1c0a9bbb52b19044e47be1fd210a0663</code></td></tr><tr><td>Transat</td><td>Light Oblique</td><td>Transat Light Oblique</td><td><code>TkD-42044-f805f510de7f258afd9cd1793c0efe0769801af7</code></td></tr><tr><td>Transat</td><td>Medium</td><td>Transat Medium</td><td><code>TkD-42047-81a780d4de252d438056ac20d0353f84e5303519</code></td></tr><tr><td>Transat</td><td>Medium Oblique</td><td>Transat Medium Oblique</td><td><code>TkD-42048-3ef685bb22822977a591bf4181b8f209b7040fae</code></td></tr><tr><td>Transat</td><td>Standard</td><td>Transat Standard</td><td><code>TkD-42045-4bcfc5723ba7b304c08c2de9526debbbcb249a52</code></td></tr><tr><td>Transat</td><td>Standard Oblique</td><td>Transat Standard Oblique</td><td><code>TkD-42046-f4efd12b5543d6ec0fb3da9a24284b9031a4b77f</code></td></tr><tr><td>Xanti Typewriter Variable</td><td>ExtraBold</td><td>Xanti Typewriter VF ExtraBold</td><td><code>TkD-51917-de87df835f7b2e6e9d9667ac5dbaf873e6bdabcb</code></td></tr><tr><td>Xanti Typewriter Variable</td><td>ExtraBold Italic</td><td>Xanti Typewriter VF ExtraBold Italic</td><td><code>TkD-53158-f2bac1ee7a607e2bfffa1ec27305f99e555c605b</code></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section><h2>Social profile images</h2><div class='grid'>
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_00_10_3_decorative_clean.png" alt="RAINBOWSMOKE_Profile_00.10.3_decorative_clean">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_00.10.3_decorative_clean</div>
+            <div class="meta">PNG · 1,477,278 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_00_10_3_decorative_clean_png.png" alt="RAINBOWSMOKE_Profile_00.10.3_decorative_clean.png">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_00.10.3_decorative_clean.png</div>
+            <div class="meta">PNG · 1,477,278 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_00_10_3_rigsolid_clean.png" alt="RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean</div>
+            <div class="meta">PNG · 1,461,999 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_00_10_3_rigsolid_clean_png.png" alt="RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean.png">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_00.10.3_rigsolid_clean.png</div>
+            <div class="meta">PNG · 1,461,999 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_Light_00_11_0.png" alt="RAINBOWSMOKE_Profile_Light_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_Light_00.11.0</div>
+            <div class="meta">PNG · 988,416 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Profile_Light_00_11_0_2.png" alt="RAINBOWSMOKE_Profile_Light_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Profile_Light_00.11.0</div>
+            <div class="meta">PNG · 988,416 bytes</div>
+          </figcaption>
+        </figure>
+        </div></section>
+    <section><h2>Glyphs / marks</h2><div class='grid'>
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0.png" alt="RAINBOWSMOKE_Glyph_RS_128_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_128_00.11.0</div>
+            <div class="meta">PNG · 30,338 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0.svg" alt="RAINBOWSMOKE_Glyph_RS_128_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_128_00.11.0</div>
+            <div class="meta">SVG · 40,586 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_128_00_11_0_2.svg" alt="RAINBOWSMOKE_Glyph_RS_128_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_128_00.11.0</div>
+            <div class="meta">SVG · 40,586 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0.png" alt="RAINBOWSMOKE_Glyph_RS_256_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_256_00.11.0</div>
+            <div class="meta">PNG · 92,293 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0.svg" alt="RAINBOWSMOKE_Glyph_RS_256_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_256_00.11.0</div>
+            <div class="meta">SVG · 123,194 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Glyph_RS_256_00_11_0_2.svg" alt="RAINBOWSMOKE_Glyph_RS_256_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Glyph_RS_256_00.11.0</div>
+            <div class="meta">SVG · 123,194 bytes</div>
+          </figcaption>
+        </figure>
+        </div></section>
+    <section><h2>Overlays</h2><div class='grid'>
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2.png" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2</div>
+            <div class="meta">PNG · 29,725 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2.svg" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2</div>
+            <div class="meta">SVG · 39,770 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_2.png" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2</div>
+            <div class="meta">PNG · 29,725 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_2.svg" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2</div>
+            <div class="meta">SVG · 39,770 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_png.png" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2.png">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2.png</div>
+            <div class="meta">PNG · 29,725 bytes</div>
+          </figcaption>
+        </figure>
+        
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Overlay_Micro_128_00_10_2_svg.svg" alt="RAINBOWSMOKE_Overlay_Micro_128_00.10.2.svg">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Overlay_Micro_128_00.10.2.svg</div>
+            <div class="meta">SVG · 39,770 bytes</div>
+          </figcaption>
+        </figure>
+        </div></section>
+    <section><h2>Motion</h2><div class='grid'>
+        <figure class="card">
+          <img src="assets/RAINBOWSMOKE_Micro_Smoke_Loop_00_11_0.gif" alt="RAINBOWSMOKE_Micro_Smoke_Loop_00.11.0">
+          <figcaption>
+            <div class="asset-name">RAINBOWSMOKE_Micro_Smoke_Loop_00.11.0</div>
+            <div class="meta">GIF · 784,216 bytes</div>
+          </figcaption>
+        </figure>
+        </div></section>
+  </main>
+</body>
+</html>
