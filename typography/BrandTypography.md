@@ -226,7 +226,7 @@ This document defines RAINBOWSMOKE's typography system. It clarifies which fonts
 
 ```html
 <link rel="stylesheet" href="https://use.typekit.net/ojc8wen.css">
-<link rel="stylesheet" href="https://use.typekit.net/xlr7mdi.css">
+<link rel="stylesheet" href="https://use.typekit.net/gsl6svi.css">
 ```
 
 ### CSS Custom Properties

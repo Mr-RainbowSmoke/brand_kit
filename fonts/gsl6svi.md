@@ -4,17 +4,17 @@
 
 ```json
 {
-  "project_id": "xlr7mdi",
+  "project_id": "gsl6svi",
   "project_type": "Adobe Fonts (Typekit)",
   "brand": "RainbowSmoke",
   "total_families": 6,
   "total_variations": 28,
-  "typekit_url": "https://use.typekit.net/xlr7mdi.css",
-  "last_updated": "2026-01-05"
+  "typekit_url": "https://use.typekit.net/gsl6svi.css",
+  "last_updated": "2026-07-29"
 }
 ```
 
-**Project ID**: xlr7mdi
+**Project ID**: gsl6svi
 
 ## Font Families Overview
 
@@ -258,7 +258,7 @@ body {
     <title>Adobe Fonts Project</title>
     
     <!-- Adobe Fonts Stylesheet -->
-    <link rel="stylesheet" href="https://use.typekit.net/xlr7mdi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gsl6svi.css">
     
     <style>
         body {
@@ -345,10 +345,11 @@ font-family: "perec-scripte-deco", sans-serif;
 ## Notes
 
 - **Total Font Families**: 6 main families (28 total variations)
-- **Last Updated**: December 12, 2025
+- **Last Updated**: July 29, 2026
 - **License**: Subject to Adobe Typekit Terms of Use
-- **Project ID**: xlr7mdi
+- **Project ID**: gsl6svi
 - **Fallback**: All fonts specify `sans-serif` as fallback (except script font)
+- **Migration note**: This project ID replaces the retired `xlr7mdi` project (same font set carried forward).
 
 ## Recommended Usage
 

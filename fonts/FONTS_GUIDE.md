@@ -15,7 +15,7 @@
       "variations": 34
     },
     {
-      "project_id": "xlr7mdi",
+      "project_id": "gsl6svi",
       "font_families": 6,
       "variations": 28
     }
@@ -23,7 +23,7 @@
   "integration": {
     "typekit_links": [
       "https://use.typekit.net/ojc8wen.css",
-      "https://use.typekit.net/xlr7mdi.css"
+      "https://use.typekit.net/gsl6svi.css"
     ]
   }
 }
@@ -34,12 +34,12 @@ This document provides AI-readable and human-readable instructions for the Rainb
 
 **Adobe Fonts Projects:**
 - **Project ID 1:** `ojc8wen` (15 font families, 34 variations)
-- **Project ID 2:** `xlr7mdi` (6 font families, 28 variations)
+- **Project ID 2:** `gsl6svi` (6 font families, 28 variations) — replaces the retired `xlr7mdi` project
 
 **Integration:**
 ```html
 <link rel="stylesheet" href="https://use.typekit.net/ojc8wen.css">
-<link rel="stylesheet" href="https://use.typekit.net/xlr7mdi.css">
+<link rel="stylesheet" href="https://use.typekit.net/gsl6svi.css">
 ```
 
 ---
@@ -740,4 +740,4 @@ font-weight: 900; /* Black (Omnes Narrow) */
 *Last Updated: January 4, 2026*  
 *Brand: RainbowSmoke*  
 *Typography System Version: 1.0*  
-*Adobe Fonts Projects: ojc8wen, xlr7mdi*
+*Adobe Fonts Projects: ojc8wen, gsl6svi*
