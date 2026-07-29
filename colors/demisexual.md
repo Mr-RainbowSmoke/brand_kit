@@ -8,6 +8,8 @@ A demisexual person is someone who only experiences sexual attraction after form
 {
   "name": "demisexual",
   "description": "Demisexual pride flag color palette",
+  "source": "RAINBOWSMOKE.cclibs (Adobe CC Library) — confirmed master source of truth",
+  "last_updated": "2026-07-29",
   "colors": [
     {
       "hex": "#000000",
@@ -15,19 +17,19 @@ A demisexual person is someone who only experiences sexual attraction after form
       "description": "Represents asexuality"
     },
     {
-      "hex": "#808080",
-      "name": "Gray",
-      "description": "Represents gray-sexuality and the spectrum between sexual and asexual"
-    },
-    {
       "hex": "#FFFFFF",
       "name": "White",
       "description": "Represents sexuality"
     },
     {
-      "hex": "#800080",
+      "hex": "#6E0070",
       "name": "Purple",
       "description": "Represents community and the emotional connection required for attraction"
+    },
+    {
+      "hex": "#D2D2D2",
+      "name": "Gray",
+      "description": "Represents gray-sexuality and the spectrum between sexual and asexual"
     }
   ]
 }

@@ -8,6 +8,8 @@ A demiboy is someone who partially, but not fully, identifies as a boy/man, rega
 {
   "name": "demiboy",
   "description": "Demiboy pride flag color palette",
+  "source": "RAINBOWSMOKE.cclibs (Adobe CC Library) — confirmed master source of truth",
+  "last_updated": "2026-07-29",
   "colors": [
     {
       "hex": "#7F7F7F",
@@ -20,14 +22,14 @@ A demiboy is someone who partially, but not fully, identifies as a boy/man, rega
       "description": "Represents the partial nature of the identity"
     },
     {
+      "hex": "#9DD7EA",
+      "name": "Light Blue",
+      "description": "Represents masculinity and connection to being a boy/man"
+    },
+    {
       "hex": "#FFFFFF",
       "name": "White",
       "description": "Represents agender or non-binary identity"
-    },
-    {
-      "hex": "#9AD9EB",
-      "name": "Light Blue",
-      "description": "Represents masculinity and connection to being a boy/man"
     }
   ]
 }
