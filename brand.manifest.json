@@ -6,10 +6,12 @@
     "source": {
       "type": "adobe-cclibs",
       "file": "RAINBOWSMOKE.cclibs",
-      "sha256": "9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803",
-      "bytes": 18282858
+      "sha256": "67b45ed492de2d94a8e1ba632799175c6171cb66c8fd2f2ab18c863039ef9f14",
+      "bytes": 18282858,
+      "priorSha256": "9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803",
+      "reverifiedNote": "Re-exported .cclibs checked 2026-07-29: outer zip hash changed (fresh Adobe export) but all 6 color themes, all 44 fonts, all 44 image assets (by per-file SHA-256), and the gradient are byte-for-byte identical to the prior confirmed master. No content changes."
     },
-    "generatedAt": "2026-01-17T19:11:25Z"
+    "generatedAt": "2026-07-29T23:46:47Z"
   },
   "identity": {
     "essence": [

@@ -2,12 +2,18 @@
 
 ## Generation Metadata
 - Created: July 28, 2026
-- Version: 3 (updated same day — `.cclibs` confirmed as master source of truth for all color values)
-- Replaces: v2 (July 28, 2026, same-day)
+- Version: 4 (July 29, 2026 — owner uploaded a fresh `.cclibs` export; re-verified against repo, no content changes)
+- Replaces: v3 (July 28, 2026, same-day)
 - Sources: Project brand files, Notion workspace, SharePoint/OneDrive, Dropbox (RAINBOWSMOKE.cclibs Adobe CC Library + live production website export), Canva
 - Documents/assets processed: 14 documents + 1 Adobe CC Library (135 assets: 6 color themes, 40 font variants, ~40 image/icon/logo assets, 1 gradient)
 - Discovery report used: Yes (expanded with the .cclibs library and reconnected Dropbox)
 - Overall confidence: **High** — visual identity (color/type/logo) is fully reconciled by owner decision; brand voice remains the thinner section, drawn mostly from the live website and one archived template
+
+**v4 change log (re-verification, 2026-07-29):**
+- Owner uploaded a new `RAINBOWSMOKE.cclibs` export (sha256 `67b45ed4…`, previously `9cf14206…`).
+- Full diff against the repo: extracted the manifest, then compared every color theme's swatches, all 44 font entries (name/family/style/typekit ID), and all 44 image assets by per-file SHA-256 of the actual embedded bytes (not just manifest metadata, which omits sha256 for some aliased components).
+- **Result: zero content differences.** Same 6 themes with identical hex values, same 44 fonts, same 44 images byte-for-byte, same gradient. The only thing that changed was the outer zip container's hash — consistent with Adobe re-exporting the library rather than any edit.
+- `brand.manifest.json`'s `brand.source` block updated to record the new sha256/export date; prior sha256 kept as `priorSha256` for traceability. No color/font/asset files needed changes.
 
 **v3 change log (owner-confirmed decision):**
 - `.cclibs` is confirmed as the **master source of truth** — its hex values now supersede `COLOR_GUIDE.md` for Pride, Demiboy, and Demisexual.
