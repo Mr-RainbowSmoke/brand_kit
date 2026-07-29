@@ -7,7 +7,7 @@
   "brand": "RainbowSmoke",
   "category": "Typography",
   "purpose": "AI-readable and human-readable instructions for the RainbowSmoke brand typography system",
-  "last_updated": "2026-01-05",
+  "last_updated": "2026-07-29",
   "adobe_fonts_projects": [
     {
       "project_id": "ojc8wen",
@@ -49,12 +49,12 @@ This document provides AI-readable and human-readable instructions for the Rainb
 ### Tier 1: Primary Fonts (Use Most Often)
 
 #### Transat
-**Family:** `transat`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Regular (400), Bold (700)  
-**Available Styles:** Normal, Italic  
-**Role:** Primary body text, UI labels, forms, paragraphs  
-**Personality:** Clean, modern, confident, geometric  
+**Family:** `transat`
+**Fallback:** `sans-serif`
+**Available Weights:** Regular (400), Bold (700)
+**Available Styles:** Normal, Italic
+**Role:** Primary body text, UI labels, forms, paragraphs
+**Personality:** Clean, modern, confident, geometric
 **Usage Rule:** Default for all body text. If it's longer than one sentence, use Transat.
 
 ```css
@@ -85,12 +85,12 @@ body {
 ---
 
 #### Le Havre Rounded
-**Family:** `le-havre-rounded`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Regular (400), Bold (700)  
-**Available Styles:** Normal, Italic  
-**Role:** Secondary body, subheadings, UI elements, cards, navigation  
-**Personality:** Friendly, human, approachable, rounded, soft  
+**Family:** `le-havre-rounded`
+**Fallback:** `sans-serif`
+**Available Weights:** Regular (400), Bold (700)
+**Available Styles:** Normal, Italic
+**Role:** Secondary body, subheadings, UI elements, cards, navigation
+**Personality:** Friendly, human, approachable, rounded, soft
 **Usage Rule:** Supports Transat; never replaces it. Use for friendlier tone.
 
 ```css
@@ -122,12 +122,12 @@ nav a {
 ### Tier 2: Headline & Impact Fonts
 
 #### Omnes Narrow (Black)
-**Family:** `omnes-narrow`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Extra Light (200), Regular (400), Bold (700), Black (900)  
-**Available Styles:** Italic for weights 200, 400, 700; Normal for 900  
-**Role:** Page titles, section headers, hero text, main headlines  
-**Personality:** Bold, modern, condensed, unmistakable, authoritative  
+**Family:** `omnes-narrow`
+**Fallback:** `sans-serif`
+**Available Weights:** Extra Light (200), Regular (400), Bold (700), Black (900)
+**Available Styles:** Italic for weights 200, 400, 700; Normal for 900
+**Role:** Page titles, section headers, hero text, main headlines
+**Personality:** Bold, modern, condensed, unmistakable, authoritative
 **Usage Rule:** One Omnes headline per section. Let it breathe with whitespace.
 
 ```css
@@ -157,12 +157,12 @@ h1 {
 ---
 
 #### Chennai (Bold)
-**Family:** `chennai`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Regular (400), Bold (700)  
-**Available Styles:** Normal, Italic  
-**Role:** Editorial headers, long-form content, feature sections, article titles  
-**Personality:** Smart, contemporary, balanced, readable, editorial  
+**Family:** `chennai`
+**Fallback:** `sans-serif`
+**Available Weights:** Regular (400), Bold (700)
+**Available Styles:** Normal, Italic
+**Role:** Editorial headers, long-form content, feature sections, article titles
+**Personality:** Smart, contemporary, balanced, readable, editorial
 **Usage Rule:** Use when Omnes feels too aggressive. Better for content-heavy pages.
 
 ```css
@@ -192,12 +192,12 @@ h1 {
 ### Tier 3: Display & Statement Fonts (Use Sparingly)
 
 #### Rig Solid (Selected Variants)
-**Families:** Multiple (`rig-solid-bold-fill`, `rig-solid-bold-inline`, `rig-solid-medium-outline`, etc.)  
-**Fallback:** `sans-serif`  
-**Available Variants:** 14 (Bold Fill, Bold Inline, Bold Halftone, Medium Outline, etc.)  
-**Available Weights:** Light (300), Medium (500), Bold (700), Zero (100)  
-**Role:** Hero banners, splash pages, posters, campaign graphics  
-**Personality:** Loud, graphic, confident, eye-catching, impactful  
+**Families:** Multiple (`rig-solid-bold-fill`, `rig-solid-bold-inline`, `rig-solid-medium-outline`, etc.)
+**Fallback:** `sans-serif`
+**Available Variants:** 14 (Bold Fill, Bold Inline, Bold Halftone, Medium Outline, etc.)
+**Available Weights:** Light (300), Medium (500), Bold (700), Zero (100)
+**Role:** Hero banners, splash pages, posters, campaign graphics
+**Personality:** Loud, graphic, confident, eye-catching, impactful
 **Usage Rule:** Never mix more than one Rig Solid variant on a single page.
 
 **Approved Variants:**
@@ -233,12 +233,12 @@ h1 {
 ---
 
 #### Elliott's Collection
-**Families:** Multiple (`elliotts-blue-eyeshadow`, `elliotts-jigsaw-dropshadow`, etc.)  
-**Fallback:** `sans-serif`  
-**Available Variants:** 6  
-**Weight:** All at 400  
-**Role:** One-off moments, art drops, social headers, special features  
-**Personality:** Artistic, unique, expressive, vintage, playful  
+**Families:** Multiple (`elliotts-blue-eyeshadow`, `elliotts-jigsaw-dropshadow`, etc.)
+**Fallback:** `sans-serif`
+**Available Variants:** 6
+**Weight:** All at 400
+**Role:** One-off moments, art drops, social headers, special features
+**Personality:** Artistic, unique, expressive, vintage, playful
 **Usage Rule:** If you use Elliott's, everything else goes quiet. Maximum one use per design.
 
 **Approved Variants:**
@@ -279,12 +279,12 @@ h1 {
 ### Tier 4: Accent & Expressive Fonts
 
 #### Sketchnote Text
-**Family:** `sketchnote-text`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Regular (400), Bold (700)  
-**Available Styles:** Normal, Italic (only for Regular)  
-**Role:** Pull quotes, captions, playful microcopy, annotations  
-**Personality:** Human, handwritten, expressive, informal, friendly  
+**Family:** `sketchnote-text`
+**Fallback:** `sans-serif`
+**Available Weights:** Regular (400), Bold (700)
+**Available Styles:** Normal, Italic (only for Regular)
+**Role:** Pull quotes, captions, playful microcopy, annotations
+**Personality:** Human, handwritten, expressive, informal, friendly
 **Usage Rule:** Use for personality, not for primary content.
 
 ```css
@@ -318,12 +318,12 @@ blockquote {
 ---
 
 #### Olivita (Italic)
-**Family:** `olivita`  
-**Fallback:** `sans-serif`  
-**Available Weights:** Regular (400)  
-**Available Styles:** Normal, Italic  
-**Role:** Pull quotes, poetic lines, emphasis, testimonials  
-**Personality:** Smooth, expressive, intimate, elegant, flowing  
+**Family:** `olivita`
+**Fallback:** `sans-serif`
+**Available Weights:** Regular (400)
+**Available Styles:** Normal, Italic
+**Role:** Pull quotes, poetic lines, emphasis, testimonials
+**Personality:** Smooth, expressive, intimate, elegant, flowing
 **Usage Rule:** Use italic variant for emphasis and expression.
 
 ```css
@@ -355,10 +355,10 @@ blockquote {
 ### Tier 5: Restricted Fonts (Situational Use Only)
 
 #### Kegger Collegiate
-**Family:** `kegger-collegiate`  
-**Fallback:** `sans-serif`  
-**Weight:** Regular (400)  
-**Role:** Sports graphics, college/athletic themes, retro designs  
+**Family:** `kegger-collegiate`
+**Fallback:** `sans-serif`
+**Weight:** Regular (400)
+**Role:** Sports graphics, college/athletic themes, retro designs
 **Usage Rule:** Sports or retro-only contexts
 
 ```css
@@ -373,10 +373,10 @@ blockquote {
 ---
 
 #### Kegger US
-**Family:** `kegger-us`  
-**Fallback:** `serif` *(Note: Only font using serif fallback)*  
-**Weight:** Regular (400)  
-**Role:** American sports aesthetics, vintage athletic designs  
+**Family:** `kegger-us`
+**Fallback:** `serif` *(Note: Only font using serif fallback)*
+**Weight:** Regular (400)
+**Role:** American sports aesthetics, vintage athletic designs
 **Usage Rule:** Use only for specific retro/sports contexts
 
 ```css
@@ -390,10 +390,10 @@ blockquote {
 ---
 
 #### Backstroke
-**Family:** `backstroke`  
-**Fallback:** `sans-serif`  
-**Weight:** Regular (400)  
-**Role:** Athletic graphics, brush-style headings, energetic displays  
+**Family:** `backstroke`
+**Fallback:** `sans-serif`
+**Weight:** Regular (400)
+**Role:** Athletic graphics, brush-style headings, energetic displays
 **Usage Rule:** Athletic contexts only
 
 ```css
@@ -407,10 +407,10 @@ blockquote {
 ---
 
 #### Perec Scripte Deco
-**Family:** `perec-scripte-deco`  
-**Fallback:** `sans-serif`  
-**Weight:** Regular (400)  
-**Role:** Logo lockups, special marks, decorative headers  
+**Family:** `perec-scripte-deco`
+**Fallback:** `sans-serif`
+**Weight:** Regular (400)
+**Role:** Logo lockups, special marks, decorative headers
 **Usage Rule:** Special occasions only - decorative script
 
 ```css
@@ -424,10 +424,10 @@ blockquote {
 ---
 
 #### Sketchnote Square
-**Family:** `sketchnote-square`  
-**Fallback:** `sans-serif`  
-**Weight:** Regular (400)  
-**Role:** Decorative headings, playful displays (not body text)  
+**Family:** `sketchnote-square`
+**Fallback:** `sans-serif`
+**Weight:** Regular (400)
+**Role:** Decorative headings, playful displays (not body text)
 **Usage Rule:** Display only, never for body text
 
 ```css
@@ -441,11 +441,11 @@ blockquote {
 ---
 
 #### Omnes Narrow Thin
-**Family:** `omnes-narrow-thin`  
-**Fallback:** `sans-serif`  
-**Weight:** Extra Light (200)  
-**Style:** Italic only  
-**Role:** Ultra-light elegant text, luxury contexts  
+**Family:** `omnes-narrow-thin`
+**Fallback:** `sans-serif`
+**Weight:** Extra Light (200)
+**Style:** Italic only
+**Role:** Ultra-light elegant text, luxury contexts
 **Usage Rule:** Use sparingly for elegant, minimal designs
 
 ```css
@@ -461,10 +461,10 @@ blockquote {
 ---
 
 #### Omnes Pro
-**Family:** `omnes-pro`  
-**Fallback:** `sans-serif`  
-**Weight:** Medium (500)  
-**Role:** Professional body text alternative  
+**Family:** `omnes-pro`
+**Fallback:** `sans-serif`
+**Weight:** Medium (500)
+**Role:** Professional body text alternative
 **Usage Rule:** Use when slightly heavier weight needed than Transat
 
 ```css
@@ -737,7 +737,7 @@ font-weight: 900; /* Black (Omnes Narrow) */
 
 ---
 
-*Last Updated: January 4, 2026*  
-*Brand: RainbowSmoke*  
-*Typography System Version: 1.0*  
+*Last Updated: July 29, 2026*
+*Brand: RainbowSmoke*
+*Typography System Version: 1.0*
 *Adobe Fonts Projects: ojc8wen, gsl6svi*

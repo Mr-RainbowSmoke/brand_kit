@@ -2,12 +2,12 @@
 
 ## Metadata
 
-````json
+```json
 {
   "brand": "RAINBOWSMOKE",
   "category": "Typography",
   "purpose": "Define brand typography hierarchy and usage rules to ensure consistency and prevent font sprawl",
-  "last_updated": "2026-01-05"
+  "last_updated": "2026-07-29"
 }
 ```
 
@@ -274,4 +274,3 @@ This document defines RAINBOWSMOKE's typography system. It clarifies which fonts
   }
 }
 ```
-````
