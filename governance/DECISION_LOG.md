@@ -29,6 +29,14 @@
 - Decision: Ship concrete component and application playbooks incrementally, starting with high-usage digital channels.
 - Rationale: Delivers immediate operational value while allowing future expansion to mobile, print, and merch.
 
+### Decision: Verbal-system canonical expansion
+- Decision: Split verbal policy into core voice (VOICE_AND_TONE), terminology/style conventions, and channel copy examples.
+- Rationale: Improves maintainability and allows faster channel-specific updates without destabilizing core voice policy.
+
+### Decision: Asset lifecycle policy
+- Decision: Mark canonical assets as Active and duplicate naming variants as Deprecated before any cleanup deletions.
+- Rationale: Preserves safety, traceability, and continuity while reducing accidental use of ambiguous files.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

@@ -25,3 +25,15 @@ Ensure overlays, intros, and stream visuals remain recognizable and legible in m
 ## Accessibility Baseline
 - Ensure sufficient contrast on dynamic backgrounds
 - Keep lower-third text in readable size bands
+
+## Stream Overlay Checklist
+- [ ] Nameplate and status text use readable type sizes.
+- [ ] Overlay marks use canonical SVG assets.
+- [ ] Motion effects are smooth and non-distracting.
+- [ ] Scene transitions avoid flash-heavy behavior.
+- [ ] Important labels remain readable on bright and dark footage.
+
+## Lower Third Template
+1. Primary line: creator or segment name.
+2. Secondary line: short context or action prompt.
+3. Optional tag: live status, event tag, or campaign marker.

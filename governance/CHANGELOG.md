@@ -40,8 +40,20 @@
   - applications/MOBILE.md
   - applications/PRINT.md
   - applications/MERCH.md
+- Expanded verbal system with:
+  - verbal-system/TERMINOLOGY_STYLE.md
+  - verbal-system/COPY_EXAMPLES.md
+  - Deepened VOICE_AND_TONE with We Are/We Are Not, refined tone matrix, and channel notes
+- Expanded asset governance with:
+  - Lifecycle status rules and active/deprecated mappings in asset-library/ASSET_INDEX.md
+  - Pack manifests: SOCIAL_KIT_MANIFEST, MEDIA_KIT_MANIFEST, CREATOR_KIT_MANIFEST, PRESS_KIT_MANIFEST
+- Added practical templates and checklists to key channel playbooks:
+  - applications/WEB.md
+  - applications/SOCIAL.md
+  - applications/VIDEO_STREAM.md
+  - applications/EMAIL.md
 
 ## Next
-- Validate provisional canonical asset picks and mark active/deprecated variants.
-- Consolidate verbal system details from legacy integrated docs into canonical files.
-- Add practical templates and checklists per application channel.
+- Add templates/checklists to MOBILE, PRINT, and MERCH playbooks.
+- Add component-level template examples for BUTTONS, FORMS, and NAVIGATION.
+- Begin selective deprecation labeling pass for duplicate asset variants.

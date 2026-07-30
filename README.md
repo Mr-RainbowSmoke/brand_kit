@@ -48,6 +48,17 @@ Docs-first brand system for RAINBOWSMOKE. This repository now serves as the cent
 - Adding concrete application playbooks and component standards.
 - Building canonical asset mapping for duplicate and near-duplicate variants.
 
+## New Canonical Verbal Docs
+- [verbal-system/VOICE_AND_TONE.md](verbal-system/VOICE_AND_TONE.md)
+- [verbal-system/TERMINOLOGY_STYLE.md](verbal-system/TERMINOLOGY_STYLE.md)
+- [verbal-system/COPY_EXAMPLES.md](verbal-system/COPY_EXAMPLES.md)
+
+## Asset Release Manifests
+- [asset-library/SOCIAL_KIT_MANIFEST.md](asset-library/SOCIAL_KIT_MANIFEST.md)
+- [asset-library/MEDIA_KIT_MANIFEST.md](asset-library/MEDIA_KIT_MANIFEST.md)
+- [asset-library/CREATOR_KIT_MANIFEST.md](asset-library/CREATOR_KIT_MANIFEST.md)
+- [asset-library/PRESS_KIT_MANIFEST.md](asset-library/PRESS_KIT_MANIFEST.md)
+
 ## Working Principles
 
 1. One canonical source per domain.

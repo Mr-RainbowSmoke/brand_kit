@@ -24,3 +24,17 @@ Apply RAINBOWSMOKE branding consistently across websites and landing pages.
 - Keyboard navigation required
 - Focus states required
 - Contrast at AA minimum
+
+## Build Checklist
+- [ ] Typography hierarchy follows ../visual-system/TYPOGRAPHY_SYSTEM.md.
+- [ ] Color pairings use approved combinations only.
+- [ ] Header, nav, and CTA zones are readable at mobile and desktop breakpoints.
+- [ ] Canonical mark assets are used (no deprecated duplicates).
+- [ ] Focus and keyboard traversal behavior validated.
+- [ ] Primary CTA is clear and unique per page.
+
+## Starter Page Template
+1. Hero: headline, one supporting line, one primary CTA.
+2. Value section: 3 short benefit blocks.
+3. Community section: creator-focused proof or examples.
+4. Action section: one secondary CTA and one final primary CTA.

@@ -12,6 +12,9 @@ This file defines canonical ownership per domain to prevent drift.
 - Canonical source: ../verbal-system/VOICE_AND_TONE.md
 - Upstream integrated reference: ../brand-voice-guidelines.md
 - Supporting source: ../verbal-system/README.md
+- Related canonical docs:
+	- ../verbal-system/TERMINOLOGY_STYLE.md
+	- ../verbal-system/COPY_EXAMPLES.md
 
 3. Color system
 - Canonical source: ../visual-system/COLOR_SYSTEM.md
@@ -28,6 +31,13 @@ This file defines canonical ownership per domain to prevent drift.
 
 6. Asset binaries
 - Canonical source: ../assets/
+
+6a. Asset release manifests
+- Canonical sources:
+	- ../asset-library/SOCIAL_KIT_MANIFEST.md
+	- ../asset-library/MEDIA_KIT_MANIFEST.md
+	- ../asset-library/CREATOR_KIT_MANIFEST.md
+	- ../asset-library/PRESS_KIT_MANIFEST.md
 
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md

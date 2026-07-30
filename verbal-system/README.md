@@ -10,6 +10,8 @@ This section governs how the brand sounds.
 
 ## Canonical Docs
 - [VOICE_AND_TONE.md](VOICE_AND_TONE.md)
+- [TERMINOLOGY_STYLE.md](TERMINOLOGY_STYLE.md)
+- [COPY_EXAMPLES.md](COPY_EXAMPLES.md)
 
 ## Current Source Mapping
 - Primary voice source: ../brand-voice-guidelines.md
