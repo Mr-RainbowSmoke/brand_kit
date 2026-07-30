@@ -23,3 +23,14 @@ Define content card layout for web, social previews, and community highlights.
 ## Accessibility Baseline
 - Interactive cards must have clear focus behavior.
 - Text overlays on media must maintain AA contrast.
+
+## Cards QA Checklist
+- [ ] Card title/body hierarchy remains readable at target breakpoint.
+- [ ] Interactive cards expose visible focus styling.
+- [ ] Media overlays maintain AA contrast for all text content.
+
+## Starter Card Template
+1. Optional media area with safe overlay zone.
+2. Label and title hierarchy.
+3. Supporting body text.
+4. Optional action row with one primary action.

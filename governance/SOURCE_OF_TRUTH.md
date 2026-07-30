@@ -101,5 +101,5 @@ This file defines canonical ownership per domain to prevent drift.
 
 ## Next Implementation Tasks
 1. Continue canonical extraction from any remaining legacy mixed-content sections.
-2. Evaluate optional parity checks for application playbook completeness.
+2. Review application/component completeness warnings and remediate weak sections.
 3. Decide whether optional markdown style linting should become blocking.

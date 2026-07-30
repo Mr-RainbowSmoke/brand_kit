@@ -22,3 +22,13 @@ Define alerts, badges, notices, and status messaging patterns.
 ## Accessibility Baseline
 - Ensure sufficient contrast and readable message hierarchy.
 - Include icon or text marker alongside state color.
+
+## Feedback QA Checklist
+- [ ] Alert types (info/success/warning/error) have distinct labels and copy.
+- [ ] State meaning is conveyed by text and icon, not color only.
+- [ ] Message hierarchy remains readable at mobile and desktop sizes.
+
+## Starter Feedback Template
+1. State marker: icon + label.
+2. Message body: concise explanation and next action.
+3. Optional action: retry, dismiss, or learn-more path.

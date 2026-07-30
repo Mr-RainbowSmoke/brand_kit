@@ -41,6 +41,16 @@ Define branded button behavior for web and campaign surfaces.
 | Ghost | default, hover, focus, active, disabled |
 | Destructive | default, hover, focus, active, disabled |
 
+## Buttons QA Checklist
+- [ ] Primary, secondary, ghost, and destructive variants are available where needed.
+- [ ] Focus-visible state is clearly distinguishable from hover.
+- [ ] Disabled and loading states preserve readable labels.
+
+## Starter Component Template
+1. Variant set: primary, secondary, ghost, destructive.
+2. State set: default, hover, focus, active, disabled, loading.
+3. Accessibility pass: keyboard focus visibility and AA contrast.
+
 ## Starter CSS Skeleton
 ```css
 .btn { font-family: var(--font-ui); border-radius: 999px; }

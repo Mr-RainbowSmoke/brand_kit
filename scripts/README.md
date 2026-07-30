@@ -84,6 +84,8 @@ Use this check to keep canonical docs aligned with manifest metadata.
 - Terminology baseline remains aligned with canonical brand-name and RS reference usage
 - Tone matrix includes required channel contexts (Social, Website, Campaign, Support, Media/Partner)
 - Copy examples include required channel contexts with at least one example bullet per context
+- Application playbooks emit optional completeness warnings for missing baseline sections/checklists/templates
+- Component docs emit optional completeness warnings for missing baseline sections/checklists/templates
 
 ### Run
 From repository root:

@@ -14,6 +14,10 @@ Ensure overlays, intros, and stream visuals remain recognizable and legible in m
 - Keep decorative display type to title cards or intros
 - Use clear hierarchy for speaker name and status text
 
+## Color Baseline
+- Use approved high-contrast pairings for overlays on variable footage.
+- Keep brand-blue presence visible without reducing label readability.
+
 ## Motion Baseline
 - Use smooth, non-distracting transitions
 - Avoid high-frequency flashing

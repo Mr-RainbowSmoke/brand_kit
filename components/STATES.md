@@ -27,3 +27,13 @@ Normalize interactive and feedback states across components.
 ## Accessibility Baseline
 - Keyboard users must receive equivalent feedback.
 - Motion used in state transitions should remain subtle and non-distracting.
+
+## States QA Checklist
+- [ ] Default, focus, and error states are distinct across core components.
+- [ ] Success/warning/error states include text, not color alone.
+- [ ] Loading behavior communicates progress without disruptive motion.
+
+## Starter State Template
+1. Define state token names and visual intent.
+2. Map state tokens to button/form/card interactions.
+3. Add message pattern for success, warning, and error.

@@ -99,8 +99,20 @@
   - Tone-matrix required channel-context parity in VOICE_AND_TONE
 - Expanded docs-manifest parity coverage to include:
   - COPY_EXAMPLES required channel-context parity and minimum example-bullet presence
+- Expanded docs-manifest parity coverage to include:
+  - Optional applications playbook completeness warnings (baseline sections, checklist/template presence, minimum checklist items)
+- Remediated application playbook completeness warning by adding color baseline coverage to:
+  - applications/VIDEO_STREAM.md
+- Expanded docs-manifest parity coverage to include:
+  - Optional component-doc completeness warnings (baseline sections, checklist/template presence, minimum checklist items)
+- Remediated component completeness warnings by adding checklist/template coverage in:
+  - components/BUTTONS.md
+  - components/CARDS.md
+  - components/STATES.md
+  - components/NAVIGATION.md
+  - components/FEEDBACK.md
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Evaluate application playbook completeness parity strategy.
+- Review and remediate any application/component completeness warnings.

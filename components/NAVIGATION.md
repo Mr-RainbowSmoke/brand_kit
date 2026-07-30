@@ -34,3 +34,8 @@ Define navigation patterns that stay branded while remaining easy to scan and op
 2. Primary links
 3. Context links or utility actions
 4. Mobile collapse/expand behavior
+
+## Starter Navigation Template
+1. Desktop row with brand zone, primary links, and utility actions.
+2. Mobile menu with clear open/close affordances.
+3. Active and focus states mapped for every nav link.

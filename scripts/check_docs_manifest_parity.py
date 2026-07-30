@@ -13,6 +13,8 @@ Checks:
 9. verbal-system/TERMINOLOGY_STYLE.md includes baseline canonical terminology alignment.
 10. verbal-system/VOICE_AND_TONE.md tone matrix includes required channel contexts.
 11. verbal-system/COPY_EXAMPLES.md includes required channel sections and example bullets.
+12. applications/* playbooks emit optional completeness warnings for missing baseline sections.
+13. components/* docs emit optional completeness warnings for missing baseline sections.
 
 Exit code is non-zero when violations are found.
 """
@@ -31,6 +33,8 @@ BRAND_OVERVIEW = ROOT / "foundation" / "BRAND_OVERVIEW.md"
 VOICE_AND_TONE = ROOT / "verbal-system" / "VOICE_AND_TONE.md"
 TERMINOLOGY_STYLE = ROOT / "verbal-system" / "TERMINOLOGY_STYLE.md"
 COPY_EXAMPLES = ROOT / "verbal-system" / "COPY_EXAMPLES.md"
+APPLICATIONS_DIR = ROOT / "applications"
+COMPONENTS_DIR = ROOT / "components"
 
 HEX_RE = re.compile(r"#[0-9A-Fa-f]{6}")
 FENCE_RE = re.compile(r"```json\n(.*?)\n```", re.DOTALL)
@@ -120,6 +124,36 @@ REQUIRED_TONE_CONTEXT_ALIASES = {
         "media",
     },
 }
+
+APPLICATION_PLAYBOOK_FILES = [
+    APPLICATIONS_DIR / "WEB.md",
+    APPLICATIONS_DIR / "SOCIAL.md",
+    APPLICATIONS_DIR / "VIDEO_STREAM.md",
+    APPLICATIONS_DIR / "EMAIL.md",
+    APPLICATIONS_DIR / "MOBILE.md",
+    APPLICATIONS_DIR / "PRINT.md",
+    APPLICATIONS_DIR / "MERCH.md",
+]
+
+APPLICATION_REQUIRED_HEADINGS = [
+    "goal",
+    "typography baseline",
+    "color baseline",
+]
+
+COMPONENT_FILES = [
+    COMPONENTS_DIR / "BUTTONS.md",
+    COMPONENTS_DIR / "FORMS.md",
+    COMPONENTS_DIR / "CARDS.md",
+    COMPONENTS_DIR / "STATES.md",
+    COMPONENTS_DIR / "NAVIGATION.md",
+    COMPONENTS_DIR / "FEEDBACK.md",
+]
+
+COMPONENT_REQUIRED_HEADINGS = [
+    "purpose",
+    "accessibility baseline",
+]
 
 
 def load_manifest() -> dict:
@@ -259,6 +293,18 @@ def extract_copy_example_contexts(markdown_text: str) -> tuple[set[str], dict[st
     return contexts, bullet_counts
 
 
+def extract_h2_headings(markdown_text: str) -> list[str]:
+    headings: list[str] = []
+    for line in markdown_text.splitlines():
+        if line.startswith("## "):
+            headings.append(normalize_text(line[3:].strip()))
+    return headings
+
+
+def count_checklist_items(markdown_text: str) -> int:
+    return sum(1 for line in markdown_text.splitlines() if line.startswith("- [ ] "))
+
+
 def validate_typography_parity(
     manifest: dict, fonts_guide_text: str, errors: list[str]
 ) -> None:
@@ -396,8 +442,83 @@ def validate_verbal_parity(
             )
 
 
+def validate_application_playbook_completeness(warnings: list[str]) -> None:
+    for playbook_path in APPLICATION_PLAYBOOK_FILES:
+        if not playbook_path.exists():
+            warnings.append(f"Missing application playbook file: {playbook_path.relative_to(ROOT)}")
+            continue
+
+        text = playbook_path.read_text(encoding="utf-8")
+        headings = extract_h2_headings(text)
+        heading_set = set(headings)
+
+        for required_heading in APPLICATION_REQUIRED_HEADINGS:
+            if required_heading not in heading_set:
+                warnings.append(
+                    "Application playbook completeness: "
+                    f"{playbook_path.relative_to(ROOT)} missing '## {required_heading.title()}'"
+                )
+
+        if not any("checklist" in heading for heading in headings):
+            warnings.append(
+                "Application playbook completeness: "
+                f"{playbook_path.relative_to(ROOT)} missing checklist section"
+            )
+
+        if not any("template" in heading for heading in headings):
+            warnings.append(
+                "Application playbook completeness: "
+                f"{playbook_path.relative_to(ROOT)} missing template section"
+            )
+
+        checklist_items = count_checklist_items(text)
+        if checklist_items < 3:
+            warnings.append(
+                "Application playbook completeness: "
+                f"{playbook_path.relative_to(ROOT)} has low checklist coverage ({checklist_items} items)"
+            )
+
+
+def validate_component_doc_completeness(warnings: list[str]) -> None:
+    for component_path in COMPONENT_FILES:
+        if not component_path.exists():
+            warnings.append(f"Missing component doc file: {component_path.relative_to(ROOT)}")
+            continue
+
+        text = component_path.read_text(encoding="utf-8")
+        headings = extract_h2_headings(text)
+        heading_set = set(headings)
+
+        for required_heading in COMPONENT_REQUIRED_HEADINGS:
+            if required_heading not in heading_set:
+                warnings.append(
+                    "Component doc completeness: "
+                    f"{component_path.relative_to(ROOT)} missing '## {required_heading.title()}'"
+                )
+
+        if not any("checklist" in heading for heading in headings):
+            warnings.append(
+                "Component doc completeness: "
+                f"{component_path.relative_to(ROOT)} missing checklist section"
+            )
+
+        if not any("template" in heading for heading in headings):
+            warnings.append(
+                "Component doc completeness: "
+                f"{component_path.relative_to(ROOT)} missing template section"
+            )
+
+        checklist_items = count_checklist_items(text)
+        if checklist_items < 3:
+            warnings.append(
+                "Component doc completeness: "
+                f"{component_path.relative_to(ROOT)} has low checklist coverage ({checklist_items} items)"
+            )
+
+
 def main() -> int:
     errors: list[str] = []
+    warnings: list[str] = []
 
     manifest = load_manifest()
     color_guide_text = COLOR_GUIDE.read_text(encoding="utf-8")
@@ -453,6 +574,13 @@ def main() -> int:
         copy_examples_text,
         errors,
     )
+    validate_application_playbook_completeness(warnings)
+    validate_component_doc_completeness(warnings)
+
+    if warnings:
+        print("Warnings:")
+        for warning in warnings:
+            print(f"- {warning}")
 
     if errors:
         print("Errors:")

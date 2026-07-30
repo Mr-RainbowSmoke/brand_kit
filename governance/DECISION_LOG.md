@@ -81,6 +81,14 @@
 - Decision: Enforce required channel contexts and minimum example-bullet presence in COPY_EXAMPLES.
 - Rationale: Ensures practical usage examples remain complete across all required verbal channels.
 
+### Decision: Optional application playbook completeness telemetry
+- Decision: Add non-blocking completeness checks for application playbooks (required baseline headings, checklist/template presence, checklist density).
+- Rationale: Surfaces documentation quality gaps early without disrupting active content migration.
+
+### Decision: Optional component-doc completeness telemetry
+- Decision: Add non-blocking completeness checks for component docs (required baseline headings, checklist/template presence, checklist density).
+- Rationale: Keeps reusable UI guidance operationally complete while preserving migration velocity.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits
