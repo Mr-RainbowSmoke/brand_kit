@@ -111,6 +111,18 @@ python3 scripts/check_markdown_style.py
 Primary required PR check and artifact report:
 - [.github/workflows/quality-suite.yml](.github/workflows/quality-suite.yml)
 
+[![Quality Suite](https://github.com/Mr-RainbowSmoke/brand_kit/actions/workflows/quality-suite.yml/badge.svg)](https://github.com/Mr-RainbowSmoke/brand_kit/actions/workflows/quality-suite.yml)
+
+## CI Policy Snapshot
+
+| Check | Local command | Workflow | PR requirement | Trigger policy |
+|---|---|---|---|---|
+| Quality suite (consolidated) | `python3 scripts/check_release_manifests.py && python3 scripts/check_markdown_links.py && python3 scripts/check_docs_manifest_parity.py && python3 scripts/check_markdown_style.py` | [.github/workflows/quality-suite.yml](.github/workflows/quality-suite.yml) | Required | pull_request + workflow_dispatch |
+| Release manifest validator | `python3 scripts/check_release_manifests.py` | [.github/workflows/release-manifest-check.yml](.github/workflows/release-manifest-check.yml) | Manual only | workflow_dispatch |
+| Docs link validator | `python3 scripts/check_markdown_links.py` | [.github/workflows/docs-link-check.yml](.github/workflows/docs-link-check.yml) | Manual only | workflow_dispatch |
+| Docs-manifest parity validator | `python3 scripts/check_docs_manifest_parity.py` | [.github/workflows/docs-manifest-parity-check.yml](.github/workflows/docs-manifest-parity-check.yml) | Manual only | workflow_dispatch |
+| Markdown style lint | `python3 scripts/check_markdown_style.py` | [.github/workflows/markdown-style-check.yml](.github/workflows/markdown-style-check.yml) | Manual only (informational) | workflow_dispatch |
+
 ## Working Principles
 
 1. One canonical source per domain.
