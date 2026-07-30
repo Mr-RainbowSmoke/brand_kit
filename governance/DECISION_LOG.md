@@ -45,6 +45,10 @@
 - Decision: Add a local validation script that blocks manifest references to deprecated or missing assets.
 - Rationale: Prevents accidental distribution drift and makes release packaging deterministic.
 
+### Decision: PR enforcement for release validation
+- Decision: Run manifest validation automatically on pull requests to main.
+- Rationale: Moves release safety checks from optional local practice to consistent repository policy.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

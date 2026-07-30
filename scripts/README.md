@@ -19,3 +19,8 @@ python3 scripts/check_release_manifests.py
 ### Exit behavior
 - Exit code 0: pass
 - Exit code non-zero: fail, fix manifest references before release
+
+## CI Integration
+- Workflow file: ../.github/workflows/release-manifest-check.yml
+- Trigger: pull requests to main and manual workflow dispatch
+- Behavior: blocks PR merge checks when manifest validation fails

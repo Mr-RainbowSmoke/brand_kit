@@ -66,6 +66,9 @@ Run before publishing any kit bundle:
 python3 scripts/check_release_manifests.py
 ```
 
+Automated PR gate is enabled via GitHub Actions:
+- [.github/workflows/release-manifest-check.yml](.github/workflows/release-manifest-check.yml)
+
 ## Working Principles
 
 1. One canonical source per domain.

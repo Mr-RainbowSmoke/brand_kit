@@ -65,10 +65,11 @@
 - Added automated release manifest validator:
   - scripts/check_release_manifests.py
   - scripts/README.md
+- Added GitHub Action PR gate:
+  - .github/workflows/release-manifest-check.yml
 - Added deprecated-to-canonical migration map in:
   - asset-library/DEPRECATED_VARIANTS_REGISTER.md
 
 ## Next
-- Add optional CI hook to run scripts/check_release_manifests.py on pull requests.
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
