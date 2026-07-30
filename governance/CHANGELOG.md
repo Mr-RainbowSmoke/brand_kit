@@ -67,9 +67,17 @@
   - scripts/README.md
 - Added GitHub Action PR gate:
   - .github/workflows/release-manifest-check.yml
+- Extracted governance-status content from legacy integrated docs into canonical governance files:
+  - governance/DATA_GAPS.md
+  - governance/OPEN_QUESTIONS.md
+  - governance/SOURCE_CONFIDENCE.md
+- Added legacy reference notices to integrated files:
+  - brand_page.md
+  - brand-voice-guidelines.md
 - Added deprecated-to-canonical migration map in:
   - asset-library/DEPRECATED_VARIANTS_REGISTER.md
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
+- Add docs integrity CI check for internal markdown links.

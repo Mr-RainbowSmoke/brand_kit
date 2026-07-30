@@ -74,3 +74,8 @@ Tone adapts by context while preserving core voice.
 ## Source References
 - ../brand-voice-guidelines.md
 - ../brand_page.md
+
+## Governance Tracking
+- ../governance/DATA_GAPS.md
+- ../governance/OPEN_QUESTIONS.md
+- ../governance/SOURCE_CONFIDENCE.md

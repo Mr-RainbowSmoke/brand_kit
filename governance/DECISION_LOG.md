@@ -49,6 +49,10 @@
 - Decision: Run manifest validation automatically on pull requests to main.
 - Rationale: Moves release safety checks from optional local practice to consistent repository policy.
 
+### Decision: Legacy integrated files as reference-only
+- Decision: Keep brand_page.md and brand-voice-guidelines.md as historical integrated references with explicit canonical pointers.
+- Rationale: Preserves provenance while preventing policy drift across duplicate documentation surfaces.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

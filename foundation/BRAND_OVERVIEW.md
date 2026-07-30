@@ -30,3 +30,8 @@ Create a welcoming, high-energy space where people can be fully expressive, visi
 ## Source References
 - ../brand_page.md
 - ../brand-voice-guidelines.md
+
+## Governance Tracking
+- ../governance/DATA_GAPS.md
+- ../governance/OPEN_QUESTIONS.md
+- ../governance/SOURCE_CONFIDENCE.md

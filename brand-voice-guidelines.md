@@ -1,5 +1,18 @@
 # RAINBOWSMOKE (Mr. RainbowSmoke LLC) Brand Guidelines
 
+## Legacy Integrated Reference Notice
+This file is retained as a historical integrated reference.
+
+Canonical policy sources now live in:
+- verbal-system/VOICE_AND_TONE.md
+- verbal-system/TERMINOLOGY_STYLE.md
+- verbal-system/COPY_EXAMPLES.md
+- governance/DATA_GAPS.md
+- governance/OPEN_QUESTIONS.md
+- governance/SOURCE_CONFIDENCE.md
+
+If guidance differs, follow the canonical files above.
+
 ## Generation Metadata
 - Created: July 28, 2026
 - Version: 4 (July 29, 2026 — owner uploaded a fresh `.cclibs` export; re-verified against repo, no content changes)

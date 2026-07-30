@@ -1,5 +1,17 @@
 # RAINBOWSMOKE — Brand Kit
 
+## Legacy Integrated Reference Notice
+This file is retained as a historical integrated visual/reference page.
+
+Canonical sources now live in:
+- foundation/BRAND_OVERVIEW.md
+- visual-system/COLOR_SYSTEM.md
+- visual-system/TYPOGRAPHY_SYSTEM.md
+- visual-system/LOGO_AND_ASSET_USAGE.md
+- asset-library/ASSET_INDEX.md
+
+If guidance differs, follow the canonical files above.
+
 A spectrum-first identity system built around presence, contrast, and motion.
 
 - Canonical source: `RAINBOWSMOKE.cclibs` (sha256: `9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803`)

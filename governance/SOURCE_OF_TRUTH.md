@@ -49,6 +49,12 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../scripts/README.md
 	- ../.github/workflows/release-manifest-check.yml
 
+11. Governance status tracking
+- Canonical sources:
+	- ../governance/DATA_GAPS.md
+	- ../governance/OPEN_QUESTIONS.md
+	- ../governance/SOURCE_CONFIDENCE.md
+
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
 
@@ -81,6 +87,6 @@ This file defines canonical ownership per domain to prevent drift.
 - Structural changes must be reflected in governance/CHANGELOG.md.
 
 ## Next Implementation Tasks
-1. Mark non-canonical files with explicit references to canonical owners.
-2. Add deprecation notices where overlap exists.
+1. Continue canonical extraction from any remaining legacy mixed-content sections.
+2. Add docs integrity CI check for internal markdown links.
 3. Automate consistency checks between docs and manifest values.
