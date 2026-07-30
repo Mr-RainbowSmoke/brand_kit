@@ -80,6 +80,8 @@ Use this check to keep canonical docs aligned with manifest metadata.
 - Fonts guide Typekit project IDs match declared integration links
 - Manifest includes required core typography family groups referenced by canonical docs
 - Foundation core identity signals remain aligned with manifest identity essence
+- Voice-and-tone coverage remains aligned with manifest voice traits and avoid terms
+- Terminology baseline remains aligned with canonical brand-name and RS reference usage
 
 ### Run
 From repository root:

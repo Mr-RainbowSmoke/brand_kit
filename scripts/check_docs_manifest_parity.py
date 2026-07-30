@@ -9,6 +9,8 @@ Checks:
 5. fonts/FONTS_GUIDE.md Typekit project IDs match declared integration links.
 6. Manifest typography includes required core families used by canonical docs.
 7. foundation/BRAND_OVERVIEW.md core identity signals align to manifest essence.
+8. verbal-system/VOICE_AND_TONE.md covers manifest voice traits and avoid terms.
+9. verbal-system/TERMINOLOGY_STYLE.md includes baseline canonical terminology alignment.
 
 Exit code is non-zero when violations are found.
 """
@@ -24,6 +26,8 @@ MANIFEST = ROOT / "brand.manifest.json"
 COLOR_GUIDE = ROOT / "colors" / "COLOR_GUIDE.md"
 FONTS_GUIDE = ROOT / "fonts" / "FONTS_GUIDE.md"
 BRAND_OVERVIEW = ROOT / "foundation" / "BRAND_OVERVIEW.md"
+VOICE_AND_TONE = ROOT / "verbal-system" / "VOICE_AND_TONE.md"
+TERMINOLOGY_STYLE = ROOT / "verbal-system" / "TERMINOLOGY_STYLE.md"
 
 HEX_RE = re.compile(r"#[0-9A-Fa-f]{6}")
 FENCE_RE = re.compile(r"```json\n(.*?)\n```", re.DOTALL)
@@ -65,6 +69,42 @@ IDENTITY_SIGNAL_ALIASES = {
     },
 }
 
+VOICE_TRAIT_ALIASES = {
+    "confident": {
+        "confident",
+        "bold",
+        "bold and expressive",
+    },
+    "warm": {
+        "warm",
+        "energetic and warm",
+        "warm and direct",
+    },
+    "bold": {
+        "bold",
+        "bold and expressive",
+    },
+    "playful": {
+        "playful",
+        "personality",
+        "energetic",
+    },
+}
+
+VOICE_AVOID_ALIASES = {
+    "generic corporate": {
+        "generic corporate",
+        "overly corporate",
+        "stiff corporate language",
+        "sterile",
+    },
+    "flat minimalism without signal": {
+        "flat",
+        "generic",
+        "flat or generic",
+    },
+}
+
 
 def load_manifest() -> dict:
     return json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -81,6 +121,9 @@ def normalize_text(value: str) -> str:
     normalized = value.lower().strip()
     normalized = normalized.replace("-", " ")
     normalized = normalized.replace(",", " ")
+    normalized = normalized.replace(":", " ")
+    normalized = normalized.replace("_", " ")
+    normalized = normalized.replace("/", " ")
     normalized = re.sub(r"\s+", " ", normalized)
     return normalized
 
@@ -205,6 +248,50 @@ def validate_identity_parity(manifest: dict, brand_overview_text: str, errors: l
             )
 
 
+def validate_verbal_parity(
+    manifest: dict, voice_and_tone_text: str, terminology_text: str, errors: list[str]
+) -> None:
+    voice_doc_normalized = normalize_text(voice_and_tone_text)
+    terminology_normalized = normalize_text(terminology_text)
+
+    voice_section = manifest.get("identity", {}).get("voice", {})
+    traits = [normalize_text(str(item)) for item in voice_section.get("traits", [])]
+    avoid_terms = [normalize_text(str(item)) for item in voice_section.get("avoid", [])]
+
+    for trait in traits:
+        allowed_phrases = VOICE_TRAIT_ALIASES.get(trait, {trait})
+        if not any(phrase in voice_doc_normalized for phrase in allowed_phrases):
+            errors.append(
+                "Missing voice trait parity in VOICE_AND_TONE: "
+                f"manifest trait='{trait}'"
+            )
+
+    for avoid in avoid_terms:
+        allowed_phrases = VOICE_AVOID_ALIASES.get(avoid, {avoid})
+        if not any(phrase in voice_doc_normalized for phrase in allowed_phrases):
+            errors.append(
+                "Missing voice avoid-term parity in VOICE_AND_TONE: "
+                f"manifest avoid='{avoid}'"
+            )
+
+    manifest_brand_name = normalize_text(str(manifest.get("brand", {}).get("name", "")))
+    if manifest_brand_name and manifest_brand_name not in terminology_normalized:
+        errors.append(
+            "Missing terminology parity in TERMINOLOGY_STYLE: "
+            f"brand name '{manifest_brand_name}' not found"
+        )
+
+    rs_terminology_markers = {
+        "approved short icon reference rs",
+        "use rs for approved monogram icon context",
+    }
+    if not any(marker in terminology_normalized for marker in rs_terminology_markers):
+        errors.append(
+            "Missing terminology parity in TERMINOLOGY_STYLE: "
+            "approved short icon reference for RS not found"
+        )
+
+
 def main() -> int:
     errors: list[str] = []
 
@@ -212,6 +299,8 @@ def main() -> int:
     color_guide_text = COLOR_GUIDE.read_text(encoding="utf-8")
     fonts_guide_text = FONTS_GUIDE.read_text(encoding="utf-8")
     brand_overview_text = BRAND_OVERVIEW.read_text(encoding="utf-8")
+    voice_and_tone_text = VOICE_AND_TONE.read_text(encoding="utf-8")
+    terminology_text = TERMINOLOGY_STYLE.read_text(encoding="utf-8")
     metadata = extract_metadata_json(color_guide_text)
 
     manifest_brand_name = str(manifest["brand"]["name"])
@@ -252,6 +341,7 @@ def main() -> int:
 
     validate_typography_parity(manifest, fonts_guide_text, errors)
     validate_identity_parity(manifest, brand_overview_text, errors)
+    validate_verbal_parity(manifest, voice_and_tone_text, terminology_text, errors)
 
     if errors:
         print("Errors:")

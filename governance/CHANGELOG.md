@@ -92,8 +92,11 @@
   - Fonts guide metadata and Typekit project-link consistency
   - Required core typography family-group presence in manifest
   - Foundation core identity-signal parity against manifest essence
+- Expanded docs-manifest parity coverage to include:
+  - Voice trait and avoid-term parity against manifest identity.voice
+  - Terminology baseline parity for canonical brand name and RS reference
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Expand docs-manifest parity coverage to verbal trait and terminology signals.
+- Evaluate tone-matrix channel-level parity strategy.

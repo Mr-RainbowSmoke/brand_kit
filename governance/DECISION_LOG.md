@@ -69,6 +69,10 @@
 - Decision: Enforce parity coverage for color, typography metadata, core typography family presence, and foundation identity essence signals.
 - Rationale: Keeps cross-domain canonical docs synchronized with source metadata while migration continues.
 
+### Decision: Verbal and terminology parity enforcement
+- Decision: Extend docs-manifest parity checks to include voice trait coverage, avoid-term coverage, and baseline terminology alignment.
+- Rationale: Prevents drift between manifest voice intent and canonical verbal policy docs.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits
