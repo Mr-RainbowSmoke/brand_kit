@@ -98,6 +98,19 @@ python3 scripts/check_docs_manifest_parity.py
 Automated PR gate is enabled via GitHub Actions:
 - [.github/workflows/docs-manifest-parity-check.yml](.github/workflows/docs-manifest-parity-check.yml)
 
+## Consolidated Quality Suite
+Run all quality validators together:
+
+```bash
+python3 scripts/check_release_manifests.py && \
+python3 scripts/check_markdown_links.py && \
+python3 scripts/check_docs_manifest_parity.py && \
+python3 scripts/check_markdown_style.py
+```
+
+Automated CI suite and artifact report:
+- [.github/workflows/quality-suite.yml](.github/workflows/quality-suite.yml)
+
 ## Working Principles
 
 1. One canonical source per domain.

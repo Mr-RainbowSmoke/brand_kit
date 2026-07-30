@@ -111,6 +111,8 @@
   - components/STATES.md
   - components/NAVIGATION.md
   - components/FEEDBACK.md
+- Added consolidated CI quality suite workflow with report artifact output:
+  - .github/workflows/quality-suite.yml
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

@@ -98,3 +98,18 @@ python3 scripts/check_docs_manifest_parity.py
 - Workflow file: ../.github/workflows/docs-manifest-parity-check.yml
 - Trigger: pull requests to main and manual workflow dispatch
 - Behavior: blocks PR merge checks when parity validation fails
+
+## Consolidated Quality Suite
+
+Runs all validators in one CI workflow and publishes a summary report artifact.
+
+### Included checks
+- Release manifest validator (required)
+- Markdown link validator (required)
+- Docs-manifest parity validator (required)
+- Markdown style lint (optional/informational)
+
+### CI Integration
+- Workflow file: ../.github/workflows/quality-suite.yml
+- Trigger: pull requests to main and manual workflow dispatch
+- Behavior: fails only when required checks fail; uploads quality-suite-report artifact on every run

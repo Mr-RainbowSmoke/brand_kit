@@ -60,6 +60,7 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../.github/workflows/markdown-style-check.yml
 	- ../scripts/check_docs_manifest_parity.py
 	- ../.github/workflows/docs-manifest-parity-check.yml
+	- ../.github/workflows/quality-suite.yml
 
 11. Governance status tracking
 - Canonical sources:

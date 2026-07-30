@@ -89,6 +89,10 @@
 - Decision: Add non-blocking completeness checks for component docs (required baseline headings, checklist/template presence, checklist density).
 - Rationale: Keeps reusable UI guidance operationally complete while preserving migration velocity.
 
+### Decision: Consolidated quality suite workflow
+- Decision: Add a single CI workflow that runs all validators and publishes a report artifact/summary.
+- Rationale: Improves PR review visibility by centralizing quality status while preserving detailed specialized checks.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits
