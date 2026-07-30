@@ -35,6 +35,25 @@ This file defines canonical ownership per domain to prevent drift.
 8. Hub navigation and discovery
 - Canonical source: ../README.md
 
+9. Component patterns
+- Canonical sources:
+	- ../components/BUTTONS.md
+	- ../components/FORMS.md
+	- ../components/CARDS.md
+	- ../components/STATES.md
+	- ../components/NAVIGATION.md
+	- ../components/FEEDBACK.md
+
+10. Application playbooks
+- Canonical sources:
+	- ../applications/WEB.md
+	- ../applications/SOCIAL.md
+	- ../applications/VIDEO_STREAM.md
+	- ../applications/EMAIL.md
+	- ../applications/MOBILE.md
+	- ../applications/PRINT.md
+	- ../applications/MERCH.md
+
 ## Governance Rules
 - One canonical source per domain.
 - Non-canonical duplicates must explicitly point to canonical source.

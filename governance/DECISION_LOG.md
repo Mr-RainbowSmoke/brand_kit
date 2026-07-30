@@ -21,6 +21,14 @@
 - Decision: Introduce domain-level canonical docs first, then migrate detail from legacy integrated docs.
 - Rationale: Creates stable target locations before deep content refactors and reduces migration risk.
 
+### Decision: Typography file ownership boundary
+- Decision: Set visual-system/TYPOGRAPHY_SYSTEM.md as policy owner, keep fonts/FONTS_GUIDE.md for inventory and integration, and keep typography/BrandTypography.md as quick reference.
+- Rationale: Eliminates overlap conflicts while preserving existing technical detail and onboarding convenience.
+
+### Decision: Playbook implementation order
+- Decision: Ship concrete component and application playbooks incrementally, starting with high-usage digital channels.
+- Rationale: Delivers immediate operational value while allowing future expansion to mobile, print, and merch.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

@@ -32,6 +32,11 @@
 ## Overview
 This document provides AI-readable and human-readable instructions for the RainbowSmoke brand typography system. All fonts are hosted via Adobe Fonts (Typekit) across two projects.
 
+## Scope Boundary (Canonical Ownership)
+- This file is the technical and inventory reference for font families, Typekit projects, and implementation metadata.
+- Policy ownership for typography usage, channel scale, and pairing decisions lives in ../visual-system/TYPOGRAPHY_SYSTEM.md.
+- If guidance conflicts, follow ../visual-system/TYPOGRAPHY_SYSTEM.md.
+
 **Adobe Fonts Projects:**
 - **Project ID 1:** `ojc8wen` (15 font families, 34 variations)
 - **Project ID 2:** `gsl6svi` (6 font families, 28 variations) — replaces the retired `xlr7mdi` project

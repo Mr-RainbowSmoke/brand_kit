@@ -20,8 +20,28 @@
   - visual-system/COLOR_SYSTEM.md
   - visual-system/TYPOGRAPHY_SYSTEM.md
   - visual-system/LOGO_AND_ASSET_USAGE.md
+- Expanded visual-system/TYPOGRAPHY_SYSTEM.md with canonical policy boundaries, role-weight matrix, responsive channel scale, and approved pairing matrix.
+- Scoped fonts/FONTS_GUIDE.md as inventory and technical reference.
+- Scoped typography/BrandTypography.md as quick reference companion.
+- Added first concrete component guides:
+  - components/BUTTONS.md
+  - components/FORMS.md
+  - components/CARDS.md
+  - components/STATES.md
+- Added first concrete application playbooks:
+  - applications/WEB.md
+  - applications/SOCIAL.md
+  - applications/VIDEO_STREAM.md
+  - applications/EMAIL.md
+- Added additional component coverage:
+  - components/NAVIGATION.md
+  - components/FEEDBACK.md
+- Added additional application coverage:
+  - applications/MOBILE.md
+  - applications/PRINT.md
+  - applications/MERCH.md
 
 ## Next
-- Convert root README into role-based hub landing page.
-- Add asset index with canonical and duplicate mapping.
-- Begin consolidation of typography and verbal system docs.
+- Validate provisional canonical asset picks and mark active/deprecated variants.
+- Consolidate verbal system details from legacy integrated docs into canonical files.
+- Add practical templates and checklists per application channel.

@@ -1,5 +1,13 @@
 # Brand Typography System
 
+## Status
+This file is a quick reference companion.
+
+Canonical typography policy lives in ../visual-system/TYPOGRAPHY_SYSTEM.md.
+Font inventory and integration details live in ../fonts/FONTS_GUIDE.md.
+
+If guidance differs across files, follow ../visual-system/TYPOGRAPHY_SYSTEM.md.
+
 ## Metadata
 
 ```json
