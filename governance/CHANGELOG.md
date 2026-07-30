@@ -95,8 +95,10 @@
 - Expanded docs-manifest parity coverage to include:
   - Voice trait and avoid-term parity against manifest identity.voice
   - Terminology baseline parity for canonical brand name and RS reference
+- Expanded docs-manifest parity coverage to include:
+  - Tone-matrix required channel-context parity in VOICE_AND_TONE
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Evaluate tone-matrix channel-level parity strategy.
+- Evaluate copy-examples structural parity strategy.

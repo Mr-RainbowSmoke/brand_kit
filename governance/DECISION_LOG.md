@@ -73,6 +73,10 @@
 - Decision: Extend docs-manifest parity checks to include voice trait coverage, avoid-term coverage, and baseline terminology alignment.
 - Rationale: Prevents drift between manifest voice intent and canonical verbal policy docs.
 
+### Decision: Tone-matrix context parity enforcement
+- Decision: Enforce required tone-matrix channel contexts in VOICE_AND_TONE (Social, Website, Campaign, Support, Media/Partner).
+- Rationale: Preserves channel-policy completeness during ongoing documentation refactors.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

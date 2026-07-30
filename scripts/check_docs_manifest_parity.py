@@ -11,6 +11,7 @@ Checks:
 7. foundation/BRAND_OVERVIEW.md core identity signals align to manifest essence.
 8. verbal-system/VOICE_AND_TONE.md covers manifest voice traits and avoid terms.
 9. verbal-system/TERMINOLOGY_STYLE.md includes baseline canonical terminology alignment.
+10. verbal-system/VOICE_AND_TONE.md tone matrix includes required channel contexts.
 
 Exit code is non-zero when violations are found.
 """
@@ -105,6 +106,14 @@ VOICE_AVOID_ALIASES = {
     },
 }
 
+REQUIRED_TONE_CONTEXT_ALIASES = {
+    "social": {"social"},
+    "website": {"website", "web"},
+    "campaign": {"campaign", "marketing", "campaigns"},
+    "support": {"support", "customer support", "creator support"},
+    "media and partner": {"media and partner", "media partner", "media"},
+}
+
 
 def load_manifest() -> dict:
     return json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -184,6 +193,40 @@ def extract_manifest_font_families(manifest: dict) -> set[str]:
         for item in manifest.get("typography", {}).get("fonts", [])
     }
     return {family for family in families if family}
+
+
+def extract_tone_matrix_contexts(markdown_text: str) -> set[str]:
+    lines = markdown_text.splitlines()
+    in_tone_matrix = False
+    contexts: set[str] = set()
+
+    for line in lines:
+        if line.strip() == "## Tone Matrix":
+            in_tone_matrix = True
+            continue
+
+        if in_tone_matrix and line.startswith("## "):
+            break
+
+        if not in_tone_matrix:
+            continue
+
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+
+        if "context" in normalize_text(stripped):
+            continue
+        if re.fullmatch(r"\|[-\s|:]+\|", stripped):
+            continue
+
+        cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+        if not cells or not cells[0]:
+            continue
+
+        contexts.add(normalize_text(cells[0]))
+
+    return contexts
 
 
 def validate_typography_parity(
@@ -290,6 +333,14 @@ def validate_verbal_parity(
             "Missing terminology parity in TERMINOLOGY_STYLE: "
             "approved short icon reference for RS not found"
         )
+
+    tone_contexts = extract_tone_matrix_contexts(voice_and_tone_text)
+    for required_context, allowed_aliases in REQUIRED_TONE_CONTEXT_ALIASES.items():
+        if not any(alias in tone_contexts for alias in allowed_aliases):
+            errors.append(
+                "Missing tone matrix context parity in VOICE_AND_TONE: "
+                f"required context='{required_context}'"
+            )
 
 
 def main() -> int:

@@ -82,6 +82,7 @@ Use this check to keep canonical docs aligned with manifest metadata.
 - Foundation core identity signals remain aligned with manifest identity essence
 - Voice-and-tone coverage remains aligned with manifest voice traits and avoid terms
 - Terminology baseline remains aligned with canonical brand-name and RS reference usage
+- Tone matrix includes required channel contexts (Social, Website, Campaign, Support, Media/Partner)
 
 ### Run
 From repository root:
