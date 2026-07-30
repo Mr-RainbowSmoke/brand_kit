@@ -113,6 +113,9 @@
   - components/FEEDBACK.md
 - Added consolidated CI quality suite workflow with report artifact output:
   - .github/workflows/quality-suite.yml
+- Updated CI trigger policy:
+  - quality-suite.yml remains PR-triggered and is now the primary required PR check
+  - release-manifest-check.yml, docs-link-check.yml, docs-manifest-parity-check.yml, and markdown-style-check.yml are manual-only workflows
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

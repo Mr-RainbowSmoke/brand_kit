@@ -66,7 +66,7 @@ Run before publishing any kit bundle:
 python3 scripts/check_release_manifests.py
 ```
 
-Automated PR gate is enabled via GitHub Actions:
+Manual standalone workflow:
 - [.github/workflows/release-manifest-check.yml](.github/workflows/release-manifest-check.yml)
 
 ## Docs Integrity Validation
@@ -76,7 +76,7 @@ Run to validate local markdown links and heading fragments:
 python3 scripts/check_markdown_links.py
 ```
 
-Automated PR gate is enabled via GitHub Actions:
+Manual standalone workflow:
 - [.github/workflows/docs-link-check.yml](.github/workflows/docs-link-check.yml)
 
 Optional style linting:
@@ -85,7 +85,7 @@ Optional style linting:
 python3 scripts/check_markdown_style.py
 ```
 
-Automated CI check (non-blocking):
+Manual standalone workflow (non-blocking):
 - [.github/workflows/markdown-style-check.yml](.github/workflows/markdown-style-check.yml)
 
 ## Docs-Manifest Parity Validation
@@ -95,7 +95,7 @@ Run to validate key canonical docs against manifest values:
 python3 scripts/check_docs_manifest_parity.py
 ```
 
-Automated PR gate is enabled via GitHub Actions:
+Manual standalone workflow:
 - [.github/workflows/docs-manifest-parity-check.yml](.github/workflows/docs-manifest-parity-check.yml)
 
 ## Consolidated Quality Suite
@@ -108,7 +108,7 @@ python3 scripts/check_docs_manifest_parity.py && \
 python3 scripts/check_markdown_style.py
 ```
 
-Automated CI suite and artifact report:
+Primary required PR check and artifact report:
 - [.github/workflows/quality-suite.yml](.github/workflows/quality-suite.yml)
 
 ## Working Principles

@@ -61,6 +61,9 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../scripts/check_docs_manifest_parity.py
 	- ../.github/workflows/docs-manifest-parity-check.yml
 	- ../.github/workflows/quality-suite.yml
+- CI policy:
+	- quality-suite.yml is the primary required PR check.
+	- standalone workflows are manual-only diagnostic checks.
 
 11. Governance status tracking
 - Canonical sources:

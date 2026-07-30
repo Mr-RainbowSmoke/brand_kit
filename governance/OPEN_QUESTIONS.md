@@ -25,10 +25,10 @@ This document contains current decision items for future planning.
 - Resolved: visual-system/TYPOGRAPHY_SYSTEM.md is policy owner.
 
 2. Release manifest enforcement
-- Resolved: CI PR gate runs manifest validator on pull requests to main.
+- Resolved: Required PR gate now runs via consolidated quality-suite workflow; standalone manifest workflow is manual-only.
 
 3. Docs-manifest parity enforcement
-- Resolved: CI PR gate runs docs-manifest parity validation on pull requests to main.
+- Resolved: Required PR gate now runs via consolidated quality-suite workflow; standalone parity workflow is manual-only.
 
 4. Markdown style lint baseline
-- Resolved: Optional non-blocking style lint CI runs on pull requests to main.
+- Resolved: Optional non-blocking style lint runs inside quality-suite for PRs and as manual standalone workflow.

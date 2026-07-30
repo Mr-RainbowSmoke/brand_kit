@@ -1,8 +1,6 @@
 name: Docs Manifest Parity Check
 
 on:
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 jobs:

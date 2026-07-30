@@ -93,6 +93,10 @@
 - Decision: Add a single CI workflow that runs all validators and publishes a report artifact/summary.
 - Rationale: Improves PR review visibility by centralizing quality status while preserving detailed specialized checks.
 
+### Decision: Consolidated suite as primary PR gate
+- Decision: Keep quality-suite.yml as the required PR-triggered check and demote standalone validator workflows to manual-only.
+- Rationale: Reduces PR status noise while retaining targeted workflows for on-demand diagnostics.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

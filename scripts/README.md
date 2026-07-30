@@ -22,8 +22,8 @@ python3 scripts/check_release_manifests.py
 
 ## CI Integration
 - Workflow file: ../.github/workflows/release-manifest-check.yml
-- Trigger: pull requests to main and manual workflow dispatch
-- Behavior: blocks PR merge checks when manifest validation fails
+- Trigger: manual workflow dispatch
+- Behavior: standalone on-demand manifest check
 
 ## Markdown Docs Integrity Validator
 
@@ -43,8 +43,8 @@ python3 scripts/check_markdown_links.py
 
 ### CI Integration
 - Workflow file: ../.github/workflows/docs-link-check.yml
-- Trigger: pull requests to main and manual workflow dispatch
-- Behavior: blocks PR merge checks when markdown link validation fails
+- Trigger: manual workflow dispatch
+- Behavior: standalone on-demand docs-link check
 
 ## Markdown Style Lint (Optional)
 
@@ -65,7 +65,7 @@ python3 scripts/check_markdown_style.py
 
 ### CI Integration
 - Workflow file: ../.github/workflows/markdown-style-check.yml
-- Trigger: pull requests to main and manual workflow dispatch
+- Trigger: manual workflow dispatch
 - Behavior: informational only (optional, non-blocking)
 
 ## Docs Manifest Parity Validator
@@ -96,8 +96,8 @@ python3 scripts/check_docs_manifest_parity.py
 
 ### CI Integration
 - Workflow file: ../.github/workflows/docs-manifest-parity-check.yml
-- Trigger: pull requests to main and manual workflow dispatch
-- Behavior: blocks PR merge checks when parity validation fails
+- Trigger: manual workflow dispatch
+- Behavior: standalone on-demand parity check
 
 ## Consolidated Quality Suite
 
@@ -112,4 +112,4 @@ Runs all validators in one CI workflow and publishes a summary report artifact.
 ### CI Integration
 - Workflow file: ../.github/workflows/quality-suite.yml
 - Trigger: pull requests to main and manual workflow dispatch
-- Behavior: fails only when required checks fail; uploads quality-suite-report artifact on every run
+- Behavior: primary PR gate; fails only when required checks fail; uploads quality-suite-report artifact on every run
