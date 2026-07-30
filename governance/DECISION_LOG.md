@@ -97,6 +97,10 @@
 - Decision: Keep quality-suite.yml as the required PR-triggered check and demote standalone validator workflows to manual-only.
 - Rationale: Reduces PR status noise while retaining targeted workflows for on-demand diagnostics.
 
+### Decision: Branch-protection runbook governance
+- Decision: Maintain a dedicated branch-protection runbook as the operational source for required-check setup on main.
+- Rationale: Keeps CI gate policy reproducible for maintainers and future repository admins.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits
