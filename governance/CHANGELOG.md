@@ -132,6 +132,7 @@
   - governance/CONTRIBUTOR_ANNOUNCEMENT.md
 - Added publication model recommendation memo to drive decision on private hub vs public docs:
   - governance/PUBLICATION_MODEL_RECOMMENDATION.md
+- Ratified publication model policy as docs-first private operations plus versioned external export kits.
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

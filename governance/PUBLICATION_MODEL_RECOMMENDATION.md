@@ -1,7 +1,7 @@
 # Publication Model Recommendation
 
 Date: 2026-07-29
-Status: Proposed (awaiting maintainer approval)
+Status: Accepted
 Owner: Governance maintainers
 
 ## Decision Summary

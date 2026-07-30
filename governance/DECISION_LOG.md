@@ -101,15 +101,15 @@
 - Decision: Maintain a dedicated branch-protection runbook as the operational source for required-check setup on main.
 - Rationale: Keeps CI gate policy reproducible for maintainers and future repository admins.
 
-## Open Decisions
-1. Public publishing model:
-- Option A: private docs + exported media kits
-- Option B: public docs site from same source
+### Decision: Publication model policy
+- Decision: Keep this repository as a private docs-first operational source of truth and publish external-facing content as versioned export kits.
+- Rationale: Preserves governance quality and operational safety while migration/completeness work remains in progress.
 
-2. Typography overlap resolution:
+## Open Decisions
+1. Typography overlap resolution:
 - Option A: merge BrandTypography into FONTS_GUIDE
 - Option B: keep both with strict scope boundaries
 
-3. Asset duplicate handling strategy:
+2. Asset duplicate handling strategy:
 - Option A: canonical map first, no deletions in v1
 - Option B: selective cleanup after mapping verification
