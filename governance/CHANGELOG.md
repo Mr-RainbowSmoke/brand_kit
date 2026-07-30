@@ -128,6 +128,8 @@
   - markdown-style-check.yml -> success
 - Added collaborator-facing release note summary for CI governance migration:
   - governance/RELEASE_NOTES.md
+- Added contributor announcement pack for PR comments, team chat, and email:
+  - governance/CONTRIBUTOR_ANNOUNCEMENT.md
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

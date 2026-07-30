@@ -73,6 +73,7 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../governance/LEGACY_ARCHIVE_MAP.md
 	- ../governance/BRANCH_PROTECTION_RUNBOOK.md
 	- ../governance/RELEASE_NOTES.md
+	- ../governance/CONTRIBUTOR_ANNOUNCEMENT.md
 
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
