@@ -1,0 +1,47 @@
+# Source Of Truth Map
+
+This file defines canonical ownership per domain to prevent drift.
+
+## Canonical Domains
+1. Brand identity narrative
+- Canonical source: ../foundation/BRAND_OVERVIEW.md
+- Upstream integrated reference: ../brand_page.md
+- Supporting source: ../foundation/README.md
+
+2. Verbal system
+- Canonical source: ../verbal-system/VOICE_AND_TONE.md
+- Upstream integrated reference: ../brand-voice-guidelines.md
+- Supporting source: ../verbal-system/README.md
+
+3. Color system
+- Canonical source: ../visual-system/COLOR_SYSTEM.md
+- Upstream integrated reference: ../colors/COLOR_GUIDE.md
+- Palette files: ../colors/*.md
+
+4. Typography
+- Canonical source: ../visual-system/TYPOGRAPHY_SYSTEM.md
+- Upstream integrated reference: ../fonts/FONTS_GUIDE.md
+- Secondary reference: ../typography/BrandTypography.md
+
+5. Asset metadata
+- Canonical source: ../brand.manifest.json
+
+6. Asset binaries
+- Canonical source: ../assets/
+
+7. Logo and asset usage policy
+- Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
+
+8. Hub navigation and discovery
+- Canonical source: ../README.md
+
+## Governance Rules
+- One canonical source per domain.
+- Non-canonical duplicates must explicitly point to canonical source.
+- Deprecations must be recorded in governance/DECISION_LOG.md.
+- Structural changes must be reflected in governance/CHANGELOG.md.
+
+## Next Implementation Tasks
+1. Mark non-canonical files with explicit references to canonical owners.
+2. Add deprecation notices where overlap exists.
+3. Automate consistency checks between docs and manifest values.
