@@ -77,6 +77,10 @@
 - Decision: Enforce required tone-matrix channel contexts in VOICE_AND_TONE (Social, Website, Campaign, Support, Media/Partner).
 - Rationale: Preserves channel-policy completeness during ongoing documentation refactors.
 
+### Decision: Copy-examples structural parity enforcement
+- Decision: Enforce required channel contexts and minimum example-bullet presence in COPY_EXAMPLES.
+- Rationale: Ensures practical usage examples remain complete across all required verbal channels.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

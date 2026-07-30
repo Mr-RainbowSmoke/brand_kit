@@ -97,8 +97,10 @@
   - Terminology baseline parity for canonical brand name and RS reference
 - Expanded docs-manifest parity coverage to include:
   - Tone-matrix required channel-context parity in VOICE_AND_TONE
+- Expanded docs-manifest parity coverage to include:
+  - COPY_EXAMPLES required channel-context parity and minimum example-bullet presence
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Evaluate copy-examples structural parity strategy.
+- Evaluate application playbook completeness parity strategy.

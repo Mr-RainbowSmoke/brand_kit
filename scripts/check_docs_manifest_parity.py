@@ -12,6 +12,7 @@ Checks:
 8. verbal-system/VOICE_AND_TONE.md covers manifest voice traits and avoid terms.
 9. verbal-system/TERMINOLOGY_STYLE.md includes baseline canonical terminology alignment.
 10. verbal-system/VOICE_AND_TONE.md tone matrix includes required channel contexts.
+11. verbal-system/COPY_EXAMPLES.md includes required channel sections and example bullets.
 
 Exit code is non-zero when violations are found.
 """
@@ -29,6 +30,7 @@ FONTS_GUIDE = ROOT / "fonts" / "FONTS_GUIDE.md"
 BRAND_OVERVIEW = ROOT / "foundation" / "BRAND_OVERVIEW.md"
 VOICE_AND_TONE = ROOT / "verbal-system" / "VOICE_AND_TONE.md"
 TERMINOLOGY_STYLE = ROOT / "verbal-system" / "TERMINOLOGY_STYLE.md"
+COPY_EXAMPLES = ROOT / "verbal-system" / "COPY_EXAMPLES.md"
 
 HEX_RE = re.compile(r"#[0-9A-Fa-f]{6}")
 FENCE_RE = re.compile(r"```json\n(.*?)\n```", re.DOTALL)
@@ -111,7 +113,12 @@ REQUIRED_TONE_CONTEXT_ALIASES = {
     "website": {"website", "web"},
     "campaign": {"campaign", "marketing", "campaigns"},
     "support": {"support", "customer support", "creator support"},
-    "media and partner": {"media and partner", "media partner", "media"},
+    "media and partner": {
+        "media and partner",
+        "partner and media",
+        "media partner",
+        "media",
+    },
 }
 
 
@@ -229,6 +236,29 @@ def extract_tone_matrix_contexts(markdown_text: str) -> set[str]:
     return contexts
 
 
+def extract_copy_example_contexts(markdown_text: str) -> tuple[set[str], dict[str, int]]:
+    contexts: set[str] = set()
+    bullet_counts: dict[str, int] = {}
+    current_context: str | None = None
+
+    for line in markdown_text.splitlines():
+        if line.startswith("## "):
+            heading = normalize_text(line[3:].strip())
+            if heading == "notes":
+                current_context = None
+                continue
+
+            current_context = heading
+            contexts.add(current_context)
+            bullet_counts.setdefault(current_context, 0)
+            continue
+
+        if current_context and line.startswith("- "):
+            bullet_counts[current_context] += 1
+
+    return contexts, bullet_counts
+
+
 def validate_typography_parity(
     manifest: dict, fonts_guide_text: str, errors: list[str]
 ) -> None:
@@ -292,7 +322,11 @@ def validate_identity_parity(manifest: dict, brand_overview_text: str, errors: l
 
 
 def validate_verbal_parity(
-    manifest: dict, voice_and_tone_text: str, terminology_text: str, errors: list[str]
+    manifest: dict,
+    voice_and_tone_text: str,
+    terminology_text: str,
+    copy_examples_text: str,
+    errors: list[str],
 ) -> None:
     voice_doc_normalized = normalize_text(voice_and_tone_text)
     terminology_normalized = normalize_text(terminology_text)
@@ -342,6 +376,25 @@ def validate_verbal_parity(
                 f"required context='{required_context}'"
             )
 
+    copy_contexts, bullet_counts = extract_copy_example_contexts(copy_examples_text)
+    for required_context, allowed_aliases in REQUIRED_TONE_CONTEXT_ALIASES.items():
+        matched_contexts = [
+            context for context in copy_contexts if any(alias in context for alias in allowed_aliases)
+        ]
+
+        if not matched_contexts:
+            errors.append(
+                "Missing copy-examples context parity in COPY_EXAMPLES: "
+                f"required context='{required_context}'"
+            )
+            continue
+
+        if not any(bullet_counts.get(context, 0) > 0 for context in matched_contexts):
+            errors.append(
+                "Copy-examples context has no example bullets in COPY_EXAMPLES: "
+                f"required context='{required_context}'"
+            )
+
 
 def main() -> int:
     errors: list[str] = []
@@ -352,6 +405,7 @@ def main() -> int:
     brand_overview_text = BRAND_OVERVIEW.read_text(encoding="utf-8")
     voice_and_tone_text = VOICE_AND_TONE.read_text(encoding="utf-8")
     terminology_text = TERMINOLOGY_STYLE.read_text(encoding="utf-8")
+    copy_examples_text = COPY_EXAMPLES.read_text(encoding="utf-8")
     metadata = extract_metadata_json(color_guide_text)
 
     manifest_brand_name = str(manifest["brand"]["name"])
@@ -392,7 +446,13 @@ def main() -> int:
 
     validate_typography_parity(manifest, fonts_guide_text, errors)
     validate_identity_parity(manifest, brand_overview_text, errors)
-    validate_verbal_parity(manifest, voice_and_tone_text, terminology_text, errors)
+    validate_verbal_parity(
+        manifest,
+        voice_and_tone_text,
+        terminology_text,
+        copy_examples_text,
+        errors,
+    )
 
     if errors:
         print("Errors:")

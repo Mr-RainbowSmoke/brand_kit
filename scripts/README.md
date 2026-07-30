@@ -83,6 +83,7 @@ Use this check to keep canonical docs aligned with manifest metadata.
 - Voice-and-tone coverage remains aligned with manifest voice traits and avoid terms
 - Terminology baseline remains aligned with canonical brand-name and RS reference usage
 - Tone matrix includes required channel contexts (Social, Website, Campaign, Support, Media/Partner)
+- Copy examples include required channel contexts with at least one example bullet per context
 
 ### Run
 From repository root:
