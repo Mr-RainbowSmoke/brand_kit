@@ -39,6 +39,10 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../asset-library/CREATOR_KIT_MANIFEST.md
 	- ../asset-library/PRESS_KIT_MANIFEST.md
 
+6b. Deprecated asset tracking
+- Canonical source:
+	- ../asset-library/DEPRECATED_VARIANTS_REGISTER.md
+
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
 

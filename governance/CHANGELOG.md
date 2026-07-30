@@ -52,8 +52,18 @@
   - applications/SOCIAL.md
   - applications/VIDEO_STREAM.md
   - applications/EMAIL.md
+- Added practical templates and checklists to remaining channel playbooks:
+  - applications/MOBILE.md
+  - applications/PRINT.md
+  - applications/MERCH.md
+- Added component starter templates/checklists:
+  - components/BUTTONS.md
+  - components/FORMS.md
+  - components/NAVIGATION.md
+- Added non-destructive deprecated variant registry:
+  - asset-library/DEPRECATED_VARIANTS_REGISTER.md
 
 ## Next
-- Add templates/checklists to MOBILE, PRINT, and MERCH playbooks.
-- Add component-level template examples for BUTTONS, FORMS, and NAVIGATION.
-- Begin selective deprecation labeling pass for duplicate asset variants.
+- Add release-bundle lint/check rule to block deprecated variants.
+- Add migration note per deprecated file to canonical target.
+- Continue deep consolidation of remaining legacy integrated docs.

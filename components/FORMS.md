@@ -31,3 +31,16 @@ Define form control behavior and styling guardrails.
 - Labels must be visible and associated with controls.
 - Focus indicator must be visible on every control.
 - Required fields should be explained explicitly.
+
+## Validation Checklist
+- [ ] Every field has a visible label.
+- [ ] Required fields are explicitly marked and explained.
+- [ ] Error state includes text, not color only.
+- [ ] Success state is clearly distinguishable from default.
+- [ ] Keyboard tab order is logical.
+
+## Starter Field Template
+1. Label
+2. Control
+3. Helper text (optional)
+4. Validation message (error/success)

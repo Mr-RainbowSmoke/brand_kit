@@ -37,6 +37,10 @@
 - Decision: Mark canonical assets as Active and duplicate naming variants as Deprecated before any cleanup deletions.
 - Rationale: Preserves safety, traceability, and continuity while reducing accidental use of ambiguous files.
 
+### Decision: Deprecated variant register
+- Decision: Maintain a dedicated non-destructive deprecated register before any archival/move actions.
+- Rationale: Ensures cleanup is auditable and reversible while preserving collaborator trust in asset paths.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

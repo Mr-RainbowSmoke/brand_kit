@@ -76,7 +76,10 @@ Use this table when canonical mapping begins.
 - [CREATOR_KIT_MANIFEST.md](CREATOR_KIT_MANIFEST.md)
 - [PRESS_KIT_MANIFEST.md](PRESS_KIT_MANIFEST.md)
 
+## Deprecated Register
+- [DEPRECATED_VARIANTS_REGISTER.md](DEPRECATED_VARIANTS_REGISTER.md)
+
 ## Next Implementation Tasks
 1. Validate lifecycle decisions with owner review.
 2. Perform non-destructive archival labeling pass for deprecated duplicates.
-3. Add release packaging checklist to each manifest.
+3. Add release-bundle lint/check rule to block deprecated variants.

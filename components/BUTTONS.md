@@ -31,3 +31,20 @@ Define branded button behavior for web and campaign surfaces.
 - Focus state must be obvious and persistent under keyboard navigation.
 - Disabled state must still preserve label readability.
 - Minimum contrast must meet AA.
+
+## State Matrix
+
+| Variant | Required states |
+|---|---|
+| Primary | default, hover, focus, active, disabled, loading |
+| Secondary | default, hover, focus, active, disabled |
+| Ghost | default, hover, focus, active, disabled |
+| Destructive | default, hover, focus, active, disabled |
+
+## Starter CSS Skeleton
+```css
+.btn { font-family: var(--font-ui); border-radius: 999px; }
+.btn:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+.btn--loading { pointer-events: none; }
+```

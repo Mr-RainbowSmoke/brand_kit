@@ -21,3 +21,16 @@ Define navigation patterns that stay branded while remaining easy to scan and op
 ## Accessibility Baseline
 - Keyboard navigation must be supported.
 - Current page or section should be clearly indicated.
+
+## Navigation QA Checklist
+- [ ] Active section is visually distinct.
+- [ ] Focus styles are visible for all nav links.
+- [ ] Mobile menu remains readable and easy to dismiss.
+- [ ] Labels are concise and consistent with terminology rules.
+- [ ] No decorative display fonts in persistent nav.
+
+## Starter Structure
+1. Brand zone (mark + home path)
+2. Primary links
+3. Context links or utility actions
+4. Mobile collapse/expand behavior

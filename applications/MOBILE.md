@@ -19,3 +19,17 @@ Apply brand rules to mobile-first interfaces and app surfaces.
 ## Accessibility Baseline
 - Touch targets should be comfortably tappable.
 - Focus and active states should remain visible.
+
+## Mobile QA Checklist
+- [ ] Core actions are reachable without excessive scrolling.
+- [ ] Typography follows mobile scale guidance in ../visual-system/TYPOGRAPHY_SYSTEM.md.
+- [ ] Primary and secondary actions are visually distinct.
+- [ ] Touch targets are comfortably tappable.
+- [ ] Canonical assets are used (no deprecated variants).
+- [ ] Contrast meets AA minimum.
+
+## Starter Screen Template
+1. Header zone: clear title and one contextual action.
+2. Primary content zone: key creator/community value.
+3. Action zone: one primary CTA and one optional secondary action.
+4. Support zone: concise helper copy or status message.
