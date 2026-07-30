@@ -43,6 +43,11 @@ This file defines canonical ownership per domain to prevent drift.
 - Canonical source:
 	- ../asset-library/DEPRECATED_VARIANTS_REGISTER.md
 
+6c. Asset release validation tooling
+- Canonical sources:
+	- ../scripts/check_release_manifests.py
+	- ../scripts/README.md
+
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
 

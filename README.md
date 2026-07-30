@@ -59,6 +59,13 @@ Docs-first brand system for RAINBOWSMOKE. This repository now serves as the cent
 - [asset-library/CREATOR_KIT_MANIFEST.md](asset-library/CREATOR_KIT_MANIFEST.md)
 - [asset-library/PRESS_KIT_MANIFEST.md](asset-library/PRESS_KIT_MANIFEST.md)
 
+## Release Validation
+Run before publishing any kit bundle:
+
+```bash
+python3 scripts/check_release_manifests.py
+```
+
 ## Working Principles
 
 1. One canonical source per domain.

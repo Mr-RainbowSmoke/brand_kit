@@ -79,7 +79,11 @@ Use this table when canonical mapping begins.
 ## Deprecated Register
 - [DEPRECATED_VARIANTS_REGISTER.md](DEPRECATED_VARIANTS_REGISTER.md)
 
+## Release Validation
+- Script: ../scripts/check_release_manifests.py
+- Usage: python3 ../scripts/check_release_manifests.py
+
 ## Next Implementation Tasks
 1. Validate lifecycle decisions with owner review.
 2. Perform non-destructive archival labeling pass for deprecated duplicates.
-3. Add release-bundle lint/check rule to block deprecated variants.
+3. Keep release-bundle check passing before distribution.

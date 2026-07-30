@@ -41,6 +41,10 @@
 - Decision: Maintain a dedicated non-destructive deprecated register before any archival/move actions.
 - Rationale: Ensures cleanup is auditable and reversible while preserving collaborator trust in asset paths.
 
+### Decision: Release manifest hardening gate
+- Decision: Add a local validation script that blocks manifest references to deprecated or missing assets.
+- Rationale: Prevents accidental distribution drift and makes release packaging deterministic.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

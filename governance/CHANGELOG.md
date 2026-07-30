@@ -62,8 +62,13 @@
   - components/NAVIGATION.md
 - Added non-destructive deprecated variant registry:
   - asset-library/DEPRECATED_VARIANTS_REGISTER.md
+- Added automated release manifest validator:
+  - scripts/check_release_manifests.py
+  - scripts/README.md
+- Added deprecated-to-canonical migration map in:
+  - asset-library/DEPRECATED_VARIANTS_REGISTER.md
 
 ## Next
-- Add release-bundle lint/check rule to block deprecated variants.
-- Add migration note per deprecated file to canonical target.
+- Add optional CI hook to run scripts/check_release_manifests.py on pull requests.
 - Continue deep consolidation of remaining legacy integrated docs.
+- Add archive labels/comments to deprecated files in future cleanup pass.
