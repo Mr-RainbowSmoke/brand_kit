@@ -72,6 +72,7 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../governance/SOURCE_CONFIDENCE.md
 	- ../governance/LEGACY_ARCHIVE_MAP.md
 	- ../governance/BRANCH_PROTECTION_RUNBOOK.md
+	- ../governance/RELEASE_NOTES.md
 
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
@@ -106,5 +107,5 @@ This file defines canonical ownership per domain to prevent drift.
 
 ## Next Implementation Tasks
 1. Continue canonical extraction from any remaining legacy mixed-content sections.
-2. Review application/component completeness warnings and remediate weak sections.
-3. Decide whether optional markdown style linting should become blocking.
+2. Decide whether optional markdown style linting should become blocking.
+3. Define publication model for this hub (private docs plus export vs public docs site).

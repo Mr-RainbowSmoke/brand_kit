@@ -119,6 +119,15 @@
 - Added CI policy snapshot and quality-suite badge to README for contributor-facing required-vs-manual clarity.
 - Added governance branch-protection runbook for required-check policy execution:
   - governance/BRANCH_PROTECTION_RUNBOOK.md
+- Applied branch protection policy on main to require only:
+  - Validate quality suite (from .github/workflows/quality-suite.yml)
+- Completed manual standalone workflow smoke tests (workflow_dispatch):
+  - release-manifest-check.yml -> success
+  - docs-link-check.yml -> success
+  - docs-manifest-parity-check.yml -> success
+  - markdown-style-check.yml -> success
+- Added collaborator-facing release note summary for CI governance migration:
+  - governance/RELEASE_NOTES.md
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

@@ -32,3 +32,9 @@ This document contains current decision items for future planning.
 
 4. Markdown style lint baseline
 - Resolved: Optional non-blocking style lint runs inside quality-suite for PRs and as manual standalone workflow.
+
+5. Branch protection required-check policy
+- Resolved: main now requires only Validate quality suite; standalone checks are manual-only.
+
+6. Standalone workflow operability after demotion
+- Resolved: Manual workflow_dispatch smoke tests passed for all standalone validator workflows.
