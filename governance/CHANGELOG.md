@@ -130,6 +130,8 @@
   - governance/RELEASE_NOTES.md
 - Added contributor announcement pack for PR comments, team chat, and email:
   - governance/CONTRIBUTOR_ANNOUNCEMENT.md
+- Added publication model recommendation memo to drive decision on private hub vs public docs:
+  - governance/PUBLICATION_MODEL_RECOMMENDATION.md
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

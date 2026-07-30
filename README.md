@@ -24,7 +24,7 @@ Docs-first brand system for RAINBOWSMOKE. This repository now serves as the cent
 - Components: [components/README.md](components/README.md)
 - Applications: [applications/README.md](applications/README.md)
 - Asset Library: [asset-library/ASSET_INDEX.md](asset-library/ASSET_INDEX.md)
-- Governance: [governance/SOURCE_OF_TRUTH.md](governance/SOURCE_OF_TRUTH.md), [governance/CHANGELOG.md](governance/CHANGELOG.md), [governance/DECISION_LOG.md](governance/DECISION_LOG.md), [governance/RELEASE_NOTES.md](governance/RELEASE_NOTES.md), [governance/CONTRIBUTOR_ANNOUNCEMENT.md](governance/CONTRIBUTOR_ANNOUNCEMENT.md), [governance/DATA_GAPS.md](governance/DATA_GAPS.md), [governance/OPEN_QUESTIONS.md](governance/OPEN_QUESTIONS.md), [governance/SOURCE_CONFIDENCE.md](governance/SOURCE_CONFIDENCE.md)
+- Governance: [governance/SOURCE_OF_TRUTH.md](governance/SOURCE_OF_TRUTH.md), [governance/CHANGELOG.md](governance/CHANGELOG.md), [governance/DECISION_LOG.md](governance/DECISION_LOG.md), [governance/RELEASE_NOTES.md](governance/RELEASE_NOTES.md), [governance/CONTRIBUTOR_ANNOUNCEMENT.md](governance/CONTRIBUTOR_ANNOUNCEMENT.md), [governance/PUBLICATION_MODEL_RECOMMENDATION.md](governance/PUBLICATION_MODEL_RECOMMENDATION.md), [governance/DATA_GAPS.md](governance/DATA_GAPS.md), [governance/OPEN_QUESTIONS.md](governance/OPEN_QUESTIONS.md), [governance/SOURCE_CONFIDENCE.md](governance/SOURCE_CONFIDENCE.md)
 
 ## Canonical Brand Sources (Current)
 

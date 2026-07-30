@@ -6,6 +6,7 @@ This document contains current decision items for future planning.
 
 1. Public publishing model
 - Should the hub remain docs-first private with exported kits, or also publish a public docs site directly from this repo?
+- Recommendation prepared: governance/PUBLICATION_MODEL_RECOMMENDATION.md (pending approval)
 
 2. Legacy file retention strategy
 - Should long integrated legacy docs remain intact as reference artifacts, or be replaced with concise pointers after full migration?
