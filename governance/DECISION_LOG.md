@@ -65,6 +65,10 @@
 - Decision: Run docs-to-manifest parity validation on pull requests to main.
 - Rationale: Prevents silent divergence between canonical color documentation and manifest source-of-truth values.
 
+### Decision: Expanded parity coverage scope
+- Decision: Enforce parity coverage for color, typography metadata, core typography family presence, and foundation identity essence signals.
+- Rationale: Keeps cross-domain canonical docs synchronized with source metadata while migration continues.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

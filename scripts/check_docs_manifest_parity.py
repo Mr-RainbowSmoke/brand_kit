@@ -5,6 +5,10 @@ Checks:
 1. colors/COLOR_GUIDE.md metadata source SHA matches brand.manifest.json.
 2. colors/COLOR_GUIDE.md metadata brand name matches manifest brand name.
 3. Palette hex values in COLOR_GUIDE match manifest theme values.
+4. fonts/FONTS_GUIDE.md metadata brand name matches manifest brand name.
+5. fonts/FONTS_GUIDE.md Typekit project IDs match declared integration links.
+6. Manifest typography includes required core families used by canonical docs.
+7. foundation/BRAND_OVERVIEW.md core identity signals align to manifest essence.
 
 Exit code is non-zero when violations are found.
 """
@@ -18,6 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "brand.manifest.json"
 COLOR_GUIDE = ROOT / "colors" / "COLOR_GUIDE.md"
+FONTS_GUIDE = ROOT / "fonts" / "FONTS_GUIDE.md"
+BRAND_OVERVIEW = ROOT / "foundation" / "BRAND_OVERVIEW.md"
 
 HEX_RE = re.compile(r"#[0-9A-Fa-f]{6}")
 FENCE_RE = re.compile(r"```json\n(.*?)\n```", re.DOTALL)
@@ -30,6 +36,35 @@ PALETTE_MAP = {
     "cotton candy": "Cotton Candy",
 }
 
+REQUIRED_FONT_FAMILY_FRAGMENTS = [
+    "transat",
+    "le havre rounded",
+    "omnes",
+    "chennai",
+    "rig solid",
+    "elliotts",
+    "sketchnote text",
+]
+
+IDENTITY_SIGNAL_ALIASES = {
+    "identity in motion": {
+        "identity in motion",
+    },
+    "spectrum first color": {
+        "spectrum first color",
+        "spectrum forward color",
+    },
+    "digital native presence": {
+        "digital native presence",
+        "digital native aesthetic",
+    },
+    "high contrast dark mode friendly": {
+        "high contrast dark mode friendly",
+        "high contrast dark friendly presentation",
+        "high contrast and dark friendly presentation",
+    },
+}
+
 
 def load_manifest() -> dict:
     return json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -40,6 +75,14 @@ def extract_metadata_json(markdown_text: str) -> dict:
     if not match:
         raise ValueError("Unable to locate metadata JSON block in COLOR_GUIDE.md")
     return json.loads(match.group(1))
+
+
+def normalize_text(value: str) -> str:
+    normalized = value.lower().strip()
+    normalized = normalized.replace("-", " ")
+    normalized = normalized.replace(",", " ")
+    normalized = re.sub(r"\s+", " ", normalized)
+    return normalized
 
 
 def extract_palette_hexes(markdown_text: str) -> dict[str, list[str]]:
@@ -73,11 +116,102 @@ def extract_manifest_palette_hexes(manifest: dict) -> dict[str, list[str]]:
     return result
 
 
+def extract_core_identity_signals(markdown_text: str) -> list[str]:
+    lines = markdown_text.splitlines()
+    in_section = False
+    signals: list[str] = []
+
+    for line in lines:
+        if line.startswith("## "):
+            if line.strip() == "## Core Identity Signals":
+                in_section = True
+                continue
+            if in_section:
+                break
+
+        if in_section and line.startswith("- "):
+            signals.append(line[2:].strip())
+
+    return signals
+
+
+def extract_manifest_font_families(manifest: dict) -> set[str]:
+    families = {
+        normalize_text(str(item.get("family", "")))
+        for item in manifest.get("typography", {}).get("fonts", [])
+    }
+    return {family for family in families if family}
+
+
+def validate_typography_parity(
+    manifest: dict, fonts_guide_text: str, errors: list[str]
+) -> None:
+    metadata = extract_metadata_json(fonts_guide_text)
+
+    manifest_brand_name = str(manifest["brand"]["name"])
+    guide_brand_name = str(metadata.get("brand", ""))
+    if guide_brand_name.upper() != manifest_brand_name.upper():
+        errors.append(
+            "Brand name mismatch: "
+            f"FONTS_GUIDE has '{guide_brand_name}' but manifest has '{manifest_brand_name}'"
+        )
+
+    projects = metadata.get("adobe_fonts_projects", [])
+    links = metadata.get("integration", {}).get("typekit_links", [])
+
+    declared_project_ids = {
+        str(project.get("project_id", "")).strip()
+        for project in projects
+        if str(project.get("project_id", "")).strip()
+    }
+    linked_project_ids = {
+        link.rsplit("/", 1)[-1].replace(".css", "").strip()
+        for link in links
+        if isinstance(link, str) and link.strip()
+    }
+
+    if declared_project_ids != linked_project_ids:
+        errors.append(
+            "Typekit project mismatch: "
+            f"declared={sorted(declared_project_ids)} links={sorted(linked_project_ids)}"
+        )
+
+    manifest_families = extract_manifest_font_families(manifest)
+    for family_fragment in REQUIRED_FONT_FAMILY_FRAGMENTS:
+        if not any(family_fragment in family for family in manifest_families):
+            errors.append(
+                "Missing required typography family fragment in manifest: "
+                f"'{family_fragment}'"
+            )
+
+
+def validate_identity_parity(manifest: dict, brand_overview_text: str, errors: list[str]) -> None:
+    doc_signals = {
+        normalize_text(signal) for signal in extract_core_identity_signals(brand_overview_text)
+    }
+    manifest_signals = [
+        normalize_text(signal)
+        for signal in manifest.get("identity", {}).get("essence", [])
+    ]
+
+    for manifest_signal in manifest_signals:
+        allowed_doc_signals = IDENTITY_SIGNAL_ALIASES.get(
+            manifest_signal, {manifest_signal}
+        )
+        if not any(candidate in doc_signals for candidate in allowed_doc_signals):
+            errors.append(
+                "Missing identity signal parity in BRAND_OVERVIEW: "
+                f"manifest='{manifest_signal}'"
+            )
+
+
 def main() -> int:
     errors: list[str] = []
 
     manifest = load_manifest()
     color_guide_text = COLOR_GUIDE.read_text(encoding="utf-8")
+    fonts_guide_text = FONTS_GUIDE.read_text(encoding="utf-8")
+    brand_overview_text = BRAND_OVERVIEW.read_text(encoding="utf-8")
     metadata = extract_metadata_json(color_guide_text)
 
     manifest_brand_name = str(manifest["brand"]["name"])
@@ -115,6 +249,9 @@ def main() -> int:
                 "Palette mismatch for "
                 f"{guide_name}: COLOR_GUIDE={guide_hexes} manifest={manifest_hexes}"
             )
+
+    validate_typography_parity(manifest, fonts_guide_text, errors)
+    validate_identity_parity(manifest, brand_overview_text, errors)
 
     if errors:
         print("Errors:")

@@ -101,5 +101,5 @@ This file defines canonical ownership per domain to prevent drift.
 
 ## Next Implementation Tasks
 1. Continue canonical extraction from any remaining legacy mixed-content sections.
-2. Expand docs-to-manifest parity checks to typography and identity traits.
+2. Expand docs-to-manifest parity checks to verbal trait signals and channel-level terminology.
 3. Decide whether optional markdown style linting should become blocking.

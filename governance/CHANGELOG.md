@@ -88,8 +88,12 @@
   - scripts/check_docs_manifest_parity.py
   - .github/workflows/docs-manifest-parity-check.yml
 - Updated colors/COLOR_GUIDE.md metadata to match latest manifest source SHA.
+- Expanded docs-manifest parity coverage to include:
+  - Fonts guide metadata and Typekit project-link consistency
+  - Required core typography family-group presence in manifest
+  - Foundation core identity-signal parity against manifest essence
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Expand docs-manifest parity coverage beyond color system.
+- Expand docs-manifest parity coverage to verbal trait and terminology signals.

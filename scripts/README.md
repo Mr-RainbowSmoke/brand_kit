@@ -76,6 +76,10 @@ Use this check to keep canonical docs aligned with manifest metadata.
 - Color guide master-source SHA matches manifest SHA
 - Color guide brand name matches manifest brand name
 - Key palette hex sequences in COLOR_GUIDE match manifest themes
+- Fonts guide brand metadata matches manifest brand metadata
+- Fonts guide Typekit project IDs match declared integration links
+- Manifest includes required core typography family groups referenced by canonical docs
+- Foundation core identity signals remain aligned with manifest identity essence
 
 ### Run
 From repository root:
