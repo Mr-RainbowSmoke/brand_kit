@@ -28,8 +28,8 @@ Docs-first brand system for RAINBOWSMOKE. This repository now serves as the cent
 
 ## Canonical Brand Sources (Current)
 
-- Brand narrative and integrated reference: [brand_page.md](brand_page.md)
-- Voice and tone source: [brand-voice-guidelines.md](brand-voice-guidelines.md)
+- Brand narrative source: [foundation/BRAND_OVERVIEW.md](foundation/BRAND_OVERVIEW.md)
+- Voice and tone source: [verbal-system/VOICE_AND_TONE.md](verbal-system/VOICE_AND_TONE.md)
 - Color source: [colors/COLOR_GUIDE.md](colors/COLOR_GUIDE.md)
 - Typography source: [fonts/FONTS_GUIDE.md](fonts/FONTS_GUIDE.md)
 - Asset metadata source: [brand.manifest.json](brand.manifest.json)
@@ -69,6 +69,35 @@ python3 scripts/check_release_manifests.py
 Automated PR gate is enabled via GitHub Actions:
 - [.github/workflows/release-manifest-check.yml](.github/workflows/release-manifest-check.yml)
 
+## Docs Integrity Validation
+Run to validate local markdown links and heading fragments:
+
+```bash
+python3 scripts/check_markdown_links.py
+```
+
+Automated PR gate is enabled via GitHub Actions:
+- [.github/workflows/docs-link-check.yml](.github/workflows/docs-link-check.yml)
+
+Optional style linting:
+
+```bash
+python3 scripts/check_markdown_style.py
+```
+
+Automated CI check (non-blocking):
+- [.github/workflows/markdown-style-check.yml](.github/workflows/markdown-style-check.yml)
+
+## Docs-Manifest Parity Validation
+Run to validate key canonical docs against manifest values:
+
+```bash
+python3 scripts/check_docs_manifest_parity.py
+```
+
+Automated PR gate is enabled via GitHub Actions:
+- [.github/workflows/docs-manifest-parity-check.yml](.github/workflows/docs-manifest-parity-check.yml)
+
 ## Working Principles
 
 1. One canonical source per domain.
@@ -80,6 +109,8 @@ Automated PR gate is enabled via GitHub Actions:
 
 Legacy files remain available while migration is in progress:
 - [brand.html](brand.html)
+- [brand_page.md](brand_page.md)
+- [brand-voice-guidelines.md](brand-voice-guidelines.md)
 - [typography/BrandTypography.md](typography/BrandTypography.md)
 - [colors/](colors/)
 - [fonts/](fonts/)

@@ -14,7 +14,10 @@ This document contains current decision items for future planning.
 - When should deprecated variants move from tracked to archived status, and what retention period is required?
 
 4. Additional CI guardrails
-- Which additional checks should become required on PRs (markdown links, docs consistency, manifest-doc parity)?
+- Which additional checks should become required on PRs beyond current manifest, markdown-link, and docs-manifest parity checks (style linting, deeper docs consistency)?
+
+5. Tone matrix validation depth
+- Should we keep current tone-by-context guidance as-is, or run a dedicated content review cycle to upgrade confidence from Medium to High?
 
 ## Recently Resolved
 
@@ -23,3 +26,9 @@ This document contains current decision items for future planning.
 
 2. Release manifest enforcement
 - Resolved: CI PR gate runs manifest validator on pull requests to main.
+
+3. Docs-manifest parity enforcement
+- Resolved: CI PR gate runs docs-manifest parity validation on pull requests to main.
+
+4. Markdown style lint baseline
+- Resolved: Optional non-blocking style lint CI runs on pull requests to main.

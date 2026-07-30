@@ -49,11 +49,24 @@ This file defines canonical ownership per domain to prevent drift.
 	- ../scripts/README.md
 	- ../.github/workflows/release-manifest-check.yml
 
+6d. Documentation integrity tooling
+- Canonical sources:
+	- ../scripts/check_markdown_links.py
+	- ../.github/workflows/docs-link-check.yml
+
+6e. Documentation quality and parity tooling
+- Canonical sources:
+	- ../scripts/check_markdown_style.py
+	- ../.github/workflows/markdown-style-check.yml
+	- ../scripts/check_docs_manifest_parity.py
+	- ../.github/workflows/docs-manifest-parity-check.yml
+
 11. Governance status tracking
 - Canonical sources:
 	- ../governance/DATA_GAPS.md
 	- ../governance/OPEN_QUESTIONS.md
 	- ../governance/SOURCE_CONFIDENCE.md
+	- ../governance/LEGACY_ARCHIVE_MAP.md
 
 7. Logo and asset usage policy
 - Canonical source: ../visual-system/LOGO_AND_ASSET_USAGE.md
@@ -88,5 +101,5 @@ This file defines canonical ownership per domain to prevent drift.
 
 ## Next Implementation Tasks
 1. Continue canonical extraction from any remaining legacy mixed-content sections.
-2. Add docs integrity CI check for internal markdown links.
-3. Automate consistency checks between docs and manifest values.
+2. Expand docs-to-manifest parity checks to typography and identity traits.
+3. Decide whether optional markdown style linting should become blocking.

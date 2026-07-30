@@ -4,15 +4,15 @@
 
 ```json
 {
-  "brand": "RainbowSmoke",
+  "brand": "RAINBOWSMOKE",
   "category": "Color System",
   "purpose": "AI-readable and human-readable instructions for the RainbowSmoke brand color palettes",
   "last_updated": "2026-07-29",
   "master_source": {
     "type": "adobe-cclibs",
     "file": "RAINBOWSMOKE.cclibs",
-    "sha256": "9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803",
-    "confirmed": "2026-01-17"
+    "sha256": "67b45ed492de2d94a8e1ba632799175c6171cb66c8fd2f2ab18c863039ef9f14",
+    "confirmed": "2026-07-29"
   },
   "palettes": [
     {"name": "pride", "colors": 6, "file": "pride.md", "role": "primary"},
@@ -25,7 +25,7 @@
 ```
 
 ## Overview
-This document provides AI-readable and human-readable instructions for the RainbowSmoke brand color palettes. `RAINBOWSMOKE.cclibs` (Adobe CC Library) is the confirmed master source of truth for all hex values — this file and its sibling palette files are kept in sync with it. See `../brand.manifest.json` and `../brand-voice-guidelines.md` for full provenance.
+This document provides AI-readable and human-readable instructions for the RainbowSmoke brand color palettes. `RAINBOWSMOKE.cclibs` (Adobe CC Library) is the confirmed master source of truth for all hex values — this file and its sibling palette files are kept in sync with it. See `../brand.manifest.json` and `../governance/SOURCE_CONFIDENCE.md` for full provenance.
 
 ---
 

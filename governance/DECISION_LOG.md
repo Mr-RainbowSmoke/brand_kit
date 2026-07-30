@@ -53,6 +53,18 @@
 - Decision: Keep brand_page.md and brand-voice-guidelines.md as historical integrated references with explicit canonical pointers.
 - Rationale: Preserves provenance while preventing policy drift across duplicate documentation surfaces.
 
+### Decision: PR enforcement for markdown docs integrity
+- Decision: Run local markdown link and heading-fragment validation on pull requests to main.
+- Rationale: Prevents navigation drift and broken internal references across the Brand Guide Hub.
+
+### Decision: Optional markdown style linting
+- Decision: Run markdown style linting on PRs as non-blocking quality telemetry.
+- Rationale: Improves authoring consistency without interrupting active migration work.
+
+### Decision: PR enforcement for docs-manifest parity
+- Decision: Run docs-to-manifest parity validation on pull requests to main.
+- Rationale: Prevents silent divergence between canonical color documentation and manifest source-of-truth values.
+
 ## Open Decisions
 1. Public publishing model:
 - Option A: private docs + exported media kits

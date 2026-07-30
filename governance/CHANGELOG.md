@@ -76,8 +76,20 @@
   - brand-voice-guidelines.md
 - Added deprecated-to-canonical migration map in:
   - asset-library/DEPRECATED_VARIANTS_REGISTER.md
+- Added markdown docs-integrity validation tooling:
+  - scripts/check_markdown_links.py
+  - .github/workflows/docs-link-check.yml
+- Added canonical legacy archival mapping:
+  - governance/LEGACY_ARCHIVE_MAP.md
+- Added optional markdown style lint tooling:
+  - scripts/check_markdown_style.py
+  - .github/workflows/markdown-style-check.yml
+- Added docs-manifest parity tooling:
+  - scripts/check_docs_manifest_parity.py
+  - .github/workflows/docs-manifest-parity-check.yml
+- Updated colors/COLOR_GUIDE.md metadata to match latest manifest source SHA.
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
-- Add docs integrity CI check for internal markdown links.
+- Expand docs-manifest parity coverage beyond color system.
