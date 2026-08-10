@@ -14,10 +14,10 @@ This document tracks known brand-system gaps that require follow-up decisions or
 - Remaining action: configure RCLONE_CONFIG secret per governance/BRANCH_PROTECTION_RUNBOOK.md, then trigger first sync via workflow_dispatch
 
 2. Legacy shipped asset color alignment
-- Status: Open
-- Description: Previously shipped assets and website builds may still reflect older palette snapshots.
-- Impact: Cross-channel color inconsistency risk.
-- Next action: Decide reissue strategy and phase plan for updates.
+- Status: Partially complete
+- Description: In-repo deprecated variants archived to assets/archive/ on 2026-08-10. External surfaces (website builds, previously shipped kits) require a separate reissue phase plan — decisions pending from business owner.
+- Impact: In-repo assets are now clean. External surfaces may still reflect older palette snapshots.
+- Next action: Await business owner decisions on reissue scope and surface priority, then create phase plan.
 
 3. Deep legacy narrative consolidation
 - Status: Closed
