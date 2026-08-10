@@ -136,6 +136,7 @@
 - Added min font-size/spacing tables and motion timing guidance to ACCESSIBILITY_BASELINE.md.
 - Added .github/workflows/sync-external-mirrors.yml: rclone-based sync to SharePoint, Google Drive, and Dropbox on push to main.
 - Archived 23 deprecated asset variants from assets/ to assets/archive/ per archival timing policy; deletion eligibility 2027-08-10.
+- Defined legacy shipped asset reissue phase plan in DATA_GAPS.md: 5-phase approach covering web, social, press kits, PDF legacy, and physical merch.
 - Updated DEPRECATED_VARIANTS_REGISTER.md to reflect archived status.
 - Added credential setup instructions for mirror sync to governance/BRANCH_PROTECTION_RUNBOOK.md.
 - Upgraded tone-by-context confidence from Medium to High in SOURCE_CONFIDENCE.md after 2026-08-10 review.

@@ -109,6 +109,10 @@
 - Decision: Deprecated variants move from Deprecated to Archived status after 2 consecutive release cycles in which they appear in no active manifests. Archival means moving the file to assets/archive/ (not deletion). Archived assets are eligible for permanent deletion after 12 months from archive date with explicit maintainer sign-off.
 - Rationale: Provides a safe, reversible cleanup path while protecting against accidental removal of assets that may still be referenced externally.
 
+### Decision: Legacy shipped asset reissue strategy
+- Decision: Address externally shipped assets in 5 phases: (1) High-urgency web and social profile palette updates, (2) press/media kit reissue via hub manifests, (3) discovery audit of unknown touchpoints, (4) legacy PDFs acknowledged as non-actionable, (5) physical/merch addressed at next production run only.
+- Rationale: Prioritizes highest-visibility public-facing surfaces while avoiding impractical recalls of physical items and static legacy documents.
+
 ### Decision: Publication model policy
 - Decision: Keep this repository as a private docs-first operational source of truth and publish external-facing content as versioned export kits.
 - Rationale: Preserves governance quality and operational safety while migration/completeness work remains in progress.
