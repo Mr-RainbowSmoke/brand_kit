@@ -15,7 +15,7 @@ If guidance differs across files, follow ../visual-system/TYPOGRAPHY_SYSTEM.md.
   "brand": "RAINBOWSMOKE",
   "category": "Typography",
   "purpose": "Define brand typography hierarchy and usage rules to ensure consistency and prevent font sprawl",
-  "last_updated": "2026-07-29"
+  "last_updated": "2026-08-10"
 }
 ```
 
@@ -114,10 +114,11 @@ This document defines RAINBOWSMOKE's typography system. It clarifies which fonts
 {
   "name": "Elliott's Collection",
   "role": "statement",
-  "allowed_variants": ["Blue Eyeshadow", "Jigsaw Dropshadow"],
+  "allowed_variants": ["Jigsaw Dropshadow"],
   "usage": ["one_off_moments", "art_drops", "social_headers"],
   "rule": "If you use Elliott's, everything else goes quiet.",
-  "restrictions": "Maximum one instance per design"
+  "restrictions": "Maximum one instance per design",
+  "note": "Blue Eyeshadow retired from Adobe Fonts 2026-01-07 — removed from allowed_variants. See ../fonts/ojc8wen.md Retired Families."
 }
 ```
 
@@ -160,14 +161,6 @@ This document defines RAINBOWSMOKE's typography system. It clarifies which fonts
 {
   "restricted_fonts": [
     {
-      "name": "Kegger Collegiate",
-      "restriction": "sports_or_retro_only"
-    },
-    {
-      "name": "Kegger US",
-      "restriction": "sports_or_retro_only"
-    },
-    {
       "name": "Backstroke",
       "restriction": "athletic_graphics_only"
     },
@@ -180,9 +173,23 @@ This document defines RAINBOWSMOKE's typography system. It clarifies which fonts
       "restriction": "decorative_headings_not_body_text"
     }
   ],
+  "retired_fonts": [
+    {
+      "name": "Kegger Collegiate",
+      "note": "Retired from Adobe Fonts 2026-01-07 — no longer served by either Typekit kit, no .cclibs presence. Do not use; use Backstroke instead."
+    },
+    {
+      "name": "Kegger US",
+      "note": "Retired from Adobe Fonts 2026-01-07 — no longer served by either Typekit kit, no .cclibs presence. Do not use; use Backstroke instead."
+    }
+  ],
   "rule": "If a font draws attention to itself, it must earn that attention."
 }
 ```
+
+## New / Unassigned Fonts (Pending Brand Role Decision)
+
+Five variable font families were added to the `gsl6svi` Adobe Fonts project on 2026-01-07: Xanti Typewriter Variable, Aglet Mono Variable, BioRhyme Variable, Grandstander Variable, and Scatterplot VF. None has an assigned brand role yet — see ../fonts/FONTS_GUIDE.md (Tier 6) for full detail and ../governance/OPEN_QUESTIONS.md for the open decision.
 
 ## Approved Font Pairings
 

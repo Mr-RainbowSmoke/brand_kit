@@ -4,7 +4,10 @@ This document contains current decision items for future planning.
 
 ## Active Questions
 
-_All active questions resolved. See Recently Resolved below._
+1. Brand role assignment for the 5 new gsl6svi fonts
+- Question: `gsl6svi` (Adobe Fonts) was repurposed on 2026-01-07 to host 5 new variable font families — Xanti Typewriter Variable, Aglet Mono Variable, BioRhyme Variable, Grandstander Variable, Scatterplot VF — confirmed present in `RAINBOWSMOKE.cclibs` and documented in fonts/gsl6svi.md and fonts/FONTS_GUIDE.md (Tier 6). None has been assigned a role (body/headline/display/accent) in visual-system/TYPOGRAPHY_SYSTEM.md.
+- Needed: Brand owner decision on whether/how to fold these into the typography hierarchy, or to leave them unassigned.
+- Discovered: 2026-08-10, during `.cclibs` + live Typekit kit reconciliation.
 
 ## Recently Resolved
 

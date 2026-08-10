@@ -95,5 +95,11 @@ Values below are baseline recommendations and can be tuned per layout while pres
 - Adobe Typekit project details and links are documented in ../fonts/FONTS_GUIDE.md.
 - Fallback behavior should remain consistent across web and static design contexts.
 
+## Retired Fonts
+Kegger Collegiate, Kegger US, and Elliott's Blue Eyeshadow were retired from Adobe Fonts on 2026-01-07 and are no longer served by either Typekit project. Do not use them in new work. For sports/athletic contexts, use Backstroke. Full detail in ../fonts/ojc8wen.md's Retired Families section.
+
+## Pending Role Assignment
+Five variable font families were added to the `gsl6svi` Adobe Fonts project on 2026-01-07 (Xanti Typewriter Variable, Aglet Mono Variable, BioRhyme Variable, Grandstander Variable, Scatterplot VF) and are documented in ../fonts/FONTS_GUIDE.md (Tier 6) and ../fonts/gsl6svi.md. None has been assigned a role in the hierarchy above yet — treat as available-but-undecided until this section is updated with a ratified placement. Open item tracked in ../governance/OPEN_QUESTIONS.md.
+
 ## Maintenance Rule
 Any typography policy change must be applied here first, then reflected in supporting references.

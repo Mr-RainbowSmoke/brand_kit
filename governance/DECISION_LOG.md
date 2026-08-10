@@ -117,6 +117,10 @@
 - Decision: Keep this repository as a private docs-first operational source of truth and publish external-facing content as versioned export kits.
 - Rationale: Preserves governance quality and operational safety while migration/completeness work remains in progress.
 
+### Decision: Typography docs reconciled against live Adobe Fonts kits (2026-08-10)
+- Decision: fonts/gsl6svi.md, fonts/ojc8wen.md, fonts/FONTS_GUIDE.md, typography/BrandTypography.md, and visual-system/TYPOGRAPHY_SYSTEM.md were rewritten to match the actual live content of both Typekit kits (verified via raw CSS fetch, not summarized fetch) rather than the previously-documented kit assignment. `kegger-collegiate`, `kegger-us`, and `elliotts-blue-eyeshadow` are marked retired (non-destructively — kept in docs as a labeled retired-families record, not deleted) rather than silently removed, consistent with the legacy retention policy above. The 5 new gsl6svi variable fonts are documented as available-but-unassigned pending a brand-owner role decision, rather than being assigned a tier unilaterally.
+- Rationale: The Adobe Fonts kits are a live external service that can be reconfigured independent of `.cclibs` re-exports; docs describing stale kit contents ship broken `font-family` references (silent fallback to generic sans-serif/serif) in production. Treating retirement as "documented as unusable" rather than deletion, and treating new-but-undecided fonts as "documented as available, not yet assigned," both follow patterns already established elsewhere in this repo (pride_extended in colors/pride.md; xlr7mdi.md.deprecated).
+
 ## Open Decisions
 1. Typography overlap resolution:
 - Option A: merge BrandTypography into FONTS_GUIDE

@@ -147,7 +147,17 @@
 - Closed DATA_GAPS.md gap: deep legacy narrative consolidation.
 - Closed OPEN_QUESTIONS.md items: legacy retention strategy and asset archival timing.
 
+## 2026-08-10 - Typography Reconciliation Against Live Adobe Fonts Kits
+- Reviewed `assets/RAINBOWSMOKE.cclibs` and fetched raw CSS directly from both live Typekit kits (`https://use.typekit.net/gsl6svi.css`, `https://use.typekit.net/ojc8wen.css`) to verify actual served font content against the docs.
+- Confirmed colors and image assets already fully in sync with `.cclibs` (all 6 color themes, all 44 images) — no changes needed.
+- Discovered `gsl6svi` was repurposed 2026-01-07: no longer serves Le Havre Rounded/Transat/Rig Solid/Elliott's/Perec Scripte Deco; now serves 5 new variable font families (Xanti Typewriter Variable, Aglet Mono Variable, BioRhyme Variable, Grandstander Variable, Scatterplot VF), matching 8 `.cclibs` font elements added the same day.
+- Discovered `ojc8wen` absorbed the former gsl6svi roster (Le Havre Rounded, Transat, Rig Solid x13, Elliott's, Perec Scripte Deco) but lost `kegger-collegiate`, `kegger-us`, and `elliotts-blue-eyeshadow` — all three fully retired from Adobe Fonts as of 2026-01-07.
+- Fully rewrote fonts/gsl6svi.md and fonts/ojc8wen.md to match live kit contents; updated fonts/FONTS_GUIDE.md (metadata, Elliott's/Rig Solid entries, retired Kegger tier, new Tier 6 for the unassigned fonts), typography/BrandTypography.md (restricted/retired fonts, new-fonts pointer), and visual-system/TYPOGRAPHY_SYSTEM.md (retired-fonts note, pending-role-assignment note).
+- Added open question for brand role assignment of the 5 new gsl6svi fonts to governance/OPEN_QUESTIONS.md.
+- Updated brand.manifest.json's `brand.source` block: re-verified `.cclibs` re-export (new outer SHA-256, identical byte count and content — all 95 manifest elements unchanged) following the same reverification pattern used 2026-07-29.
+
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.
 - Add archive labels/comments to deprecated files in future cleanup pass.
 - Review and remediate any application/component completeness warnings.
+- Await brand owner decision on role assignment for the 5 new gsl6svi fonts (governance/OPEN_QUESTIONS.md).

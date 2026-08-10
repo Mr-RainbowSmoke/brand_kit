@@ -7,17 +7,17 @@
   "brand": "RainbowSmoke",
   "category": "Typography",
   "purpose": "AI-readable and human-readable instructions for the RainbowSmoke brand typography system",
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-08-10",
   "adobe_fonts_projects": [
     {
       "project_id": "ojc8wen",
-      "font_families": 15,
-      "variations": 34
+      "font_families": 29,
+      "variations": 44
     },
     {
       "project_id": "gsl6svi",
-      "font_families": 6,
-      "variations": 28
+      "font_families": 5,
+      "variations": "variable (see fonts/gsl6svi.md for per-family weight axis ranges)"
     }
   ],
   "integration": {
@@ -37,9 +37,10 @@ This document provides AI-readable and human-readable instructions for the Rainb
 - Policy ownership for typography usage, channel scale, and pairing decisions lives in ../visual-system/TYPOGRAPHY_SYSTEM.md.
 - If guidance conflicts, follow ../visual-system/TYPOGRAPHY_SYSTEM.md.
 
-**Adobe Fonts Projects:**
-- **Project ID 1:** `ojc8wen` (15 font families, 34 variations)
-- **Project ID 2:** `gsl6svi` (6 font families, 28 variations) — replaces the retired `xlr7mdi` project
+**Adobe Fonts Projects (verified against live Typekit CSS 2026-08-10):**
+- **Project ID 1:** `ojc8wen` (29 font families, 44 variations) — hosts Le Havre Rounded, Transat, Chennai, Sketchnote Text/Square, Omnes Narrow/Narrow Thin/Pro, Olivita, Backstroke, Perec Scripte Deco, Rig Solid (13 variants), and Elliott's (5 live variants). Absorbed the Rig Solid/Le Havre Rounded/Transat/Elliott's/Perec Scripte Deco roster from `gsl6svi` on 2026-01-07.
+- **Project ID 2:** `gsl6svi` (5 variable font families) — repurposed 2026-01-07 to host Xanti Typewriter Variable, Aglet Mono Variable, BioRhyme Variable, Grandstander Variable, and Scatterplot VF. Previously hosted the roster now in `ojc8wen`; before that it replaced the retired `xlr7mdi` project.
+- **Retired (no longer served by either project):** `kegger-collegiate`, `kegger-us`, `elliotts-blue-eyeshadow` — see fonts/ojc8wen.md's Retired Families section. Do not use in new work.
 
 **Integration:**
 ```html
@@ -199,7 +200,7 @@ h1 {
 #### Rig Solid (Selected Variants)
 **Families:** Multiple (`rig-solid-bold-fill`, `rig-solid-bold-inline`, `rig-solid-medium-outline`, etc.)
 **Fallback:** `sans-serif`
-**Available Variants:** 14 (Bold Fill, Bold Inline, Bold Halftone, Medium Outline, etc.)
+**Available Variants:** 13 (Bold Fill, Bold Inline, Bold Halftone, Medium Outline, etc.) — hosted in `ojc8wen` as of 2026-01-07 (previously `gsl6svi`)
 **Available Weights:** Light (300), Medium (500), Bold (700), Zero (100)
 **Role:** Hero banners, splash pages, posters, campaign graphics
 **Personality:** Loud, graphic, confident, eye-catching, impactful
@@ -238,16 +239,15 @@ h1 {
 ---
 
 #### Elliott's Collection
-**Families:** Multiple (`elliotts-blue-eyeshadow`, `elliotts-jigsaw-dropshadow`, etc.)
+**Families:** Multiple (`elliotts-jigsaw-dropshadow`, `elliotts-typhoid-mary-3d-lig`, etc.)
 **Fallback:** `sans-serif`
-**Available Variants:** 6
+**Available Variants:** 5 (`elliotts-blue-eyeshadow` retired from Adobe Fonts 2026-01-07 — do not use; see fonts/ojc8wen.md Retired Families)
 **Weight:** All at 400
 **Role:** One-off moments, art drops, social headers, special features
 **Personality:** Artistic, unique, expressive, vintage, playful
 **Usage Rule:** If you use Elliott's, everything else goes quiet. Maximum one use per design.
 
 **Approved Variants:**
-- `elliotts-blue-eyeshadow` - Retro display font
 - `elliotts-jigsaw-dropshadow` - 3D puzzle effect
 
 **Other Variants (Use with Caution):**
@@ -259,7 +259,7 @@ h1 {
 ```css
 /* Elliott's Implementation */
 .special-feature {
-  font-family: "elliotts-blue-eyeshadow", sans-serif;
+  font-family: "elliotts-jigsaw-dropshadow", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   text-align: center;
@@ -359,38 +359,8 @@ blockquote {
 
 ### Tier 5: Restricted Fonts (Situational Use Only)
 
-#### Kegger Collegiate
-**Family:** `kegger-collegiate`
-**Fallback:** `sans-serif`
-**Weight:** Regular (400)
-**Role:** Sports graphics, college/athletic themes, retro designs
-**Usage Rule:** Sports or retro-only contexts
-
-```css
-.sports-header {
-  font-family: "kegger-collegiate", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-```
-
----
-
-#### Kegger US
-**Family:** `kegger-us`
-**Fallback:** `serif` *(Note: Only font using serif fallback)*
-**Weight:** Regular (400)
-**Role:** American sports aesthetics, vintage athletic designs
-**Usage Rule:** Use only for specific retro/sports contexts
-
-```css
-.vintage-sports {
-  font-family: "kegger-us", serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-```
+#### Retired: Kegger Collegiate / Kegger US
+`kegger-collegiate` and `kegger-us` were retired from Adobe Fonts on 2026-01-07 — neither family is served by `ojc8wen` or `gsl6svi` anymore, and neither has a `.cclibs` presence. **Do not use.** For sports/athletic/retro contexts, use Backstroke instead (below). See fonts/ojc8wen.md's Retired Families section for the full record.
 
 ---
 
@@ -477,6 +447,27 @@ blockquote {
   font-family: "omnes-pro", sans-serif;
   font-weight: 500;
 }
+```
+
+---
+
+### Tier 6: New / Unassigned Fonts (Pending Brand Role Decision)
+
+Five variable font families were added to `gsl6svi` on 2026-01-07 (see fonts/gsl6svi.md for full detail) and to `RAINBOWSMOKE.cclibs`, but **no formal brand role has been assigned yet**. Treat these as available-but-undecided — same status as `pride_extended` in colors/pride.md. Do not build canonical UI patterns on them until visual-system/TYPOGRAPHY_SYSTEM.md records a decision; open item tracked in governance/OPEN_QUESTIONS.md.
+
+- **Xanti Typewriter Variable** (`xanti-typewriter-variable`, CAST / Gianluca Sandrone) — weight 25–900, normal + italic. Typewriter/monospace character.
+- **Aglet Mono Variable** (`aglet-mono-variable`, XYZ Type / Jesse Ragan) — weight 200–900, normal + italic. Clean monospace.
+- **BioRhyme Variable** (`biorhyme-variable`, Google) — weight 200–800, normal only. Slab-serif display.
+- **Grandstander Variable** (`grandstander-variable`, Google) — weight 100–900, normal + italic. Rounded, playful.
+- **Scatterplot VF** (`scatterplot-vf`, CAST / Giulio Galli) — weight 300–900, normal only. Experimental display.
+
+```css
+/* Reference only — not yet an approved brand pairing */
+font-family: "xanti-typewriter-variable", sans-serif;
+font-family: "aglet-mono-variable", sans-serif;
+font-family: "biorhyme-variable", sans-serif;
+font-family: "grandstander-variable", sans-serif;
+font-family: "scatterplot-vf", sans-serif;
 ```
 
 ---
@@ -605,7 +596,7 @@ START: What type of content?
 │  └─ Elegant → Olivita (400 italic)
 │
 └─ SPORTS/ATHLETIC
-   └─ Use: Kegger Collegiate or Backstroke
+   └─ Use: Backstroke (Kegger Collegiate/US retired from Adobe Fonts 2026-01-07)
 ```
 
 ---
@@ -682,22 +673,26 @@ font-family: "rig-solid-bold-fill", sans-serif;
 font-family: "rig-solid-bold-inline", sans-serif;
 font-family: "rig-solid-medium-outline", sans-serif;
 
-/* Elliott's Collection */
-font-family: "elliotts-blue-eyeshadow", sans-serif;
+/* Elliott's Collection (elliotts-blue-eyeshadow retired 2026-01-07, do not use) */
 font-family: "elliotts-jigsaw-dropshadow", sans-serif;
 
 /* Accent Fonts */
 font-family: "sketchnote-text", sans-serif;
 font-family: "olivita", sans-serif;
 
-/* Restricted/Situational */
-font-family: "kegger-collegiate", sans-serif;
-font-family: "kegger-us", serif; /* Note: serif fallback */
+/* Restricted/Situational (kegger-collegiate, kegger-us retired 2026-01-07, do not use) */
 font-family: "backstroke", sans-serif;
 font-family: "perec-scripte-deco", sans-serif;
 font-family: "sketchnote-square", sans-serif;
 font-family: "omnes-narrow-thin", sans-serif;
 font-family: "omnes-pro", sans-serif;
+
+/* New / unassigned (gsl6svi, added 2026-01-07 — pending brand role, see Tier 6) */
+font-family: "xanti-typewriter-variable", sans-serif;
+font-family: "aglet-mono-variable", sans-serif;
+font-family: "biorhyme-variable", sans-serif;
+font-family: "grandstander-variable", sans-serif;
+font-family: "scatterplot-vf", sans-serif;
 ```
 
 ---
@@ -706,15 +701,17 @@ font-family: "omnes-pro", sans-serif;
 
 ```css
 /* Standard Weights */
-font-weight: 100; /* Rig Solid Zero variants */
-font-weight: 200; /* Extra Light (Omnes Narrow, Omnes Narrow Thin) */
-font-weight: 300; /* Light (Rig Solid Light variants) */
+font-weight: 100; /* Rig Solid Zero variants; low end of Grandstander Variable's axis */
+font-weight: 200; /* Extra Light (Omnes Narrow, Omnes Narrow Thin); low end of Aglet Mono / BioRhyme Variable axes */
+font-weight: 300; /* Light (Rig Solid Light variants); low end of Scatterplot VF axis */
 font-weight: 400; /* Regular/Normal (Most fonts) */
 font-weight: 500; /* Medium (Omnes Pro, Rig Solid Medium) */
-font-weight: 600; /* Semi-Bold (Not available in this collection) */
+font-weight: 600; /* Semi-Bold (Not available in static-cut fonts; within all 5 new variable-font axes) */
 font-weight: 700; /* Bold (Most fonts) */
-font-weight: 800; /* Extra Bold (Not available) */
-font-weight: 900; /* Black (Omnes Narrow) */
+font-weight: 800; /* Extra Bold; top of BioRhyme Variable's axis */
+font-weight: 900; /* Black (Omnes Narrow); top of Aglet Mono / Grandstander / Scatterplot VF axes */
+
+/* Xanti Typewriter Variable's axis (25–800) extends below 100 — see fonts/gsl6svi.md */
 ```
 
 ---
@@ -734,15 +731,17 @@ font-weight: 900; /* Black (Omnes Narrow) */
 - Use more than one Elliott's font per design
 - Ignore minimum font size requirements
 - Create walls of text in decorative fonts
+- Reference `kegger-collegiate`, `kegger-us`, or `elliotts-blue-eyeshadow` — all three are retired from Adobe Fonts and will silently fall back to the generic fallback
 
 **IF YOU'RE UNSURE:**
 - Default to Transat + Le Havre Rounded + Omnes Narrow
 - This trio covers 90% of use cases
 - Add accent fonts only when needed for specific effect
+- Tier 6 fonts (Xanti Typewriter, Aglet Mono, BioRhyme, Grandstander, Scatterplot VF) are new and unassigned — don't build canonical patterns on them yet
 
 ---
 
-*Last Updated: July 29, 2026*
+*Last Updated: August 10, 2026*
 *Brand: RainbowSmoke*
-*Typography System Version: 1.0*
-*Adobe Fonts Projects: ojc8wen, gsl6svi*
+*Typography System Version: 2.0 (live-Typekit-kit-aligned)*
+*Adobe Fonts Projects: ojc8wen (29 families / 44 variations), gsl6svi (5 variable families)*

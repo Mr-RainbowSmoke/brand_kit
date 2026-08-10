@@ -6,12 +6,12 @@
     "source": {
       "type": "adobe-cclibs",
       "file": "RAINBOWSMOKE.cclibs",
-      "sha256": "67b45ed492de2d94a8e1ba632799175c6171cb66c8fd2f2ab18c863039ef9f14",
+      "sha256": "1d700ced1f3b5727d8f964145d896e9db1aed26320124bc56b3dfc151a55818b",
       "bytes": 18282858,
-      "priorSha256": "9cf142065ff85c6464b98bddcb149c38fcf82a09ef9517657b8fae2b0c0bd803",
-      "reverifiedNote": "Re-exported .cclibs checked 2026-07-29: outer zip hash changed (fresh Adobe export) but all 6 color themes, all 44 fonts, all 44 image assets (by per-file SHA-256), and the gradient are byte-for-byte identical to the prior confirmed master. No content changes."
+      "priorSha256": "67b45ed492de2d94a8e1ba632799175c6171cb66c8fd2f2ab18c863039ef9f14",
+      "reverifiedNote": "Re-exported .cclibs checked 2026-08-10: outer zip hash changed again (fresh Adobe export) but all 95 manifest elements are unchanged — all 6 color themes, all 44 fonts, all 44 image assets (by per-file SHA-256), and the gradient are byte-for-byte identical to the prior confirmed master. No content changes. Live Typekit kit contents (gsl6svi, ojc8wen) were separately verified against raw CSS the same day; see governance/CHANGELOG.md 2026-08-10 entry for the typography reconciliation this triggered."
     },
-    "generatedAt": "2026-07-29T23:46:47Z"
+    "generatedAt": "2026-08-10T00:00:00Z"
   },
   "identity": {
     "essence": [
