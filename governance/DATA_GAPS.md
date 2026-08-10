@@ -17,10 +17,8 @@ This document tracks known brand-system gaps that require follow-up decisions or
 - Next action: Decide reissue strategy and phase plan for updates.
 
 3. Deep legacy narrative consolidation
-- Status: In progress
-- Description: Legacy integrated docs still contain mixed archival and canonical-ready content.
-- Impact: Reader confusion about authoritative source.
-- Next action: Continue migration into canonical domain docs and mark legacy files as reference-only.
+- Status: Closed
+- Resolution: All legacy files formally classified: pointer stubs (brand_page.md, brand-voice-guidelines.md), scope-bounded companion (typography/BrandTypography.md), provenance artifact (brand.html). Retention policy ratified in DECISION_LOG.md.
 
 4. Automated docs consistency checks
 - Status: Partially complete

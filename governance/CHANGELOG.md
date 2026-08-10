@@ -133,6 +133,11 @@
 - Added publication model recommendation memo to drive decision on private hub vs public docs:
   - governance/PUBLICATION_MODEL_RECOMMENDATION.md
 - Ratified publication model policy as docs-first private operations plus versioned external export kits.
+- Ratified legacy file retention policy: pointer stubs, scope-bounded companions, or provenance artifacts — no deletions.
+- Ratified asset archival timing policy: Deprecated → Archived after 2 clean release cycles; 12-month window before eligible deletion.
+- Updated LEGACY_ARCHIVE_MAP.md to include brand.html and typography/BrandTypography.md.
+- Closed DATA_GAPS.md gap: deep legacy narrative consolidation.
+- Closed OPEN_QUESTIONS.md items: legacy retention strategy and asset archival timing.
 
 ## Next
 - Continue deep consolidation of remaining legacy integrated docs.

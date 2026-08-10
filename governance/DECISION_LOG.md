@@ -101,6 +101,14 @@
 - Decision: Maintain a dedicated branch-protection runbook as the operational source for required-check setup on main.
 - Rationale: Keeps CI gate policy reproducible for maintainers and future repository admins.
 
+### Decision: Legacy file retention policy
+- Decision: Retain legacy files permanently as non-destructive artifacts in one of two forms: (a) pointer stubs for fully-migrated content (brand_page.md, brand-voice-guidelines.md), (b) scope-bounded quick-reference companions for technically-dense content (typography/BrandTypography.md). brand.html retained as HTML provenance artifact. No legacy file is ever elevated to policy authority.
+- Rationale: Preserves provenance and traceability with zero risk of policy drift since canonical files are authoritative by explicit rule.
+
+### Decision: Asset archival timing policy
+- Decision: Deprecated variants move from Deprecated to Archived status after 2 consecutive release cycles in which they appear in no active manifests. Archival means moving the file to assets/archive/ (not deletion). Archived assets are eligible for permanent deletion after 12 months from archive date with explicit maintainer sign-off.
+- Rationale: Provides a safe, reversible cleanup path while protecting against accidental removal of assets that may still be referenced externally.
+
 ### Decision: Publication model policy
 - Decision: Keep this repository as a private docs-first operational source of truth and publish external-facing content as versioned export kits.
 - Rationale: Preserves governance quality and operational safety while migration/completeness work remains in progress.
