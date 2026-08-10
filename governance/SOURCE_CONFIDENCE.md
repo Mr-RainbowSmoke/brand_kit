@@ -11,7 +11,7 @@ This document records confidence in major brand domains and their evidentiary ba
 | Logo and asset usage | High | Canonical asset mapping + lifecycle policy + manifest checks |
 | Voice and values | High | Canonical verbal policy and examples consolidated from legacy sources |
 | Tone by context | High | Tone matrix covers all 5 required contexts with formality, energy, and channel-specific notes; reviewed 2026-08-10 |
-| External mirror parity | Medium | Canonical hub is stable; external mirrors may require explicit sync passes |
+| External mirror parity | Low | Three confirmed mirrors identified (SharePoint, Dropbox, Google Drive); none yet synced to v1.0 hub |
 
 ## Notes
 - Confidence should be revised whenever major policy or source changes occur.

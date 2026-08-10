@@ -134,6 +134,8 @@
   - governance/PUBLICATION_MODEL_RECOMMENDATION.md
 - Ratified publication model policy as docs-first private operations plus versioned external export kits.
 - Added min font-size/spacing tables and motion timing guidance to ACCESSIBILITY_BASELINE.md.
+- Added .github/workflows/sync-external-mirrors.yml: rclone-based sync to SharePoint, Google Drive, and Dropbox on push to main.
+- Added credential setup instructions for mirror sync to governance/BRANCH_PROTECTION_RUNBOOK.md.
 - Upgraded tone-by-context confidence from Medium to High in SOURCE_CONFIDENCE.md after 2026-08-10 review.
 - Closed all remaining open questions; OPEN_QUESTIONS.md active section now empty.
 - Ratified legacy file retention policy: pointer stubs, scope-bounded companions, or provenance artifacts — no deletions.

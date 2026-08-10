@@ -1,0 +1,78 @@
+name: Sync external mirrors
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/**"
+      - "asset-library/**"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Validate and sync to SharePoint, Google Drive, Dropbox
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Abort if any kit manifest references a missing or deprecated asset
+      - name: Validate release manifests
+        run: python3 scripts/check_release_manifests.py
+
+      - name: Install rclone
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      # RCLONE_CONFIG secret is the full rclone.conf base64-encoded.
+      # See governance/BRANCH_PROTECTION_RUNBOOK.md for setup steps.
+      - name: Configure rclone
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONFIG }}" | base64 -d > ~/.config/rclone/rclone.conf
+
+      # Sync active assets only — exclude deprecated naming patterns
+      - name: Sync assets to SharePoint
+        run: |
+          rclone sync assets/ sharepoint:Brand Guide/assets/ \
+            --filter "- *_png.png" \
+            --filter "- *_svg.svg" \
+            --filter "- *_2.png" \
+            --filter "- *_2.svg" \
+            --progress --stats 30s
+
+      - name: Sync asset manifests to SharePoint
+        run: |
+          rclone sync asset-library/ sharepoint:Brand Guide/asset-library/ \
+            --progress --stats 30s
+
+      - name: Sync assets to Google Drive
+        run: |
+          rclone sync assets/ gdrive:Brand Guide/assets/ \
+            --filter "- *_png.png" \
+            --filter "- *_svg.svg" \
+            --filter "- *_2.png" \
+            --filter "- *_2.svg" \
+            --progress --stats 30s
+
+      - name: Sync asset manifests to Google Drive
+        run: |
+          rclone sync asset-library/ gdrive:Brand Guide/asset-library/ \
+            --progress --stats 30s
+
+      - name: Sync assets to Dropbox
+        run: |
+          rclone sync assets/ dropbox:Brand Guide/assets/ \
+            --filter "- *_png.png" \
+            --filter "- *_svg.svg" \
+            --filter "- *_2.png" \
+            --filter "- *_2.svg" \
+            --progress --stats 30s
+
+      - name: Sync asset manifests to Dropbox
+        run: |
+          rclone sync asset-library/ dropbox:Brand Guide/asset-library/ \
+            --progress --stats 30s

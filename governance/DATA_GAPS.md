@@ -4,11 +4,14 @@ This document tracks known brand-system gaps that require follow-up decisions or
 
 ## Open Gaps
 
-1. GitHub mirror synchronization
-- Status: Open
-- Description: External mirror references may still contain older values or outdated docs.
-- Impact: Potential drift between canonical hub and external copies.
-- Next action: Perform controlled mirror sync from canonical hub sources.
+1. External mirror synchronization
+- Status: Workflow ready — credentials pending
+- Targets:
+  - SharePoint brand guide site: https://djfox8705live.sharepoint.com/sites/BrandGuide
+  - Dropbox (asset kit exports)
+  - Google Drive (asset kit exports)
+- Automation: .github/workflows/sync-external-mirrors.yml triggers on push to main
+- Remaining action: configure RCLONE_CONFIG secret per governance/BRANCH_PROTECTION_RUNBOOK.md, then trigger first sync via workflow_dispatch
 
 2. Legacy shipped asset color alignment
 - Status: Open
