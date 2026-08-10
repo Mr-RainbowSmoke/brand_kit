@@ -4,8 +4,7 @@ This document contains current decision items for future planning.
 
 ## Active Questions
 
-1. Tone matrix validation depth
-- Should we keep current tone-by-context guidance as-is, or run a dedicated content review cycle to upgrade confidence from Medium to High?
+_All active questions resolved. See Recently Resolved below._
 
 ## Recently Resolved
 
@@ -39,3 +38,6 @@ This document contains current decision items for future planning.
 
 10. Additional CI guardrails
 - Resolved: Current quality suite (manifest, link, parity, style) is sufficient. No additional required checks needed at this time.
+
+11. Tone matrix validation depth
+- Resolved: Tone matrix reviewed 2026-08-10. All 5 required contexts have formality, energy, and channel notes. Confidence upgraded to High in SOURCE_CONFIDENCE.md.

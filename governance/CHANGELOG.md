@@ -133,6 +133,9 @@
 - Added publication model recommendation memo to drive decision on private hub vs public docs:
   - governance/PUBLICATION_MODEL_RECOMMENDATION.md
 - Ratified publication model policy as docs-first private operations plus versioned external export kits.
+- Added min font-size/spacing tables and motion timing guidance to ACCESSIBILITY_BASELINE.md.
+- Upgraded tone-by-context confidence from Medium to High in SOURCE_CONFIDENCE.md after 2026-08-10 review.
+- Closed all remaining open questions; OPEN_QUESTIONS.md active section now empty.
 - Ratified legacy file retention policy: pointer stubs, scope-bounded companions, or provenance artifacts — no deletions.
 - Ratified asset archival timing policy: Deprecated → Archived after 2 clean release cycles; 12-month window before eligible deletion.
 - Updated LEGACY_ARCHIVE_MAP.md to include brand.html and typography/BrandTypography.md.

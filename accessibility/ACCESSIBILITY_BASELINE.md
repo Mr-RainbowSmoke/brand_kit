@@ -28,8 +28,46 @@ This document defines minimum accessibility requirements for RAINBOWSMOKE brand 
 - Error states must include text, not color alone.
 
 ## Next Implementation Tasks
-1. Add min font-size and spacing tables by channel.
-2. Add motion timing guidance and reduced-motion examples.
+1. Validate contrast ratios for additional mid-tone palette combinations as new contexts are introduced.
+
+## Min Font Size and Spacing by Channel
+
+| Channel | Min body size | Min label / caption | Line height | Notes |
+|---|---|---|---|---|
+| Web | 16px | 14px | 1.5× body size | 24px line-height at 16px body |
+| Email | 16px | 14px | 1.5× | Email clients may override; use px not em for safety |
+| Mobile (touch) | 16px | 14px | 1.4× | Respect OS dynamic type scaling |
+| Social graphic | 28px equivalent | 20px equivalent | 1.2× (graphic context) | Measured at final export resolution |
+| Video overlay | 28px equivalent | 20px equivalent | 1.2× | Measured at 1080p; verify at 720p |
+| Print (body) | 10pt | 8pt | 1.4× | Points, not pixels; verify at physical print size |
+| Print (large format) | 14pt | 10pt | 1.4× | Posters and signage; larger preferred |
+| Merch copy | 14pt equivalent | 10pt equivalent | 1.2× | Depends on substrate; order proofs |
+
+## Motion Timing and Reduced-Motion
+
+### Timing Guidelines
+
+| Animation type | Recommended duration | Easing | Notes |
+|---|---|---|---|
+| State transition (hover, focus) | 100–150ms | ease-out | Fast and responsive; never jarring |
+| Panel / drawer open | 200–300ms | ease-in-out | Smooth reveal |
+| Alert / toast appear | 200–250ms | ease-out | Appears quickly; does not distract |
+| Stream intro / outro slate | 500–1500ms | ease-in-out | Brand moment; not rushed |
+| Alert box animation (stream) | Under 3 seconds total | ease-out | Non-looping unless intentional |
+| Loading spinner | Continuous, ~1000ms per cycle | linear | Keep rotation speed calm |
+
+### Flash and Strobe Rule
+- Never exceed 3 flashes per second (WCAG 2.3.1 Three Flashes threshold)
+- High-saturation color flashes (Pride red / green alternating) are particularly risky— avoid entirely in motion contexts
+
+### Reduced-Motion Implementation
+```css
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+```
+- All animated components must respect `prefers-reduced-motion`
+- For stream overlays: provide a static non-animated variant of every animated asset
 
 ## Approved Color Contrast Pairings
 

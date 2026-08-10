@@ -10,7 +10,7 @@ This document records confidence in major brand domains and their evidentiary ba
 | Typography system | High | Canonical policy + inventory documentation + integration references |
 | Logo and asset usage | High | Canonical asset mapping + lifecycle policy + manifest checks |
 | Voice and values | High | Canonical verbal policy and examples consolidated from legacy sources |
-| Tone by context | Medium | Strong internal guidance, but still evolving with channel execution feedback |
+| Tone by context | High | Tone matrix covers all 5 required contexts with formality, energy, and channel-specific notes; reviewed 2026-08-10 |
 | External mirror parity | Medium | Canonical hub is stable; external mirrors may require explicit sync passes |
 
 ## Notes
