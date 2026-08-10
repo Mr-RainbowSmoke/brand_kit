@@ -2,18 +2,28 @@
 
 Docs-first brand system for RAINBOWSMOKE. This repository now serves as the central hub for both internal creators and external partners.
 
-## Start Here
+## Get Started
 
-### If you are internal team or collaborators
-1. Read the brand foundation in [foundation/README.md](foundation/README.md).
-2. Follow visual rules in [visual-system/README.md](visual-system/README.md).
-3. Follow voice rules in [verbal-system/README.md](verbal-system/README.md).
-4. Use component and channel guides in [components/README.md](components/README.md) and [applications/README.md](applications/README.md).
+### I am a designer
+1. Understand the brand foundation: [foundation/BRAND_OVERVIEW.md](foundation/BRAND_OVERVIEW.md)
+2. Apply the visual system: [visual-system/README.md](visual-system/README.md) — colors, typography, logo rules
+3. Use component specs: [components/README.md](components/README.md) — buttons, forms, cards, states
+4. Pick up a channel playbook: [applications/README.md](applications/README.md) — web, social, email, video
+5. Pull approved assets: [asset-library/ASSET_INDEX.md](asset-library/ASSET_INDEX.md)
 
-### If you are external partners or media
-1. Use this hub as the latest reference for approved brand usage.
-2. Check asset usage and status in [asset-library/ASSET_INDEX.md](asset-library/ASSET_INDEX.md).
-3. Follow accessibility and compliance notes in [accessibility/ACCESSIBILITY_BASELINE.md](accessibility/ACCESSIBILITY_BASELINE.md).
+### I am a content writer
+1. Read brand voice and values: [verbal-system/VOICE_AND_TONE.md](verbal-system/VOICE_AND_TONE.md)
+2. Follow terminology and style conventions: [verbal-system/TERMINOLOGY_STYLE.md](verbal-system/TERMINOLOGY_STYLE.md)
+3. Use real copy examples by channel: [verbal-system/COPY_EXAMPLES.md](verbal-system/COPY_EXAMPLES.md)
+4. Check channel tone for your surface: [applications/README.md](applications/README.md)
+5. Review inclusive language: [accessibility/ACCESSIBILITY_BASELINE.md](accessibility/ACCESSIBILITY_BASELINE.md)
+
+### I am a partner or media contact
+1. Review approved usage rules: [visual-system/LOGO_AND_ASSET_USAGE.md](visual-system/LOGO_AND_ASSET_USAGE.md)
+2. Download release-ready assets: [asset-library/PRESS_KIT_MANIFEST.md](asset-library/PRESS_KIT_MANIFEST.md) or [asset-library/MEDIA_KIT_MANIFEST.md](asset-library/MEDIA_KIT_MANIFEST.md)
+3. Check asset status: [asset-library/ASSET_INDEX.md](asset-library/ASSET_INDEX.md)
+4. Understand accessibility expectations: [accessibility/ACCESSIBILITY_BASELINE.md](accessibility/ACCESSIBILITY_BASELINE.md)
+5. Follow the canonical brand foundation: [foundation/BRAND_OVERVIEW.md](foundation/BRAND_OVERVIEW.md)
 
 ## Hub Sections
 
@@ -35,18 +45,20 @@ Docs-first brand system for RAINBOWSMOKE. This repository now serves as the cent
 - Asset metadata source: [brand.manifest.json](brand.manifest.json)
 - Binary assets: [assets/](assets/)
 
-## Current Implementation Status
+## Implementation Status
 
-### Completed in this phase
-- Hub structure scaffolding created.
-- Governance and source-of-truth mapping created.
-- Accessibility baseline document created.
-- Asset indexing framework created.
+### Complete
+- Hub architecture: foundation, visual, verbal, accessibility, components, applications, asset library, governance.
+- Canonical source-of-truth mapping and ownership across all domains.
+- Automated quality suite: manifest, link, parity, and style validators — required PR gate on main.
+- Asset indexing and release manifests for social, media, creator, and press kits.
+- Deprecated variant register and archival timing policy.
+- Governance: decision log, changelog, open questions, source confidence, branch protection runbook.
 
 ### In progress
-- Consolidating overlapping docs into domain-level canonical sections.
-- Adding concrete application playbooks and component standards.
-- Building canonical asset mapping for duplicate and near-duplicate variants.
+- Expanding component and application docs from scaffolds to full specifications.
+- Accessibility contrast matrix against approved palette combinations.
+- v1.0 hub launch notes and usability walkthrough.
 
 ## New Canonical Verbal Docs
 - [verbal-system/VOICE_AND_TONE.md](verbal-system/VOICE_AND_TONE.md)

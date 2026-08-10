@@ -4,10 +4,7 @@ This document contains current decision items for future planning.
 
 ## Active Questions
 
-1. Additional CI guardrails
-- Which additional checks should become required on PRs beyond current manifest, markdown-link, and docs-manifest parity checks (style linting, deeper docs consistency)?
-
-2. Tone matrix validation depth
+1. Tone matrix validation depth
 - Should we keep current tone-by-context guidance as-is, or run a dedicated content review cycle to upgrade confidence from Medium to High?
 
 ## Recently Resolved
@@ -39,3 +36,6 @@ This document contains current decision items for future planning.
 
 9. Asset archival timing
 - Resolved: Deprecated → Archived after 2 clean release cycles; assets/archive/ folder; eligible for permanent deletion after 12 months with maintainer sign-off.
+
+10. Additional CI guardrails
+- Resolved: Current quality suite (manifest, link, parity, style) is sufficient. No additional required checks needed at this time.
